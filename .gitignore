@@ -1,0 +1,12 @@
+project.zip
+ps.docx
+.venv/
+__pycache__/
+.pytest_cache/
+work/
+data/
+*.pyc
+*.pem
+.cloud-secrets/
+
+.DS_Store

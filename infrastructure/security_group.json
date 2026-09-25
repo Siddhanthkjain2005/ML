@@ -1,0 +1,10 @@
+{
+    "GroupId": "sg-0dc2b627a847ae0ce",
+    "Tags": [
+        {
+            "Key": "Project",
+            "Value": "AmazonMLChallenge2026"
+        }
+    ],
+    "SecurityGroupArn": "arn:aws:ec2:ap-south-1:206632867498:security-group/sg-0dc2b627a847ae0ce"
+}

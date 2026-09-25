@@ -1,0 +1,3 @@
+{"time": "2026-09-25T14:25:30Z", "stage": "fold_start", "fold": "train", "anchors": 30, "true_links": 48}
+{"time": "2026-09-25T14:25:30Z", "fold": "train", "stage": "target_cache_shard", "shard": 0, "rows": 20}
+{"time": "2026-09-25T14:25:30Z", "fold": "train", "stage": "target_cache_shard", "shard": 1, "rows": 10}

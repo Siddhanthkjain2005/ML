@@ -1,0 +1,1440 @@
+{
+  "source_profiles": {
+    "train_source1": {
+      "member": "student_resource/dataset/train/train_source1.tsv",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "rows": 2206821,
+      "malformed_width": [],
+      "malformed_width_count": 0,
+      "unexpected_ids": [],
+      "unexpected_id_count": 0,
+      "prefix_counts": {
+        "S1": 2206821
+      },
+      "country_counts": {
+        "US": 1323633,
+        "India": 883188
+      },
+      "empty": {},
+      "whitespace_only": {},
+      "null_like": {
+        "entity_id": {},
+        "business_name": {},
+        "business_address": {},
+        "country": {}
+      },
+      "nonascii_rows": {
+        "business_address": 554
+      },
+      "replacement_character_rows": {},
+      "tab_newline_cr_nul_rows": {},
+      "lengths": {
+        "entity_id": {
+          "p0": 6,
+          "p1": 10,
+          "p5": 11,
+          "p25": 12,
+          "p50": 12,
+          "p75": 12,
+          "p95": 12,
+          "p99": 12,
+          "p100": 12,
+          "mean": 11.888905352994193
+        },
+        "business_name": {
+          "p0": 3,
+          "p1": 8,
+          "p5": 12,
+          "p25": 18,
+          "p50": 24,
+          "p75": 30,
+          "p95": 37,
+          "p99": 42,
+          "p100": 105,
+          "mean": 24.03440333402664
+        },
+        "business_address": {
+          "p0": 11,
+          "p1": 22,
+          "p5": 27,
+          "p25": 33,
+          "p50": 41,
+          "p75": 70,
+          "p95": 103,
+          "p99": 124,
+          "p100": 256,
+          "mean": 52.06621289175697
+        },
+        "country": {
+          "p0": 2,
+          "p1": 2,
+          "p5": 2,
+          "p25": 2,
+          "p50": 2,
+          "p75": 5,
+          "p95": 5,
+          "p99": 5,
+          "p100": 5,
+          "mean": 3.2006247901393
+        }
+      },
+      "longest": {
+        "entity_id": [
+          [
+            12,
+            4,
+            "S1-377745466",
+            "S1-377745466"
+          ],
+          [
+            12,
+            3,
+            "S1-773889195",
+            "S1-773889195"
+          ],
+          [
+            12,
+            2,
+            "S1-925783039",
+            "S1-925783039"
+          ]
+        ],
+        "business_name": [
+          [
+            105,
+            1774113,
+            "S1-590655896",
+            "164/B-43 Vinayaka.Plaza 2Nd Floor 24Th Cross Ro Ad 6Th Block Jayanagar Bangalore 560082 Breweries Pvt Ltd"
+          ],
+          [
+            101,
+            1783887,
+            "S1-821281223",
+            "First Floor Survey No. 134/2/2/1B Bld/B Mp/1 Patil Heritage Shivajinagar Technologies Private Limited"
+          ],
+          [
+            94,
+            2163007,
+            "S1-64575188",
+            "Murlidhar Apartmentajit Park Society Opp Krushi Farm Ghod-Dod Road Calibration Private Limited"
+          ]
+        ],
+        "business_address": [
+          [
+            256,
+            914951,
+            "S1-286073597",
+            "C/O Medicine Godown, Canal Road, Opposite 3Rd No Bridge, Towards Sharda Sishu Tirtha School, P.O- Fulbari, P.S- Bhaktinagar, Jalpaiguri, West Bengal, Opposite 3Rd No Bridge, Towards Sharda Sishu Tirtha School, P.O- Fulbari, Rajganj, Jalpaiguri, West Bengal"
+          ],
+          [
+            245,
+            1484225,
+            "S1-509980564",
+            "3Rd Floor, Plot No. 1050/1, Sree Sai Enclave, Survey No. 163/Part, Durgamatha House Building Co-Operative Housing Society Limited, Hydernagar, Balanagar Mandal, Kukatpally Municipal Circle, Ranga Reddy Medchal, Tirumalagiri, Hyderabad, Telangana"
+          ],
+          [
+            244,
+            812703,
+            "S1-694035766",
+            "Flat No301 Wing C, Vrindavan C. H. S.Ltd., Skybuild Village, New Sai Babanagar, Behind Bhatia High School, Kandivali (W), Mumbai, Skybuild Village, New Sai Babanagar, Behind Bhatia High School, Kandivali (W), Kandivlai West, Mumbai, Maharashtra"
+          ]
+        ],
+        "country": [
+          [
+            5,
+            13,
+            "S1-564729135",
+            "India"
+          ],
+          [
+            5,
+            8,
+            "S1-785847572",
+            "India"
+          ],
+          [
+            5,
+            6,
+            "S1-755362802",
+            "India"
+          ]
+        ]
+      },
+      "both_name_address_missing": 0,
+      "normalization_changes": {
+        "business_name": 2206821,
+        "business_address": 2206821,
+        "country": 2206821
+      },
+      "id_duplicate_stats": {
+        "distinct": 2206821,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "exact_business_duplicate_stats": {
+        "distinct": 2206821,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "normalized_business_duplicate_stats": {
+        "distinct": 2206821,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "fingerprint_delimiter_present_rows": 1,
+      "elapsed_seconds": 31.782909415996983
+    },
+    "train_source2": {
+      "member": "student_resource/dataset/train/train_source2.tsv",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "rows": 5034616,
+      "malformed_width": [],
+      "malformed_width_count": 0,
+      "unexpected_ids": [],
+      "unexpected_id_count": 0,
+      "prefix_counts": {
+        "S2": 5034616
+      },
+      "country_counts": {
+        "India": 2017799,
+        "US": 3016817
+      },
+      "empty": {
+        "business_address": 168967
+      },
+      "whitespace_only": {},
+      "null_like": {
+        "entity_id": {},
+        "business_name": {
+          "nan": 1,
+          "na": 5
+        },
+        "business_address": {},
+        "country": {}
+      },
+      "nonascii_rows": {
+        "business_name": 764608,
+        "business_address": 478453
+      },
+      "replacement_character_rows": {},
+      "tab_newline_cr_nul_rows": {},
+      "lengths": {
+        "entity_id": {
+          "p0": 6,
+          "p1": 10,
+          "p5": 11,
+          "p25": 12,
+          "p50": 12,
+          "p75": 12,
+          "p95": 12,
+          "p99": 12,
+          "p100": 12,
+          "mean": 11.88879549105632
+        },
+        "business_name": {
+          "p0": 2,
+          "p1": 8,
+          "p5": 12,
+          "p25": 19,
+          "p50": 25,
+          "p75": 31,
+          "p95": 40,
+          "p99": 48,
+          "p100": 104,
+          "mean": 25.103574930044317
+        },
+        "business_address": {
+          "p0": 0,
+          "p1": 0,
+          "p5": 22,
+          "p25": 30,
+          "p50": 37,
+          "p75": 61,
+          "p95": 96,
+          "p99": 118,
+          "p100": 249,
+          "mean": 46.22590858965212
+        },
+        "country": {
+          "p0": 2,
+          "p1": 2,
+          "p5": 2,
+          "p25": 2,
+          "p50": 2,
+          "p75": 5,
+          "p95": 5,
+          "p99": 5,
+          "p100": 5,
+          "mean": 3.202355254104782
+        }
+      },
+      "longest": {
+        "entity_id": [
+          [
+            12,
+            4,
+            "S2-639257739",
+            "S2-639257739"
+          ],
+          [
+            12,
+            3,
+            "S2-764573417",
+            "S2-764573417"
+          ],
+          [
+            12,
+            2,
+            "S2-166376419",
+            "S2-166376419"
+          ]
+        ],
+        "business_name": [
+          [
+            104,
+            37326,
+            "S2-603021191",
+            "LTD. 303&304 DABOUR BUILDING C-I LOCAL SHOPPING CENTRE IIND FLOOR JANAK ELECTRONICS OVERSEAS PVT. CENTER"
+          ],
+          [
+            103,
+            889001,
+            "S2-556494127",
+            "164/B-43 VINAYAKA.PLAZA 2ND FLOOR 24TH CROSS RO AD 6TH BLOCK JAYANAGAR BANGALORE 560082 BREWERIES (PVT)"
+          ],
+          [
+            101,
+            3683715,
+            "S2-292883139",
+            "First Floor Survey No. 134/2/2/1b Bld/B Mp/1 Patil Heritage Shivajinagar Technologies Private Limited"
+          ]
+        ],
+        "business_address": [
+          [
+            249,
+            1815513,
+            "S2-709031902",
+            "DOOR NO 1ST-6ND FLOORS, UNIT NO. 02 AND 10TH - 16TH FLOORS, UNIT NO. 01 AND 02 (ARGUS BLOCK), KNOWLEDGE CITY, SURVEY NO. 83/1, INORBIT MALL ROAD, RAIDURG PANMAKTHA VILLAGE, SERILINGAMPALLY MANDAL, RANGA REDDY DISTRICT, SHAIKPET, HYDERABAD, Telangana"
+          ],
+          [
+            244,
+            4139984,
+            "S2-946065820",
+            "NO 1ST-2ND FLOORS, UNIT NO. 02 AND 10TH - 16TH FLOORS, UNIT NO. 01 AND 02 (ARGUS BLOCK), KNOWLEDGE CITY, SURVEY NO. 83/1, INORBIT MALL ROAD, RAIDURG PANMAKTHA VILLAGE, SERILINGAMPALLY MANDAL, RANGA REDDY DISTRICT, HYDERABAD, SHAIKPET, Telangana"
+          ],
+          [
+            244,
+            2243037,
+            "S2-663593086",
+            "C/O MEDICINE GODOWN, CANAL ROAD, OPPOSITE 3RD NO BRIDGE, TOWARDS SHARDA SISHU TIRTHA SCHOOL, P.O- FULBARI, P.S- BHAKTINAGAR, JALPAIGURI, WEST BENGAL, OPPOSITE 3RD NO BRIDGE, TOWARDS SHARDA SISHU TIRTHA SCHOOL, P.O- FULBARI, RAJGANJ, West Bengal"
+          ]
+        ],
+        "country": [
+          [
+            5,
+            8,
+            "S2-584977605",
+            "India"
+          ],
+          [
+            5,
+            4,
+            "S2-639257739",
+            "India"
+          ],
+          [
+            5,
+            2,
+            "S2-166376419",
+            "India"
+          ]
+        ]
+      },
+      "both_name_address_missing": 0,
+      "normalization_changes": {
+        "business_address": 4865649,
+        "country": 5034616,
+        "business_name": 4289070
+      },
+      "id_duplicate_stats": {
+        "distinct": 5034616,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "exact_business_duplicate_stats": {
+        "distinct": 5008743,
+        "duplicate_groups": 25060,
+        "rows_in_duplicate_groups": 50933,
+        "extra_duplicate_rows": 25873,
+        "max_group": 5,
+        "group_size_histogram": {
+          "2": 24270,
+          "3": 769,
+          "4": 19,
+          "5": 2
+        }
+      },
+      "normalized_business_duplicate_stats": {
+        "distinct": 4987235,
+        "duplicate_groups": 45772,
+        "rows_in_duplicate_groups": 93153,
+        "extra_duplicate_rows": 47381,
+        "max_group": 5,
+        "group_size_histogram": {
+          "2": 44210,
+          "3": 1518,
+          "4": 41,
+          "5": 3
+        }
+      },
+      "fingerprint_delimiter_present_rows": 0,
+      "elapsed_seconds": 75.67765508400043
+    },
+    "train_source3": {
+      "member": "student_resource/dataset/train/train_source3.tsv",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "rows": 5285603,
+      "malformed_width": [],
+      "malformed_width_count": 0,
+      "unexpected_ids": [],
+      "unexpected_id_count": 0,
+      "prefix_counts": {
+        "S3": 5285603
+      },
+      "country_counts": {
+        "US": 3170056,
+        "India": 2115547
+      },
+      "empty": {
+        "business_address": 175916
+      },
+      "whitespace_only": {},
+      "null_like": {
+        "entity_id": {},
+        "business_name": {
+          "na": 18
+        },
+        "business_address": {},
+        "country": {}
+      },
+      "nonascii_rows": {
+        "business_name": 606737,
+        "business_address": 476588
+      },
+      "replacement_character_rows": {},
+      "tab_newline_cr_nul_rows": {},
+      "lengths": {
+        "entity_id": {
+          "p0": 5,
+          "p1": 11,
+          "p5": 11,
+          "p25": 12,
+          "p50": 12,
+          "p75": 12,
+          "p95": 12,
+          "p99": 12,
+          "p100": 12,
+          "mean": 11.8887330357577
+        },
+        "business_name": {
+          "p0": 2,
+          "p1": 6,
+          "p5": 11,
+          "p25": 18,
+          "p50": 25,
+          "p75": 31,
+          "p95": 42,
+          "p99": 50,
+          "p100": 123,
+          "mean": 25.202143823514554
+        },
+        "business_address": {
+          "p0": 0,
+          "p1": 0,
+          "p5": 22,
+          "p25": 35,
+          "p50": 42,
+          "p75": 54,
+          "p95": 91,
+          "p99": 115,
+          "p100": 240,
+          "mean": 46.71443731207206
+        },
+        "country": {
+          "p0": 2,
+          "p1": 2,
+          "p5": 2,
+          "p25": 2,
+          "p50": 2,
+          "p75": 5,
+          "p95": 5,
+          "p99": 5,
+          "p100": 5,
+          "mean": 3.2007411453338435
+        }
+      },
+      "longest": {
+        "entity_id": [
+          [
+            12,
+            5,
+            "S3-671162755",
+            "S3-671162755"
+          ],
+          [
+            12,
+            3,
+            "S3-859268022",
+            "S3-859268022"
+          ],
+          [
+            12,
+            2,
+            "S3-202863386",
+            "S3-202863386"
+          ]
+        ],
+        "business_name": [
+          [
+            123,
+            2697373,
+            "S3-337462666",
+            "164/B-43 Vinayaka.Plaza 2Nd Floor 24Th Cross Ad Ro 6Th Block Jayanagar Bangalore 560082 560082 Breweries Industries Pvt Ltd"
+          ],
+          [
+            108,
+            1014336,
+            "S3-427553313",
+            "First Floor Survey No. 134/2/2/1B Bld/B Mp/1 Patil Heritage Shivajinagar Technologies Industries Private Ltd"
+          ],
+          [
+            103,
+            3075488,
+            "S3-579326566",
+            "First Floor Survey No. 134/2/2/1b Bld/B Mp/1 Patihlt Heritage Shivajinagar-Technologies Private Limited"
+          ]
+        ],
+        "business_address": [
+          [
+            240,
+            1944747,
+            "S3-709052356",
+            "6Rd/1 Floor, Plot No. 1050/1, Sree Sai Enclave, Survey No. 163/Part, Durgamatha House Building Co-operative Housing Society Limited, Hydernagar, Balanagar Mandal, Kukatpally Municipal Circle, Ranga Reddy Medchal, Hyderabad, Tirumalagiri, TG"
+          ],
+          [
+            238,
+            1472889,
+            "S3-909327212",
+            "Plot No. 1050/1, Sree Sai Enclave, Survey No. 163/Part, Durgamatha House Building Co-operative Housing Society Limited, Hydernagar, Balanagar Mandal, Kukatpally Municipal Circle, Ranga Reddy Medchal, Tirumalagiri, Hyderabad, 3Rd Floor, TG"
+          ],
+          [
+            236,
+            635813,
+            "S3-932431142",
+            "Bangalore North, Site No. 10, Bangalore, ಕರ್ನಾಟಕ, Formed On Kiadb Plot Bearing No. 35, Having Bbmp Khata No. 35, In 2Nd Phase Of Peenya Industrial Area, Comprised In Sy. No. 41 And 42 Of Nallakadaranahalli Village, Yeshwanthapura, Hobli"
+          ]
+        ],
+        "country": [
+          [
+            5,
+            13,
+            "S3-53737228",
+            "India"
+          ],
+          [
+            5,
+            6,
+            "S3-960981775",
+            "India"
+          ],
+          [
+            5,
+            3,
+            "S3-859268022",
+            "India"
+          ]
+        ]
+      },
+      "both_name_address_missing": 0,
+      "normalization_changes": {
+        "business_address": 5109592,
+        "country": 5285603,
+        "business_name": 4711350
+      },
+      "id_duplicate_stats": {
+        "distinct": 5285603,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "exact_business_duplicate_stats": {
+        "distinct": 5266743,
+        "duplicate_groups": 18381,
+        "rows_in_duplicate_groups": 37241,
+        "extra_duplicate_rows": 18860,
+        "max_group": 4,
+        "group_size_histogram": {
+          "2": 17919,
+          "3": 445,
+          "4": 17
+        }
+      },
+      "normalized_business_duplicate_stats": {
+        "distinct": 5252671,
+        "duplicate_groups": 31938,
+        "rows_in_duplicate_groups": 64870,
+        "extra_duplicate_rows": 32932,
+        "max_group": 4,
+        "group_size_histogram": {
+          "2": 30971,
+          "3": 940,
+          "4": 27
+        }
+      },
+      "fingerprint_delimiter_present_rows": 0,
+      "elapsed_seconds": 80.35352587500529
+    },
+    "test_source1": {
+      "member": "student_resource/dataset/test/test_source1.tsv",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "rows": 1732544,
+      "malformed_width": [],
+      "malformed_width_count": 0,
+      "unexpected_ids": [],
+      "unexpected_id_count": 0,
+      "prefix_counts": {
+        "S1": 1732544
+      },
+      "country_counts": {
+        "US": 663106,
+        "France": 259452,
+        "India": 809986
+      },
+      "empty": {},
+      "whitespace_only": {},
+      "null_like": {
+        "entity_id": {},
+        "business_name": {},
+        "business_address": {},
+        "country": {}
+      },
+      "nonascii_rows": {
+        "business_address": 73800,
+        "business_name": 40789
+      },
+      "replacement_character_rows": {},
+      "tab_newline_cr_nul_rows": {},
+      "lengths": {
+        "entity_id": {
+          "p0": 6,
+          "p1": 11,
+          "p5": 11,
+          "p25": 12,
+          "p50": 12,
+          "p75": 12,
+          "p95": 12,
+          "p99": 12,
+          "p100": 12,
+          "mean": 11.88933845258764
+        },
+        "business_name": {
+          "p0": 3,
+          "p1": 8,
+          "p5": 12,
+          "p25": 18,
+          "p50": 24,
+          "p75": 29,
+          "p95": 36,
+          "p99": 42,
+          "p100": 92,
+          "mean": 23.83642608788002
+        },
+        "business_address": {
+          "p0": 11,
+          "p1": 24,
+          "p5": 28,
+          "p25": 36,
+          "p50": 50,
+          "p75": 74,
+          "p95": 105,
+          "p99": 126,
+          "p100": 268,
+          "mean": 57.213179578700455
+        },
+        "country": {
+          "p0": 2,
+          "p1": 2,
+          "p5": 2,
+          "p25": 2,
+          "p50": 5,
+          "p75": 5,
+          "p95": 6,
+          "p99": 6,
+          "p100": 6,
+          "mean": 4.0015457038897715
+        }
+      },
+      "longest": {
+        "entity_id": [
+          [
+            12,
+            4,
+            "S1-156285671",
+            "S1-156285671"
+          ],
+          [
+            12,
+            3,
+            "S1-106407869",
+            "S1-106407869"
+          ],
+          [
+            12,
+            2,
+            "S1-714132312",
+            "S1-714132312"
+          ]
+        ],
+        "business_name": [
+          [
+            92,
+            774178,
+            "S1-990896063",
+            "Evaan Group of Companies of Whitefield Roadsadaramangala Indl Area Mahadevapura Post Pvt Ltd"
+          ],
+          [
+            92,
+            57475,
+            "S1-670215189",
+            "Trimurti Apartment.Mgh-1 Opposite P & T Colo Malviya Nagar Developersprivate Private Limited"
+          ],
+          [
+            88,
+            584403,
+            "S1-48487934",
+            "Swayam Siddhi Commercialcomplex Exhibition Road Ps- Gandhi Maidan Veneer Private Limited"
+          ]
+        ],
+        "business_address": [
+          [
+            268,
+            1013048,
+            "S1-526297214",
+            "Orange Business Centre 1St Floor Greater Visakhapatnam Smart City Corporation Limited, Building Plot No 21, Behind Ambica Sea Green Hotel, Near Victory At Sea Memorial, Kirlampudi Layout, Beach Road, Visakhapatnam (Urban), Visakhapatnam, Vishakhapatnam, Andhra Pradesh"
+          ],
+          [
+            240,
+            137558,
+            "S1-2395005",
+            "Industrial Unit No. B 205 Second Floor Regency, Plaza 1 Co Operative Premises Society Limited Formerly Known As Regency Plaza Building No. 1, Near Valduni Bridge, Kalyan, Ambernath Road Shanti Nagar, Ulhasnagar 3, Kalyan, Thane, Maharashtra"
+          ],
+          [
+            239,
+            1322005,
+            "S1-21758984",
+            "Kanchipuram, Tamil Nadu, B-02 B 119/3 Part, 123/5A Part, 123/58, 123/5C Part, 124/1 Part, 125/1 Part, 125/2 Part, 125/3 Part, 125/4 Part, 126 Part And 138/3 Part, Walajabad Road, Varanavasi Village, Walajabad Taluk, Oragadam, Sriperumbudur"
+          ]
+        ],
+        "country": [
+          [
+            6,
+            11,
+            "S1-913506265",
+            "France"
+          ],
+          [
+            6,
+            6,
+            "S1-921369899",
+            "France"
+          ],
+          [
+            6,
+            4,
+            "S1-156285671",
+            "France"
+          ]
+        ]
+      },
+      "both_name_address_missing": 0,
+      "normalization_changes": {
+        "business_name": 1732544,
+        "business_address": 1732544,
+        "country": 1732544
+      },
+      "id_duplicate_stats": {
+        "distinct": 1732544,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "exact_business_duplicate_stats": {
+        "distinct": 1732544,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "normalized_business_duplicate_stats": {
+        "distinct": 1732544,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "fingerprint_delimiter_present_rows": 0,
+      "elapsed_seconds": 25.73145745900547
+    },
+    "test_source2": {
+      "member": "student_resource/dataset/test/test_source2.tsv",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "rows": 4887273,
+      "malformed_width": [],
+      "malformed_width_count": 0,
+      "unexpected_ids": [],
+      "unexpected_id_count": 0,
+      "prefix_counts": {
+        "S2": 4887273
+      },
+      "country_counts": {
+        "India": 2312565,
+        "France": 703378,
+        "US": 1871330
+      },
+      "empty": {
+        "business_address": 129408
+      },
+      "whitespace_only": {},
+      "null_like": {
+        "entity_id": {},
+        "business_name": {
+          "na": 49
+        },
+        "business_address": {},
+        "country": {}
+      },
+      "nonascii_rows": {
+        "business_name": 928158,
+        "business_address": 720665
+      },
+      "replacement_character_rows": {},
+      "tab_newline_cr_nul_rows": {},
+      "lengths": {
+        "entity_id": {
+          "p0": 6,
+          "p1": 11,
+          "p5": 11,
+          "p25": 12,
+          "p50": 12,
+          "p75": 12,
+          "p95": 12,
+          "p99": 12,
+          "p100": 12,
+          "mean": 11.888974894588454
+        },
+        "business_name": {
+          "p0": 2,
+          "p1": 8,
+          "p5": 12,
+          "p25": 19,
+          "p50": 25,
+          "p75": 32,
+          "p95": 42,
+          "p99": 49,
+          "p100": 102,
+          "mean": 25.703646184692364
+        },
+        "business_address": {
+          "p0": 0,
+          "p1": 0,
+          "p5": 23,
+          "p25": 32,
+          "p50": 43,
+          "p75": 67,
+          "p95": 99,
+          "p99": 120,
+          "p100": 269,
+          "mean": 50.413405594490015
+        },
+        "country": {
+          "p0": 2,
+          "p1": 2,
+          "p5": 2,
+          "p25": 2,
+          "p50": 5,
+          "p75": 5,
+          "p95": 6,
+          "p99": 6,
+          "p100": 6,
+          "mean": 3.995224535236726
+        }
+      },
+      "longest": {
+        "entity_id": [
+          [
+            12,
+            4,
+            "S2-158121477",
+            "S2-158121477"
+          ],
+          [
+            12,
+            3,
+            "S2-566025912",
+            "S2-566025912"
+          ],
+          [
+            12,
+            2,
+            "S2-192345572",
+            "S2-192345572"
+          ]
+        ],
+        "business_name": [
+          [
+            102,
+            2020890,
+            "S2-466758377",
+            "evaan group of companies of whitefield roadsadaramangala indl area mahadevapura post infratech pvt ltd"
+          ],
+          [
+            95,
+            4688395,
+            "S2-948788479",
+            "SANT 24 BUILDINGSEVOKE ROAD WEF DEEP 12 2001 PS SILIGURI FOODS INFRATECH PRIVATE LIMITED #98694"
+          ],
+          [
+            95,
+            3269874,
+            "S2-194954698",
+            "TRIMURTI APARTMENT.MGH-1 OPPOSITE  P & T COLO MADLIVAYA NAGAR DEVELOPERSPRIVATE PRIVATE LIMITED"
+          ]
+        ],
+        "business_address": [
+          [
+            269,
+            4121114,
+            "S2-525969980",
+            "NO 276, FIRST FLOOR, MONTERRA BUILDING SURVEY NO 24, SNEHITHA HILLS-PIHASE 1, PLOT NO 276, FIRST FLOOR, MONTERRA BUILDING SURVEY NO 24, SNEHITHA HILLS-PIHASE 1, PINEGROVE COLLEGE ROAD, NEAR APPA JUNCTION, PEERAMCHERUVU, GANDIPET MANDAL, RANGAREDDY, HYDERABAD, Telangana"
+          ],
+          [
+            268,
+            4421885,
+            "S2-673363598",
+            "ORANGE BUSINESS CENTRE 1ST FLOOR GREATER VISAKHAPATNAM SMART CITY CORPORATION LIMITED, BUILDING PLOT NO 21, BEHIND AMBICA SEA GREEN HOTEL, NEAR VICTORY AT SEA MEMORIAL, KIRLAMPUDI LAYOUT, BEACH ROAD, VISAKHAPATNAM (URBAN), VISAKHAPATNAM, VISHAKHAPATNAM, Andhra Pradesh"
+          ],
+          [
+            268,
+            1885754,
+            "S2-737914864",
+            "ORANGE BUSINESS CENTRE 6ST FLOOR GREATER VISAKHAPATNAM SMART CITY CORPORATION LIMITED, BUILDING PLOT NO 21, BEHIND AMBICA SEA GREEN HOTEL, NEAR VICTORY AT SEA MEMORIAL, KIRLAMPUDI LAYOUT, BEACH ROAD, VISAKHAPATNAM (URBAN), VISAKHAPATNAM, VISHAKHAPATNAM, Andhra Pradesh"
+          ]
+        ],
+        "country": [
+          [
+            6,
+            9,
+            "S2-770341988",
+            "France"
+          ],
+          [
+            6,
+            4,
+            "S2-158121477",
+            "France"
+          ],
+          [
+            6,
+            3,
+            "S2-566025912",
+            "France"
+          ]
+        ]
+      },
+      "both_name_address_missing": 0,
+      "normalization_changes": {
+        "business_name": 4115504,
+        "business_address": 4757865,
+        "country": 4887273
+      },
+      "id_duplicate_stats": {
+        "distinct": 4887273,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "exact_business_duplicate_stats": {
+        "distinct": 4864632,
+        "duplicate_groups": 21909,
+        "rows_in_duplicate_groups": 44550,
+        "extra_duplicate_rows": 22641,
+        "max_group": 5,
+        "group_size_histogram": {
+          "2": 21192,
+          "3": 703,
+          "4": 13,
+          "5": 1
+        }
+      },
+      "normalized_business_duplicate_stats": {
+        "distinct": 4846863,
+        "duplicate_groups": 38987,
+        "rows_in_duplicate_groups": 79397,
+        "extra_duplicate_rows": 40410,
+        "max_group": 5,
+        "group_size_histogram": {
+          "2": 37597,
+          "3": 1358,
+          "4": 31,
+          "5": 1
+        }
+      },
+      "fingerprint_delimiter_present_rows": 0,
+      "elapsed_seconds": 77.66187870800059
+    },
+    "test_source3": {
+      "member": "student_resource/dataset/test/test_source3.tsv",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "rows": 5082316,
+      "malformed_width": [],
+      "malformed_width_count": 0,
+      "unexpected_ids": [],
+      "unexpected_id_count": 0,
+      "prefix_counts": {
+        "S3": 5082316
+      },
+      "country_counts": {
+        "India": 2405000,
+        "France": 731615,
+        "US": 1945701
+      },
+      "empty": {
+        "business_address": 136098
+      },
+      "whitespace_only": {},
+      "null_like": {
+        "entity_id": {},
+        "business_name": {
+          "na": 60,
+          "null": 1
+        },
+        "business_address": {},
+        "country": {}
+      },
+      "nonascii_rows": {
+        "business_name": 737515,
+        "business_address": 729222
+      },
+      "replacement_character_rows": {},
+      "tab_newline_cr_nul_rows": {},
+      "lengths": {
+        "entity_id": {
+          "p0": 4,
+          "p1": 10,
+          "p5": 11,
+          "p25": 12,
+          "p50": 12,
+          "p75": 12,
+          "p95": 12,
+          "p99": 12,
+          "p100": 12,
+          "mean": 11.888712744347263
+        },
+        "business_name": {
+          "p0": 2,
+          "p1": 6,
+          "p5": 11,
+          "p25": 19,
+          "p50": 25,
+          "p75": 32,
+          "p95": 42,
+          "p99": 50,
+          "p100": 103,
+          "mean": 25.65519440349636
+        },
+        "business_address": {
+          "p0": 0,
+          "p1": 0,
+          "p5": 22,
+          "p25": 35,
+          "p50": 43,
+          "p75": 59,
+          "p95": 94,
+          "p99": 117,
+          "p100": 267,
+          "mean": 48.74047087981149
+        },
+        "country": {
+          "p0": 2,
+          "p1": 2,
+          "p5": 2,
+          "p25": 2,
+          "p50": 5,
+          "p75": 5,
+          "p95": 6,
+          "p99": 6,
+          "p100": 6,
+          "mean": 3.995440661304807
+        }
+      },
+      "longest": {
+        "entity_id": [
+          [
+            12,
+            4,
+            "S3-198586129",
+            "S3-198586129"
+          ],
+          [
+            12,
+            3,
+            "S3-374810425",
+            "S3-374810425"
+          ],
+          [
+            12,
+            2,
+            "S3-462677478",
+            "S3-462677478"
+          ]
+        ],
+        "business_name": [
+          [
+            103,
+            4772818,
+            "S3-493326166",
+            "Cirapyra F/K/A Swayam Siddhi Commercialcomplex Exhibition Road Ps- Gandhi Maidan Veneer Private Limited"
+          ],
+          [
+            102,
+            3515550,
+            "S3-74994557",
+            "Evaan Group of Companies of Whitefield Roadsadaramangala Indl Area Mahadevapura Post Overseas Pvt Ltd."
+          ],
+          [
+            101,
+            3712846,
+            "S3-749133717",
+            "Moon Infotech Of Saranya Nagar Layout Kundrathur Thirumudivakkam Main Road Industries Ltd (ID: 18513)"
+          ]
+        ],
+        "business_address": [
+          [
+            267,
+            1738493,
+            "S3-235241639",
+            "Orange Business Centre 1St- Floor Greater Visakhapatnam Smart City Corporation Limited, Building Plot No 21, Behind Ambica Sea Green Hotel, Near Victory At Sea Memorial, Kirlampudi Layout, Beach Road, Visakhapatnam (Urban), Vishakhapatnam, Visakhapatnam, ఆంధ్రప్రదేశ్"
+          ],
+          [
+            257,
+            4172354,
+            "S3-132921109",
+            "Orange Business Centre 1St- Floor Greater Visakhapatnam Smart City Corporation Limited, Building Plot No 21, Behind Ambica Sea Green Hotel, Near Victory At Sea Memorial, Kirlampudi Layout, Beach Road, Visakhapatnam (Urban), Visakhapatnam, Vishakhapatnam, AP"
+          ],
+          [
+            239,
+            2825162,
+            "S3-305307032",
+            "B-02 B 119/16 Part, 123/5A Part, 123/58, 123/5C Part, 124/1 Part, 125/1 Part, 125/2 Part, 125/3 Part, 125/4 Part, 126 Part And 138/3 Part, Walajabad Road, Varanavasi Village, Walajabad Taluk, Oragadam, Sriperumbudur, Kanchipuram, தமிழ்நாடு"
+          ]
+        ],
+        "country": [
+          [
+            6,
+            14,
+            "S3-92755938",
+            "France"
+          ],
+          [
+            6,
+            12,
+            "S3-934627663",
+            "France"
+          ],
+          [
+            6,
+            4,
+            "S3-198586129",
+            "France"
+          ]
+        ]
+      },
+      "both_name_address_missing": 0,
+      "normalization_changes": {
+        "business_address": 4946109,
+        "country": 5082316,
+        "business_name": 4520097
+      },
+      "id_duplicate_stats": {
+        "distinct": 5082316,
+        "duplicate_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "extra_duplicate_rows": 0,
+        "max_group": 1,
+        "group_size_histogram": {}
+      },
+      "exact_business_duplicate_stats": {
+        "distinct": 5066023,
+        "duplicate_groups": 15861,
+        "rows_in_duplicate_groups": 32154,
+        "extra_duplicate_rows": 16293,
+        "max_group": 4,
+        "group_size_histogram": {
+          "2": 15441,
+          "3": 408,
+          "4": 12
+        }
+      },
+      "normalized_business_duplicate_stats": {
+        "distinct": 5053739,
+        "duplicate_groups": 27643,
+        "rows_in_duplicate_groups": 56220,
+        "extra_duplicate_rows": 28577,
+        "max_group": 4,
+        "group_size_histogram": {
+          "2": 26733,
+          "3": 886,
+          "4": 24
+        }
+      },
+      "fingerprint_delimiter_present_rows": 0,
+      "elapsed_seconds": 78.51736570800131
+    }
+  },
+  "comparisons": {
+    "id_train_test": {
+      "source1": {
+        "train_unique": 2206821,
+        "test_unique": 1732544,
+        "overlap_unique_ids": 0,
+        "overlap_examples": []
+      },
+      "source2": {
+        "train_unique": 5034616,
+        "test_unique": 4887273,
+        "overlap_unique_ids": 0,
+        "overlap_examples": []
+      },
+      "source3": {
+        "train_unique": 5285603,
+        "test_unique": 5082316,
+        "overlap_unique_ids": 0,
+        "overlap_examples": []
+      }
+    },
+    "business_train_test": {
+      "train_source1__test_source1__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source1__test_source2__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source1__test_source3__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source2__test_source1__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source2__test_source2__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source2__test_source3__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source3__test_source1__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source3__test_source2__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source3__test_source3__exact": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source1__test_source1__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source1__test_source2__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source1__test_source3__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source2__test_source1__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source2__test_source2__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source2__test_source3__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source3__test_source1__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source3__test_source2__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      },
+      "train_source3__test_source3__normalized": {
+        "shared_distinct_fingerprints": 0,
+        "train_rows_with_shared_fingerprint": 0,
+        "test_rows_with_shared_fingerprint": 0
+      }
+    },
+    "within_split_cross_source": {
+      "train_source1__source2__exact": {
+        "shared_distinct_fingerprints": 1,
+        "source_a_rows_with_shared_fingerprint": 1,
+        "source_b_rows_with_shared_fingerprint": 1
+      },
+      "train_source1__source3__exact": {
+        "shared_distinct_fingerprints": 17,
+        "source_a_rows_with_shared_fingerprint": 17,
+        "source_b_rows_with_shared_fingerprint": 17
+      },
+      "train_source2__source3__exact": {
+        "shared_distinct_fingerprints": 471,
+        "source_a_rows_with_shared_fingerprint": 471,
+        "source_b_rows_with_shared_fingerprint": 473
+      },
+      "test_source1__source2__exact": {
+        "shared_distinct_fingerprints": 0,
+        "source_a_rows_with_shared_fingerprint": 0,
+        "source_b_rows_with_shared_fingerprint": 0
+      },
+      "test_source1__source3__exact": {
+        "shared_distinct_fingerprints": 1642,
+        "source_a_rows_with_shared_fingerprint": 1642,
+        "source_b_rows_with_shared_fingerprint": 1710
+      },
+      "test_source2__source3__exact": {
+        "shared_distinct_fingerprints": 429,
+        "source_a_rows_with_shared_fingerprint": 432,
+        "source_b_rows_with_shared_fingerprint": 429
+      },
+      "train_source1__source2__normalized": {
+        "shared_distinct_fingerprints": 59549,
+        "source_a_rows_with_shared_fingerprint": 59549,
+        "source_b_rows_with_shared_fingerprint": 62864
+      },
+      "train_source1__source3__normalized": {
+        "shared_distinct_fingerprints": 86,
+        "source_a_rows_with_shared_fingerprint": 86,
+        "source_b_rows_with_shared_fingerprint": 88
+      },
+      "train_source2__source3__normalized": {
+        "shared_distinct_fingerprints": 2048,
+        "source_a_rows_with_shared_fingerprint": 2085,
+        "source_b_rows_with_shared_fingerprint": 2086
+      },
+      "test_source1__source2__normalized": {
+        "shared_distinct_fingerprints": 44313,
+        "source_a_rows_with_shared_fingerprint": 44313,
+        "source_b_rows_with_shared_fingerprint": 47005
+      },
+      "test_source1__source3__normalized": {
+        "shared_distinct_fingerprints": 9261,
+        "source_a_rows_with_shared_fingerprint": 9261,
+        "source_b_rows_with_shared_fingerprint": 10083
+      },
+      "test_source2__source3__normalized": {
+        "shared_distinct_fingerprints": 4814,
+        "source_a_rows_with_shared_fingerprint": 5056,
+        "source_b_rows_with_shared_fingerprint": 5048
+      }
+    }
+  },
+  "methods": {
+    "source_stream": "Python zipfile.ZipFile.open + io.TextIOWrapper UTF-8 + csv.reader(delimiter=TAB, strict=True); entire six members streamed without full extraction.",
+    "lengths": "Python character counts, including whitespace; exact histograms. Percentiles nearest rank. Longest samples capped at 500 characters.",
+    "missing": "Raw empty strings, whitespace-only, and casefold/strip common null-like literals counted separately.",
+    "fingerprints": "BLAKE2b 128-bit fingerprint of name + unit separator + address + unit separator + country; entity_id excluded. Separator-present rows separately counted. Counts are fingerprint based, not byte-verified; negligible but nonzero hash collision possibility.",
+    "normalization": "Unicode NFKC, casefold, split/join whitespace independently for name/address/country; does not remove punctuation or transliterate.",
+    "ids": "Full ID form validated per source; numeric suffix saved uint64, sorted, exact duplicate/overlap comparison."
+  },
+  "comparison_elapsed_seconds": 19.53312974999426,
+  "stream_elapsed_seconds_sum": 369.72479225001007
+}

@@ -1,0 +1,235 @@
+{
+  "header": [
+    "source1_entity_id",
+    "matched_entity_ids"
+  ],
+  "encoding": "UTF-8 comma-delimited ID string in second TSV field, empty field = no linked targets",
+  "stats": {
+    "rows": 2206821,
+    "empty_matched_lists": 123247
+  },
+  "match_count_distribution": {
+    "0": 123247,
+    "1": 119157,
+    "2": 375212,
+    "3": 530841,
+    "4": 484115,
+    "5": 321957,
+    "6": 164868,
+    "7": 63968,
+    "8": 18680,
+    "9": 4205,
+    "10": 534,
+    "11": 37
+  },
+  "match_count_by_source": {
+    "2": {
+      "0": 287745,
+      "1": 789108,
+      "2": 652779,
+      "3": 333957,
+      "4": 119078,
+      "5": 24154
+    },
+    "3": {
+      "0": 266276,
+      "1": 716417,
+      "2": 668375,
+      "3": 372443,
+      "4": 145116,
+      "5": 35378,
+      "6": 2816
+    }
+  },
+  "joint_match_counts": {
+    "0,0": 123247,
+    "0,1": 60407,
+    "0,2": 57041,
+    "0,3": 31526,
+    "0,4": 12260,
+    "0,5": 3017,
+    "0,6": 247,
+    "1,0": 58750,
+    "1,1": 269681,
+    "1,2": 251224,
+    "1,3": 140393,
+    "1,4": 54575,
+    "1,5": 13437,
+    "1,6": 1048,
+    "2,0": 48490,
+    "2,1": 223054,
+    "2,2": 208159,
+    "2,3": 116076,
+    "2,4": 45167,
+    "2,5": 10957,
+    "2,6": 876,
+    "3,0": 25037,
+    "3,1": 114405,
+    "3,2": 105817,
+    "3,3": 59427,
+    "3,4": 23315,
+    "3,5": 5504,
+    "3,6": 452,
+    "4,0": 8898,
+    "4,1": 40618,
+    "4,2": 38338,
+    "4,3": 20852,
+    "4,4": 8131,
+    "4,5": 2085,
+    "4,6": 156,
+    "5,0": 1854,
+    "5,1": 8252,
+    "5,2": 7796,
+    "5,3": 4169,
+    "5,4": 1668,
+    "5,5": 378,
+    "5,6": 37
+  },
+  "anomalies": [],
+  "source1": {
+    "unique": 2206821,
+    "duplicate_ids": 0,
+    "duplicate_rows": 0
+  },
+  "links": {
+    "2": {
+      "total": 3693619,
+      "unique_targets": 3693619,
+      "repeat_occurrences": 0,
+      "distinct_s1_target_pairs": 3693619,
+      "targets_shared_across_distinct_s1": 0,
+      "maximum_s1_per_target": 1,
+      "s1_count_per_target_distribution": {
+        "1": 3693619
+      },
+      "positive_cross_country_links": 0
+    },
+    "3": {
+      "total": 3944746,
+      "unique_targets": 3944746,
+      "repeat_occurrences": 0,
+      "distinct_s1_target_pairs": 3944746,
+      "targets_shared_across_distinct_s1": 0,
+      "maximum_s1_per_target": 1,
+      "s1_count_per_target_distribution": {
+        "1": 3944746
+      },
+      "positive_cross_country_links": 0
+    }
+  },
+  "elapsed_seconds": 21.49,
+  "singleton_proportion": 0.05584820880352326,
+  "total_links": 7638365,
+  "mean_links_per_source1": 3.4612526344456573,
+  "all_empty_prediction_macro_f0_5_on_full_training_labels": 0.05584820880352326,
+  "multi_target_source1_rows": 1964417,
+  "multi_target_source1_proportion": 0.8901569270910509,
+  "both_target_sources_rows": 1776047,
+  "oracle_one_match_total_macro_f0_5_ceiling": 0.6963880336487924,
+  "oracle_one_match_per_target_source_macro_f0_5_ceiling": 0.8573649886011523,
+  "coverage": {
+    "ground_truth_s1_not_in_train_s1": 0,
+    "train_s1_not_in_ground_truth": 0,
+    "train_s1_row_count": 2206821,
+    "ground_truth_s2_targets_not_in_train_s2": 0,
+    "train_s2_rows_not_linked_to_any_s1": 1340997,
+    "train_s2_row_count": 5034616,
+    "ground_truth_s3_targets_not_in_train_s3": 0,
+    "train_s3_rows_not_linked_to_any_s1": 1340857,
+    "train_s3_row_count": 5285603
+  },
+  "country_groups": {
+    "US": {
+      "source1_rows": 1323633,
+      "singleton_rows": 73896,
+      "singleton_proportion": 0.055828163849042746,
+      "positive_links": 4578522,
+      "mean_matches": 3.4590570044717834,
+      "match_count_distribution": {
+        "0": 73896,
+        "1": 71689,
+        "2": 225285,
+        "3": 318876,
+        "4": 290446,
+        "5": 192618,
+        "6": 98406,
+        "7": 38299,
+        "8": 11217,
+        "9": 2534,
+        "10": 347,
+        "11": 20
+      }
+    },
+    "India": {
+      "source1_rows": 883188,
+      "singleton_rows": 49351,
+      "singleton_proportion": 0.05587825015738439,
+      "positive_links": 3059843,
+      "mean_matches": 3.4645432229604567,
+      "match_count_distribution": {
+        "0": 49351,
+        "1": 47468,
+        "2": 149927,
+        "3": 211965,
+        "4": 193669,
+        "5": 129339,
+        "6": 66462,
+        "7": 25669,
+        "8": 7463,
+        "9": 1671,
+        "10": 187,
+        "11": 17
+      }
+    }
+  },
+  "positive_country_pairs": {
+    "S1->S2": {
+      "US -> US": 2213074,
+      "India -> India": 1480545
+    },
+    "S1->S3": {
+      "US -> US": 2365448,
+      "India -> India": 1579298
+    }
+  },
+  "joins_complete": true,
+  "integrity_checks": {
+    "wrong_column_count": 0,
+    "missing_source1_ids": 0,
+    "invalid_source1_format": 0,
+    "invalid_target_format": 0,
+    "rows_with_duplicate_target_ids": 0,
+    "duplicate_target_occurrences": 0,
+    "list_outer_whitespace": 0
+  },
+  "methods": [
+    "Read the complete ZIP TSV member with Python zipfile + TextIOWrapper UTF-8-sig + csv.reader delimiter tab; no extraction or project writes.",
+    "Parse every Source 1 and target ID with strict S1-/S2-/S3- numeric regex; accumulate compact numeric NumPy arrays and exact counters.",
+    "Use NumPy unique/counts for duplicate rows/list links/target sharing; numeric IDs are sufficient because source prefix is separately verified.",
+    "Join exact IDs by searchsorted against independently streamed and sorted source ID/country arrays produced by source_data_audit.",
+    "S1 country match-count groups include singleton rows; country comparison uses actual two raw labels, US and India."
+  ],
+  "limitations": [
+    "No benchmark model was trained or evaluated; all-empty score and cardinality ceilings are arithmetic diagnostics on full training labels.",
+    "No fuzzy/near-duplicate identity search or manual semantic label adjudication was performed.",
+    "Ground-truth integrity checks establish internal consistency, not correctness of real-world business identity labels."
+  ],
+  "leakage_implications": {
+    "positive_graph": "Each observed target ID belongs to exactly one Source 1 label row; every component in the labeled positive graph is therefore a Source 1 star, including singletons.",
+    "pair_random_split_risk": "89.01569270910509% of Source 1 rows have multiple positive target records; random pair splitting can expose the same anchor/business across training and validation. Split Source 1 stars as units.",
+    "business_triple_duplicates_in_train_source1": {
+      "exact": 0,
+      "nfkc_casefold_collapsed_whitespace": 0
+    },
+    "near_duplicate_identity_status": "Not tested; exact/basic normalized uniqueness does not establish absence of near-duplicate businesses.",
+    "cross_s1_target_business_duplicate_status": "Not tested: available sorted unique source fingerprint arrays do not preserve target-ID alignment. A second pass is required to determine whether duplicate target text tuples span multiple labeled S1 entities."
+  },
+  "candidate_space_diagnostics": {
+    "full_train_cartesian_pairs": 22774876013799,
+    "same_country_train_cartesian_pairs": 11839670856657,
+    "country_reduction_fraction": 0.4801433452597723,
+    "positive_pair_density": 3.3538557994221414e-07,
+    "ground_truth_same_country_blocking_recall": 1.0,
+    "note": "Computed from full training labels; does not establish test ground-truth properties."
+  }
+}

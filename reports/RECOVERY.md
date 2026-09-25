@@ -1,0 +1,9 @@
+# Recovery checkpoint — 2026-09-25
+
+Phase 0 complete. Saved identity-disjoint 80/10/10 splits are in `work/splits_v1`; do not rebuild. Training-only vectorizers are in `work/vectorizers_v1.joblib` (88.9 seconds, vocab sizes 165495/27022/197134). Positive oracle v2 completed; null-like string preservation did not change sampled statistics. Foundation suite: 79 tests passed before candidate/dataset integration.
+
+Candidate union and pair dataset modules are being completed by agents. `ber.pipeline` orchestrates a 6000-train/3000-calibration/3000-validation anchor pilot against each entire fold target pool, including all distractors. No model score or candidate recall has yet been measured. No submission predictions exist. Target public score shown by user: 0.985884; local pilot score is not comparable to the public leaderboard.
+
+User explicitly lifted credit-only restriction and asked for the best AWS/Azure provider; existing total cap US$100 still applies. AWS is active: `i-09833693cad605fca`, IP `3.110.80.56`, Mumbai, `r7i.xlarge` (4 vCPU, 32 GiB), 100GB gp3. Instance price previously verified $0.273/hour; planned 12h conservative budget $8. Automatic shutdown scheduled at bootstrap +12h, STOP behavior (EBS remains billable until termination). Preserve results locally and TERMINATE when work completes. Temporary SG `sg-0dc2b627a847ae0ce`, key `amazonml-20260925`; key material in `.cloud-secrets` must never be packaged. Root profile `amazon-ml` explicitly authorized. Azure resources were not created.
+
+AWS directory `/home/ubuntu/amazonml`, `.venv`, work/splits_v1 and code are being uploaded. Inspect current process/log state before relaunching. Intended run: `PYTHONPATH=code/business_entity_resolution/src .venv/bin/python -u -m ber.pipeline --output experiments/pilot_v1`.

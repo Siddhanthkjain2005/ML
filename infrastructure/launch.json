@@ -1,0 +1,141 @@
+{
+    "ReservationId": "r-0e3ea1d4a2c4dccec",
+    "OwnerId": "206632867498",
+    "Groups": [],
+    "Instances": [
+        {
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "amazonml-20260925-paid-v1",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2026-09-25T14:18:41+00:00",
+                        "AttachmentId": "eni-attach-0c19950c245558ba7",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "NetworkCardIndex": 0
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupId": "sg-0dc2b627a847ae0ce",
+                            "GroupName": "amazonml-20260925"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "06:ff:d6:7e:90:a3",
+                    "NetworkInterfaceId": "eni-0abba3cc3cfe25372",
+                    "OwnerId": "206632867498",
+                    "PrivateDnsName": "ip-172-31-18-3.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "172.31.18.3",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-18-3.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "172.31.18.3"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-0b4ce62319160a537",
+                    "VpcId": "vpc-0b8ee87e0fcb096e2",
+                    "InterfaceType": "interface",
+                    "Operator": {
+                        "Managed": false
+                    }
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupId": "sg-0dc2b627a847ae0ce",
+                    "GroupName": "amazonml-20260925"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "BudgetUSD",
+                    "Value": "100"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "AmazonMLChallenge2026"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "amazonml-experiment-20260925"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 2,
+                "ThreadsPerCore": 2
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "required",
+                "HttpPutResponseHopLimit": 2,
+                "HttpEndpoint": "enabled",
+                "HttpProtocolIpv6": "disabled",
+                "InstanceMetadataTags": "disabled"
+            },
+            "EnclaveOptions": {
+                "Enabled": false
+            },
+            "BootMode": "uefi-preferred",
+            "PrivateDnsNameOptions": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "MaintenanceOptions": {
+                "AutoRecovery": "default",
+                "RebootMigration": "default"
+            },
+            "CurrentInstanceBootMode": "uefi",
+            "Operator": {
+                "Managed": false
+            },
+            "InstanceId": "i-09833693cad605fca",
+            "ImageId": "ami-007b1f3fdea0383d9",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "PrivateDnsName": "ip-172-31-18-3.ap-south-1.compute.internal",
+            "PublicDnsName": "",
+            "StateTransitionReason": "",
+            "KeyName": "amazonml-20260925",
+            "AmiLaunchIndex": 0,
+            "ProductCodes": [],
+            "InstanceType": "r7i.xlarge",
+            "LaunchTime": "2026-09-25T14:18:41+00:00",
+            "Placement": {
+                "AvailabilityZoneId": "aps1-az2",
+                "GroupName": "",
+                "Tenancy": "default",
+                "AvailabilityZone": "ap-south-1c"
+            },
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "SubnetId": "subnet-0b4ce62319160a537",
+            "VpcId": "vpc-0b8ee87e0fcb096e2",
+            "PrivateIpAddress": "172.31.18.3"
+        }
+    ]
+}
