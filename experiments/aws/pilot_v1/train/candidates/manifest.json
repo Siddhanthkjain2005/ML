@@ -1,0 +1,266 @@
+{
+  "complete": true,
+  "config": {
+    "schema_version": 1,
+    "query_sha256": "ea69ec19c4de74307b8a98472848f051925c9bf6e2eac91bd23e8fae17b49a6c",
+    "exact_cap": 200,
+    "target_files": {
+      "2": {
+        "path": "/home/ubuntu/amazonml/work/splits_v1/train/source2.tsv",
+        "sha256": "e5abd3853b37490afa9bb4e66fcc906e793efe4c14472cf0f87604b087ff28fb"
+      },
+      "3": {
+        "path": "/home/ubuntu/amazonml/work/splits_v1/train/source3.tsv",
+        "sha256": "775ed53d1546c928ac106ed535ce7964ecec6ff20bd5cb3f02d08d484f667ec9"
+      }
+    },
+    "retrieval_arrays": {
+      "2": {
+        "name_char": {
+          "ids": "87159820beeea8058125d6d31bf550c09e70eadb40f874840afe488b329718c0",
+          "scores": "3374c2c71b1be403b150cb62390ca6bc69184fd8952bc14b1e4e99421e89da3c"
+        },
+        "name_word": {
+          "ids": "0f7bcce100e617b101327c3853083d020b4a025ea91780e97a3584fe4c1d730d",
+          "scores": "2c1c509b39522c3d436c2e8ab5c6c0959b0926c0ed2a8ebdeddb8d2b96308867"
+        },
+        "address_char": {
+          "ids": "dc3cba78c84a7e25265286855726935f74e30be4090e5951205537bd226533c6",
+          "scores": "3fdfdd3743a01ddfc2b9b96bb0e0a05fc639176e2af414fbdd87c9d0c86b6399"
+        }
+      },
+      "3": {
+        "name_char": {
+          "ids": "b71612afdead58a06169341833b89297f3a3900bc45076fc957ed09b81fdd715",
+          "scores": "cf0e4e171a78dc91a59d6894ce725e504925a238d9aeb9b49265f64d5143459f"
+        },
+        "name_word": {
+          "ids": "e3cd3d89fd42c652ab0e361681dd5b1db2631b9d36071b596136110e9daeab83",
+          "scores": "ac01e59ed674ba42f1cd449ba84d6a1a3ec5d0003f09c692d885300fc98fba0d"
+        },
+        "address_char": {
+          "ids": "0cdd9a4b7e94f5009d0440310c3f3044a7c0335c48b59ab9921091d75e80e624",
+          "scores": "3ce86ee8464f8a43bce3b2d059f2c03e34eb037ada8f130879cdefab7e28351a"
+        }
+      }
+    },
+    "truth_sha256": "6ae169f840283d6f2def8ba297400ae48c5c77eaf08f8f709847e0190b9830b3",
+    "normalizer_sha256": "379cbcf90ab6b0a350c668c44aef873e9d59ec73d49d0d977a1b022b79fba013",
+    "implementation_sha256": "6b1ead258298af262d52da23c718a94e13824fb370010236b13770543534eaa3"
+  },
+  "branches": [
+    "name_char",
+    "name_word",
+    "address_char",
+    "name_exact",
+    "number_block"
+  ],
+  "branch_bits": {
+    "name_char": 1,
+    "name_word": 2,
+    "address_char": 4,
+    "name_exact": 8,
+    "number_block": 16
+  },
+  "artifacts": {
+    "anchors": "anchors.npy",
+    "target_codes": "target_codes.npy",
+    "masks": "masks.npy",
+    "scores": "scores.npy",
+    "ranks": "ranks.npy",
+    "queries": "queries.jsonl",
+    "labels": "labels.npy",
+    "truth_counts": "truth_counts.npy"
+  },
+  "stats": {
+    "query_count": 6000,
+    "candidate_pairs": 614640,
+    "target_rows": {
+      "2": 4027549,
+      "3": 4227938
+    },
+    "candidate_counts": {
+      "mean": 102.44,
+      "max": 266,
+      "p50": 102.0,
+      "p90": 115.0,
+      "p95": 117.0,
+      "p99": 197.0
+    },
+    "candidate_pairs_by_branch": {
+      "name_char": 240000,
+      "name_word": 239600,
+      "address_char": 240000,
+      "name_exact": 49314,
+      "number_block": 1921
+    },
+    "exact_branch_eligible_pairs": {
+      "name_exact": 50295,
+      "number_block": 1923
+    },
+    "exact_eligible_pairs": 51959,
+    "exact_retained_pairs": 50976,
+    "exact_overflow_queries": 19,
+    "exact_discarded_pairs": 983,
+    "exact_cap_policy": "Combined exact-name/numeric-address union across both sources; smallest numeric encoded target IDs retained",
+    "label_diagnostics": {
+      "overall": {
+        "anchors": 6000,
+        "true_links": 20872,
+        "recalled_links": 20081,
+        "positive_anchors": 5673,
+        "link_recall": 0.9621023380605596,
+        "macro_recall_positive_anchors": 0.9607538773191885,
+        "oracle_macro_f0_5": 0.9855195985356103
+      },
+      "by_source": {
+        "2": {
+          "anchors": 6000,
+          "true_links": 10106,
+          "recalled_links": 9758,
+          "positive_anchors": 5235,
+          "link_recall": 0.965565010884623,
+          "macro_recall_positive_anchors": 0.9638522763451133,
+          "oracle_macro_f0_5": 0.9784394390331891
+        },
+        "3": {
+          "anchors": 6000,
+          "true_links": 10766,
+          "recalled_links": 10323,
+          "positive_anchors": 5295,
+          "link_recall": 0.9588519412966747,
+          "macro_recall_positive_anchors": 0.9582813975448544,
+          "oracle_macro_f0_5": 0.9758734747686952
+        }
+      },
+      "by_country": {
+        "US": {
+          "anchors": 3577,
+          "true_links": 12625,
+          "recalled_links": 12369,
+          "positive_anchors": 3397,
+          "link_recall": 0.9797227722772277,
+          "macro_recall_positive_anchors": 0.9796494105443173,
+          "oracle_macro_f0_5": 0.9934497480201144
+        },
+        "India": {
+          "anchors": 2423,
+          "true_links": 8247,
+          "recalled_links": 7712,
+          "positive_anchors": 2276,
+          "link_recall": 0.935127925306172,
+          "macro_recall_positive_anchors": 0.9325517128351044,
+          "oracle_macro_f0_5": 0.9738125639891559
+        }
+      },
+      "by_match_count": {
+        "2-3": {
+          "anchors": 2480,
+          "true_links": 6431,
+          "recalled_links": 6157,
+          "positive_anchors": 2480,
+          "link_recall": 0.9573938734255948,
+          "macro_recall_positive_anchors": 0.9576612903225812,
+          "oracle_macro_f0_5": 0.983122119815671
+        },
+        "4-6": {
+          "anchors": 2639,
+          "true_links": 12333,
+          "recalled_links": 11894,
+          "positive_anchors": 2639,
+          "link_recall": 0.9644044433633342,
+          "macro_recall_positive_anchors": 0.9640773020083366,
+          "oracle_macro_f0_5": 0.9891109844913645
+        },
+        "0": {
+          "anchors": 327,
+          "true_links": 0,
+          "recalled_links": 0,
+          "positive_anchors": 0,
+          "link_recall": null,
+          "macro_recall_positive_anchors": null,
+          "oracle_macro_f0_5": 1.0
+        },
+        "1": {
+          "anchors": 309,
+          "true_links": 309,
+          "recalled_links": 295,
+          "positive_anchors": 309,
+          "link_recall": 0.9546925566343042,
+          "macro_recall_positive_anchors": 0.9546925566343042,
+          "oracle_macro_f0_5": 0.9546925566343042
+        },
+        "7+": {
+          "anchors": 245,
+          "true_links": 1799,
+          "recalled_links": 1735,
+          "positive_anchors": 245,
+          "link_recall": 0.9644246803779878,
+          "macro_recall_positive_anchors": 0.9639050858438617,
+          "oracle_macro_f0_5": 0.9906565142779482
+        }
+      },
+      "standalone_branch_recall": {
+        "name_char": {
+          "recalled_links": 14086,
+          "recall": 0.6748754311996934
+        },
+        "name_word": {
+          "recalled_links": 13109,
+          "recall": 0.6280663089306248
+        },
+        "address_char": {
+          "recalled_links": 17978,
+          "recall": 0.8613453430433116
+        },
+        "name_exact": {
+          "recalled_links": 4464,
+          "recall": 0.21387504791107703
+        },
+        "number_block": {
+          "recalled_links": 1622,
+          "recall": 0.07771176696052128
+        }
+      },
+      "incremental_branch_recall": {
+        "name_char": {
+          "new_positive_links": 14086,
+          "cumulative_positive_links": 14086,
+          "cumulative_recall": 0.6748754311996934
+        },
+        "name_word": {
+          "new_positive_links": 1058,
+          "cumulative_positive_links": 15144,
+          "cumulative_recall": 0.7255653507090839
+        },
+        "address_char": {
+          "new_positive_links": 4925,
+          "cumulative_positive_links": 20069,
+          "cumulative_recall": 0.9615274051360675
+        },
+        "name_exact": {
+          "new_positive_links": 12,
+          "cumulative_positive_links": 20081,
+          "cumulative_recall": 0.9621023380605596
+        },
+        "number_block": {
+          "new_positive_links": 0,
+          "cumulative_positive_links": 20081,
+          "cumulative_recall": 0.9621023380605596
+        }
+      },
+      "oracle_note": "Perfect classifier selects only recalled true links; empty true anchors score one; this is a candidate ceiling, not measured model performance."
+    }
+  },
+  "runtime_seconds": 132.97608478199982,
+  "sha256": {
+    "anchors.npy": "3f195d0261089be9cd2e93818db726129e703a9ee7cb0c42c37d90426f70e533",
+    "target_codes.npy": "42e03b5f2acc7e0c8e9dcf90c8185be3afea9b7700bb1a8f76578dc78b0238d7",
+    "masks.npy": "f981912630d100ac2c8fbdfaeb294c1639b1069352515ceadfe2ba3c1a9581d2",
+    "scores.npy": "f7cef4268fc79ffdd1b093356a4e3206882b8e2e67111e0790df3e3628005bc0",
+    "ranks.npy": "f6e4c48c23f6f5ca35bae18b36b4e4d1cd15baf0dceb8bb5a2a62406a0a1a300",
+    "queries.jsonl": "9b4df730c04cd9326be4ea67731d6a6fe70603bd5d4dbc5bddf09aeda5d189e4",
+    "labels.npy": "9aa53bad750fa87d9ba4b20f58f2b3a1f0367e22e23423ca0e2eb2446adce7f7",
+    "truth_counts.npy": "1945018e1582715a317d80ed6434e5254f65c6694acd140ffc65e1fcf6168eb3"
+  }
+}

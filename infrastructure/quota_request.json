@@ -1,0 +1,17 @@
+{
+    "RequestedQuota": {
+        "Id": "6592229305524221889d3ae31600b051r0Ili7rH",
+        "ServiceCode": "ec2",
+        "ServiceName": "Amazon Elastic Compute Cloud (Amazon EC2)",
+        "QuotaCode": "L-1216C47A",
+        "QuotaName": "Running On-Demand Standard (A, C, D, H, I, M, R, T, Z) instances",
+        "DesiredValue": 32.0,
+        "Status": "PENDING",
+        "Created": "2026-09-25T20:35:29.340000+05:30",
+        "Requester": "{\"accountId\":\"206632867498\",\"callerArn\":\"arn:aws:iam::206632867498:root\"}",
+        "QuotaArn": "arn:aws:servicequotas:ap-south-1:206632867498:ec2/L-1216C47A",
+        "GlobalQuota": false,
+        "Unit": "None",
+        "QuotaRequestedAtLevel": "ACCOUNT"
+    }
+}

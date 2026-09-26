@@ -1,0 +1,56 @@
+{"time": "2026-09-25T15:12:59Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T15:12:59Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T15:12:59Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T15:12:59Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T15:12:59Z", "stage": "inference_partition_complete", "partition": 0, "rows": 11}
+{"time": "2026-09-25T15:12:59Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T15:12:59Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T15:12:59Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T15:12:59Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T15:12:59Z", "stage": "inference_partition_complete", "partition": 1, "rows": 11}
+{"time": "2026-09-25T15:12:59Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T15:12:59Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T15:12:59Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T15:12:59Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T15:13:00Z", "stage": "inference_partition_complete", "partition": 2, "rows": 8}
+{
+  "complete": true,
+  "rows": 30,
+  "candidate_pairs": 540,
+  "selected_pairs": 48,
+  "sha256": {
+    "matching_results.tsv": "6920014202cbb0073cc0cc13775c6a00827cf7d0154110ec7371287085952521",
+    "candidate_pairs.tsv": "50c488fb1e4653fe6b9b44eb95b74e8116bcbc7bd9921e3f8e380b3263490d5a"
+  },
+  "validation_status": "Must run strict and official membership validators before packaging"
+}
+{
+  "valid": true,
+  "error_count": 0,
+  "errors": [],
+  "errors_truncated": false,
+  "counts": {
+    "source1_rows": 30,
+    "france_source1_rows": 0,
+    "source2_rows": 30,
+    "source3_rows": 30,
+    "candidate": {
+      "rows": 30,
+      "pairs": 540,
+      "empty_rows": 0
+    },
+    "matching": {
+      "rows": 30,
+      "pairs": 48,
+      "empty_rows": 6
+    }
+  }
+}
+ML Challenge 2026 — submission validator
+  test dir: integration_test
+  required S1 entities: 30
+  valid S2/S3 match IDs: 60
+  matching_results.tsv: 30 rows (6 empty, 24 non-empty).
+  candidate_pairs.tsv: 30 rows (0 empty, 30 non-empty).
+
+PASS — no blocking issues found. Safe to submit.

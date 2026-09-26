@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "config": {
+    "k": 20,
+    "query_batch": 512,
+    "query_sha256": "dbf04519e87027b7fc9f1bbcae0a968e0499eaad6e3ed6923bed342c415f063d",
+    "schema_version": 1,
+    "target_batch": 250000,
+    "target_cache_key": "a1c3e036ee5f46fbfe60f2f6b74a24440aef970e89b668e24d496b6661d60d29",
+    "threads": 4
+  },
+  "output_sha256": {
+    "address_char": "c0f55586ddd82847bc84a452a3654eced35e0daffec58b4a174f5695e77fa4e2",
+    "name_char": "b567aec97e946dcbc1e6258583736fbeffde7b4a17f3827fa873d627e41f877b",
+    "name_word": "82236fc56ca97d560af3c9abe7b19b5d674bda1fd20ceb7b44cf1f977ef503ac"
+  },
+  "query_count": 3000,
+  "target_count": 503841,
+  "target_source": "S2"
+}

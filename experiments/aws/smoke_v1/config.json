@@ -1,0 +1,13 @@
+{
+  "cache": "work/smoke_cache",
+  "calibration_anchors": 30,
+  "k": 5,
+  "output": "experiments/smoke_v1",
+  "seed": 42,
+  "splits": "integration_fixture",
+  "target_batch": 20,
+  "threads": 2,
+  "train_anchors": 30,
+  "validation_anchors": 30,
+  "vectorizers": "integration_fixture/v.joblib"
+}

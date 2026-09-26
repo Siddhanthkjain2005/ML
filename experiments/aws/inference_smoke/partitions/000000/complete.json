@@ -1,0 +1,11 @@
+{
+  "candidate_pairs": 196,
+  "query_hash": "218831bdb1200b1add8bc35270fac44ba4cfe93961e5ca4f507900271782cd81",
+  "rows": 11,
+  "selected_pairs": 18,
+  "sha256": {
+    "candidate_pairs.tsv": "dac7526a004a095132abeaffc2fe57f316486faf3576065a4c0566bd1d8cb52d",
+    "matching_results.tsv": "a33ff49662b7085004030d02c7ebf3a758232b2c3121c0973992b0236bbb649a",
+    "scores.npy": "cd39dd19a5ccdb4b555a7dec27b12e58dd1d143eca95cb97aab38626edf61f78"
+  }
+}

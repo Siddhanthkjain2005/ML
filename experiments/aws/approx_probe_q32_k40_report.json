@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "India": {
+      "gained_vs_base": 7,
+      "lost_vs_base": 11,
+      "recall": 0.9422222222222222,
+      "retrieved": 636,
+      "true": 675
+    },
+    "US": {
+      "gained_vs_base": 4,
+      "lost_vs_base": 4,
+      "recall": 0.9812623274161736,
+      "retrieved": 995,
+      "true": 1014
+    },
+    "overall": {
+      "gained_vs_base": 11,
+      "lost_vs_base": 15,
+      "recall": 0.9656601539372409,
+      "retrieved": 1631,
+      "true": 1689
+    }
+  },
+  "k": 40,
+  "query_feature_limit": 32,
+  "runtime_seconds": 48.28827307199981,
+  "scope": "1000 training anchors; entire S2 training pool; sparse branches only; not validation"
+}

@@ -9,6 +9,9 @@ import os
 from pathlib import Path
 import re
 import tempfile
+from contextlib import ExitStack
+from concurrent.futures import ProcessPoolExecutor
+import multiprocessing
 from typing import Callable, Mapping, Sequence
 
 import joblib
@@ -80,6 +83,7 @@ def build_vectorizers(
     min_df: int | float = 2,
     max_df: int | float = 0.2,
     max_features: int = 300_000,
+    representation: str = 'unicode',
 ) -> dict[str, TfidfVectorizer]:
     """Fit three branches on an ID-hash sample of supplied training records.
 
@@ -92,6 +96,8 @@ def build_vectorizers(
     """
     if sample_limit <= 0 or max_features <= 0:
         raise ValueError("sample_limit and max_features must be positive")
+    if representation not in ('unicode', 'romanized'):
+        raise ValueError('Unknown text representation')
     paths = sorted({Path(path).resolve() for path in training_files})
     if not paths:
         raise ValueError("At least one training file is required")
@@ -129,12 +135,19 @@ def build_vectorizers(
     addresses = [normalize_text(item[3]) for item in sampled]
     common = dict(min_df=min_df, max_df=max_df, max_features=max_features,
                   lowercase=False, dtype=np.float32, norm="l2", sublinear_tf=True)
+    representation_info = None
+    if representation == 'romanized':
+        from .romanization import romanize, representation_metadata
+        common['preprocessor'] = romanize
+        representation_info = representation_metadata()
     vectorizers = {
         "name_char": TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), **common),
         "name_word": TfidfVectorizer(analyzer="word", ngram_range=(1, 1), token_pattern=r"(?u)\b\w+\b", **common),
         "address_char": TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), **common),
     }
     for branch, vectorizer in vectorizers.items():
+        if representation_info is not None:
+            vectorizer.representation_metadata_ = representation_info
         vectorizer.fit(addresses if branch == "address_char" else names)
     output_path = Path(output_path).resolve()
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -149,11 +162,18 @@ def build_vectorizers(
         "config": {"min_df": min_df, "max_df": max_df, "max_features": max_features},
         "vocabulary_sizes": {key: len(value.vocabulary_) for key, value in vectorizers.items()},
         "artifact_sha256": _digest(output_path),
+        "representation": representation, "representation_metadata": representation_info,
     })
     return vectorizers
 
 
-def _target_cache(target_path, vectorizers, cache_root, target_batch, progress):
+def _transform_texts(vectorizer, texts):
+    matrix = vectorizer.transform(texts).astype(np.float32).tocsr()
+    matrix.sort_indices()
+    return matrix
+
+
+def _target_cache(target_path, vectorizers, cache_root, target_batch, progress, cache_workers=1):
     """Build atomically published immutable CSR shards, with raw-input hashes."""
     before = target_path.stat()
     checksum = _digest(target_path)
@@ -172,7 +192,9 @@ def _target_cache(target_path, vectorizers, cache_root, target_batch, progress):
                     raise ValueError(f"Target cache corruption: {filename}")
         return destination, manifest
     cache_root.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix=".building-", dir=cache_root) as temp:
+    with tempfile.TemporaryDirectory(prefix=".building-", dir=cache_root) as temp, ExitStack() as resources:
+        pool = resources.enter_context(ProcessPoolExecutor(max_workers=cache_workers,
+            mp_context=multiprocessing.get_context('spawn'))) if cache_workers > 1 else None
         stage = Path(temp) / "cache"
         stage.mkdir()
         shards = []
@@ -202,9 +224,11 @@ def _target_cache(target_path, vectorizers, cache_root, target_batch, progress):
             file_hashes = {ids_file: _digest(stage / ids_file)}
             names = [normalize_text(item[1]["business_name"]) for item in batch]
             addresses = [normalize_text(item[1]["business_address"]) for item in batch]
+            pending = {branch: pool.submit(_transform_texts, vectorizers[branch],
+                addresses if branch == 'address_char' else names) for branch in BRANCHES} if pool else {}
             for branch in BRANCHES:
-                matrix = vectorizers[branch].transform(addresses if branch == "address_char" else names).astype(np.float32).tocsr()
-                matrix.sort_indices()
+                matrix = pending.pop(branch).result() if pool else _transform_texts(
+                    vectorizers[branch], addresses if branch == 'address_char' else names)
                 filename = f"{shard_no:06d}.{branch}.npz"
                 sparse.save_npz(stage / filename, matrix, compressed=False)
                 file_hashes[filename] = _digest(stage / filename)
@@ -238,7 +262,7 @@ def _merge_topk(old_ids, old_scores, new_ids, new_scores, k):
     return out_ids, out_scores
 
 
-def _multiply_topk(queries, targets, target_transpose, target_ids, k, threads):
+def _multiply_topk(queries, targets, target_transpose, target_ids, k, threads, cutoff_scores=None):
     from sparse_dot_topn import sp_matmul_topn
 
     # An extra result detects boundary ties. Resolve those rows exactly so IDs,
@@ -249,10 +273,35 @@ def _multiply_topk(queries, targets, target_transpose, target_ids, k, threads):
     for row in range(queries.shape[0]):
         start, stop = result.indptr[row:row + 2]
         columns, scores = result.indices[start:stop], result.data[start:stop]
-        if len(scores) > k and scores[k - 1] == scores[k]:
-            exact = (queries[row] @ targets.T).tocsr()
+        if (len(scores) > k and scores[k - 1] == scores[k]
+                and (cutoff_scores is None or scores[k] >= cutoff_scores[row])):
+            # Reuse the CSR transpose here too. CSR @ CSC otherwise converts
+            # the entire target shard for every tied query (common for words).
+            exact = (queries[row] @ target_transpose).tocsr()
             columns, scores = exact.indices, exact.data
         yield target_ids[columns], scores
+
+
+def distinctive_query_matrix(matrix, idf, limit):
+    """Keep the highest-IDF query fragments; target vectors remain unchanged.
+
+    This is an explicitly approximate retrieval option, not a pair cosine
+    feature. Equal IDF fragments break ties by query weight then feature index.
+    Independent full-vector cosine features are computed for all final pairs.
+    """
+    if not isinstance(limit, int) or limit < 1:
+        raise ValueError('query feature limit must be positive')
+    result = matrix.copy().tocsr()
+    for row in range(result.shape[0]):
+        start, end = result.indptr[row:row + 2]
+        if end - start > limit:
+            indices = result.indices[start:end]
+            values = result.data[start:end]
+            order = np.lexsort((indices, -values, -np.asarray(idf)[indices]))
+            values[order[limit:]] = 0
+    result.eliminate_zeros()
+    from sklearn.preprocessing import normalize
+    return normalize(result, norm='l2', copy=False)
 
 
 def retrieve_sparse(
@@ -268,6 +317,9 @@ def retrieve_sparse(
     resume: bool = True,
     cache_dir: str | Path | None = None,
     progress: Callable[[dict], None] | None = None,
+    query_feature_limit: int | None = None,
+    cache_workers: int = 1,
+    rerank_pool: int | None = None,
 ) -> dict[str, dict]:
     """Retrieve positive-cosine top-k per branch for one target source.
 
@@ -281,6 +333,10 @@ def retrieve_sparse(
     """
     if any(not isinstance(value, int) or value <= 0 for value in (k, threads, query_batch, target_batch)):
         raise ValueError("k, threads, query_batch, target_batch must be positive integers")
+    if not isinstance(cache_workers, int) or cache_workers < 1:
+        raise ValueError('cache_workers must be positive')
+    if rerank_pool is not None and (not isinstance(rerank_pool, int) or rerank_pool < k or query_feature_limit is None):
+        raise ValueError('rerank_pool must be >= k and requires query_feature_limit')
     if set(vectorizers) != set(BRANCHES):
         raise ValueError(f"Expected vectorizer branches {BRANCHES}")
     output_dir, target_path = Path(output_dir).resolve(), Path(target_path).resolve()
@@ -293,10 +349,18 @@ def retrieve_sparse(
         _numeric_id(str(entity_id))
     cached, cache = _target_cache(target_path, vectorizers,
                                   Path(cache_dir).resolve() if cache_dir is not None else output_dir / "target_cache",
-                                  target_batch, progress)
+                                  target_batch, progress, cache_workers)
     config = {"schema_version": 1, "query_sha256": _json_digest(queries),
               "target_cache_key": cached.name, "k": k, "query_batch": query_batch,
               "target_batch": target_batch, "threads": threads}
+    if query_feature_limit is not None:
+        if not isinstance(query_feature_limit, int) or query_feature_limit < 1:
+            raise ValueError('query_feature_limit must be positive')
+        config['query_feature_limit'] = query_feature_limit
+        config['query_selection'] = 'idf_then_weight_then_feature_index_v1'
+    if rerank_pool is not None:
+        config['rerank_pool'] = rerank_pool
+        config['rerank_method'] = 'full_cosine_per_shard_pool_v1; word_branch_unpruned'
     config_path = output_dir / "retrieval.json"
     if config_path.exists():
         previous = json.loads(config_path.read_text())
@@ -327,6 +391,11 @@ def retrieve_sparse(
         branch: vectorizers[branch].transform(normalized_addresses if branch == "address_char" else normalized_names).astype(np.float32).tocsr()
         for branch in BRANCHES
     } if queries else {}
+    full_query_matrices = query_matrices
+    if query_feature_limit is not None:
+        query_matrices = {branch: (matrix if rerank_pool is not None and branch == 'name_word' else
+                          distinctive_query_matrix(matrix, vectorizers[branch].idf_, query_feature_limit))
+                          for branch, matrix in full_query_matrices.items()}
     for shard in cache["shards"][completed:]:
         number = shard["shard"]
         target_ids = np.load(cached / f"{number:06d}.ids.npy", allow_pickle=False)
@@ -335,8 +404,24 @@ def retrieve_sparse(
             target_transpose = matrix.T.tocsr()
             for start in range(0, len(queries), query_batch):
                 batch = query_matrices[branch][start:start + query_batch]
-                for offset, (local_ids, local_scores) in enumerate(_multiply_topk(batch, matrix, target_transpose, target_ids, k, threads)):
+                # A shard boundary tie strictly below the current global kth
+                # score cannot enter the global top-k. Skip its expensive exact
+                # resolution without changing either selected IDs or scores.
+                cutoffs = scores[branch][start:start + query_batch, -1]
+                reranking = rerank_pool is not None and branch != 'name_word'
+                local_k = rerank_pool if reranking else k
+                for offset, (local_ids, local_scores) in enumerate(_multiply_topk(batch, matrix, target_transpose, target_ids, local_k, threads, None if reranking else cutoffs)):
                     row = start + offset
+                    if reranking:
+                        # Re-score every provisional hit with the complete,
+                        # original normalized vector before selecting final k.
+                        if len(local_ids) > rerank_pool:
+                            local_ids, local_scores = _merge_topk(np.empty(0, dtype=np.int64),
+                                np.empty(0, dtype=np.float32), local_ids, local_scores, rerank_pool)
+                            keep = local_ids >= 0
+                            local_ids = local_ids[keep]
+                        columns = np.searchsorted(target_ids, local_ids)
+                        local_scores = np.asarray(matrix[columns].multiply(full_query_matrices[branch][row]).sum(axis=1)).ravel()
                     ids[branch][row], scores[branch][row] = _merge_topk(
                         ids[branch][row], scores[branch][row], local_ids, local_scores, k)
         completed = number + 1

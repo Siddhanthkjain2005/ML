@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "config": {
+    "k": 20,
+    "query_batch": 512,
+    "query_feature_limit": 12,
+    "query_selection": "idf_then_weight_then_feature_index_v1",
+    "query_sha256": "93410a629940dbd698f8db77c836a6abd30f4257b3abcfa6d8f821bb1fe40fd8",
+    "schema_version": 1,
+    "target_batch": 250000,
+    "target_cache_key": "d4c4441dea892f6463c9052d0acfe296a9a485a3a1f2664e84dfe08f97f2e57a",
+    "threads": 2
+  },
+  "output_sha256": {
+    "address_char": "85482146a7dce27a6435f69c2fccee903206a7588d2e23902ca1fc44a412461a",
+    "name_char": "d868ea93b72c573c5dc098b47a0ae70067780f018c24441d440f4c715232d072",
+    "name_word": "25f6ea9ef7780815e5eeba0a183ad75655fdf9b92878911cf7225c73018b6a37"
+  },
+  "query_count": 1000,
+  "target_count": 4027549,
+  "target_source": "S2"
+}

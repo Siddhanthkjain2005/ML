@@ -1,0 +1,385 @@
+{
+  "X_path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/features/X.npy",
+  "X_sha256": "d92c30fa4fccfec941e1df3fe6fc69e0d47aa62bee6f6bc82071763caa936271",
+  "batches": [
+    {
+      "end": 10000,
+      "sha256": "af4ad6f55787df7f11e706a6bc4ccac1d8ae2ef92f3165e8ba36122969c46471",
+      "start": 0
+    },
+    {
+      "end": 20000,
+      "sha256": "d865be43bee94751d7c83b2dc954291553edecfee705690116f68cbd88433ce7",
+      "start": 10000
+    },
+    {
+      "end": 30000,
+      "sha256": "0492cfe932239d0c24ece867e0b240dbeb4ed862eb939dfd6d36144e74461334",
+      "start": 20000
+    },
+    {
+      "end": 40000,
+      "sha256": "25785ee9f8a73a351c4ddacf8fdbb92ac7751b96611c2006034772076570e6af",
+      "start": 30000
+    },
+    {
+      "end": 50000,
+      "sha256": "5aa20b92af9cc032c72a9db0a2fb8eccd9d2182a3a72baca2e6b94ec7dfe60ee",
+      "start": 40000
+    },
+    {
+      "end": 60000,
+      "sha256": "037f47b07c067e1513b1cf97da1ae343f626ceb25d7e588f073a7cc65c2a1c89",
+      "start": 50000
+    },
+    {
+      "end": 70000,
+      "sha256": "f71cd3d5201570afd2b8c091cdd4e351dbec397ae100f67f0a8c145b5bc9fe05",
+      "start": 60000
+    },
+    {
+      "end": 80000,
+      "sha256": "9be09cad621fdfe8e8bffd0ada3330915de62ebbbbe686b04587f1106bb649c8",
+      "start": 70000
+    },
+    {
+      "end": 90000,
+      "sha256": "e28cf3bf9608998a5fb11941cdfd9d36a15943f5c6625f5c881832ee6158b58d",
+      "start": 80000
+    },
+    {
+      "end": 100000,
+      "sha256": "8b0ab8ebebd202366371f3573e8065c06092af8b15650dbbdbde1adbd6c16058",
+      "start": 90000
+    },
+    {
+      "end": 110000,
+      "sha256": "989025e264c40f65f1298b54d240bdcdfab9854dbdfbff6a542fa21e22c64851",
+      "start": 100000
+    },
+    {
+      "end": 120000,
+      "sha256": "e799478dc03413b1a5be46c9ca581cc5ce51240ebd6828018a47de2c8393d8cf",
+      "start": 110000
+    },
+    {
+      "end": 130000,
+      "sha256": "d8ae186b10fb66b72bb92d24059e18c4efe6fc4e512aec5d466a4fbafbb78008",
+      "start": 120000
+    },
+    {
+      "end": 140000,
+      "sha256": "5f154ffc06cd9e014770711db85ac917f12e979f56cde1d67a91cb87a2cc56a3",
+      "start": 130000
+    },
+    {
+      "end": 150000,
+      "sha256": "362e2064ceef7506954301878e3c78cea97ac666f55c14810d2fff9cc081060b",
+      "start": 140000
+    },
+    {
+      "end": 160000,
+      "sha256": "302f02f38a55cce4a86b0da4a481eae35c5b5d95b3469fa8d467acd8294ff230",
+      "start": 150000
+    },
+    {
+      "end": 170000,
+      "sha256": "814293bd98431b595de55ffe54036023ab5e9c0e231619c19ea0345d91e5bf1a",
+      "start": 160000
+    },
+    {
+      "end": 180000,
+      "sha256": "9029228dce1b5c450cf3c57d63cc85b42761b3267188843e13e67f32734e982d",
+      "start": 170000
+    },
+    {
+      "end": 190000,
+      "sha256": "5614f9f35f84bc393b6ca8b82394f8b2cb1417ba5320ae45bcc33b4352a694fb",
+      "start": 180000
+    },
+    {
+      "end": 200000,
+      "sha256": "1e31689f2dcf0188d1a470ebcbc762d40f273a7d63a29ea3f38eca99d9ab84ed",
+      "start": 190000
+    },
+    {
+      "end": 210000,
+      "sha256": "192ad92ae3301dc5bbe467b1a0ceface71c67d0830752b7cb83c0cf8055fc5c2",
+      "start": 200000
+    },
+    {
+      "end": 220000,
+      "sha256": "bcfa62f6e65ea1f2df4b28e9994ae65e74bfe45d62e85c1ab2daafddfdfeb767",
+      "start": 210000
+    },
+    {
+      "end": 230000,
+      "sha256": "db00f2a8dedeab5fa0064c788c6dfd55b6196fc317eb6b1ef43a6a2368201e24",
+      "start": 220000
+    },
+    {
+      "end": 240000,
+      "sha256": "310460bbad0993be4f1e2be8178df2b2609a4a596e8a29b4ba2db4c21bd50a8e",
+      "start": 230000
+    },
+    {
+      "end": 250000,
+      "sha256": "5176693a03d2fd76ff30b5c56af0125df80cd69fce0fe4a13f13934e998b1cff",
+      "start": 240000
+    },
+    {
+      "end": 260000,
+      "sha256": "3842ab72371e19cd27c57e22190c8877d5a521f9ed03c3be97adcd6f9e63f6a1",
+      "start": 250000
+    },
+    {
+      "end": 270000,
+      "sha256": "e3393a73dd52cb3ff0b0fcccf9855c5bf706a536058c793370306a322d8758f1",
+      "start": 260000
+    },
+    {
+      "end": 280000,
+      "sha256": "7329e967ed1bfd6f80b47867c9215124f152231e3b8e830fdb1d91934d6b14d7",
+      "start": 270000
+    },
+    {
+      "end": 290000,
+      "sha256": "cf77e0d3f359bdb79a2acf1e6c1a617feb62fc068a9265a76cdb2fc68a4d74af",
+      "start": 280000
+    },
+    {
+      "end": 300000,
+      "sha256": "5d78bdcbddd99f42c1e342fe67675cc5ebac0518801ce03b0c134c771c0d66b2",
+      "start": 290000
+    },
+    {
+      "end": 306321,
+      "sha256": "b82ddb4353d185e1f50dd215d4cd66043c2c16f319f24b244b6552924eb58ae8",
+      "start": 300000
+    }
+  ],
+  "complete": true,
+  "config": {
+    "batch_size": 10000,
+    "candidate_inputs": {
+      "anchors": {
+        "path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/candidates/anchors.npy",
+        "sha256": "bf95296fc2d19c731ae4d07a2243da50f57879a4f12f4b92125cbcb3eb98a91f"
+      },
+      "masks": {
+        "path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/candidates/masks.npy",
+        "sha256": "c8b6a7ced5bb9ee45ce5f802ea3e9423a32cf5e60bad55bf7c198b790dd8c9ce"
+      },
+      "queries": {
+        "path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/candidates/queries.jsonl",
+        "sha256": "550b05c6b85e448b9843391e3429760b47147db214b298847cef7a8806449a54"
+      },
+      "ranks": {
+        "path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/candidates/ranks.npy",
+        "sha256": "5e8da9dd0008f1c076e51e003c9b1064974592dce821315f872fd1e165dffb0e"
+      },
+      "scores": {
+        "path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/candidates/scores.npy",
+        "sha256": "e7a16ccdf53a83b781e43546839c765b2eb946c213f5e2e110420b4c3a8e555e"
+      },
+      "target_codes": {
+        "path": "/home/ubuntu/amazonml/experiments/pilot_v1/calibration/candidates/target_codes.npy",
+        "sha256": "381e793b420bad2221ea42e670d429412e1b972c48db0cd8d95b0d639091a9ed"
+      }
+    },
+    "feature_names": [
+      "name_exact",
+      "name_folded_exact",
+      "name_token_jaccard",
+      "name_token_containment",
+      "name_token_overlap",
+      "name_length_ratio",
+      "name_token_count_ratio",
+      "name_edit_similarity",
+      "name_token_sort_similarity",
+      "name_numbers_both_present",
+      "name_numbers_equal",
+      "name_numbers_overlap",
+      "name_numbers_conflict",
+      "name_numbers_disagree",
+      "name_numbers_jaccard",
+      "name_left_missing",
+      "name_right_missing",
+      "address_exact",
+      "address_folded_exact",
+      "address_token_jaccard",
+      "address_token_containment",
+      "address_token_overlap",
+      "address_length_ratio",
+      "address_token_count_ratio",
+      "address_edit_similarity",
+      "address_token_sort_similarity",
+      "address_numbers_both_present",
+      "address_numbers_equal",
+      "address_numbers_overlap",
+      "address_numbers_conflict",
+      "address_numbers_disagree",
+      "address_numbers_jaccard",
+      "address_left_missing",
+      "address_right_missing",
+      "name_legal_exact",
+      "name_core_exact",
+      "name_acronym_exact",
+      "name_acronym_matches_name",
+      "country_equal",
+      "country_conflict",
+      "country_left_missing",
+      "country_right_missing",
+      "left_source1",
+      "right_source2",
+      "right_source3",
+      "retrieval_rank_reciprocal",
+      "retrieval_score",
+      "retrieval_candidate_count_log1p",
+      "retrieval_name_rank_reciprocal",
+      "retrieval_address_rank_reciprocal",
+      "retrieval_name_score",
+      "retrieval_address_score",
+      "retrieval_name_exact",
+      "retrieval_address_exact",
+      "retrieval_name_char",
+      "retrieval_address_char",
+      "retrieval_name_token",
+      "retrieval_address_token",
+      "retrieval_number_block",
+      "retrieval_sorted_neighborhood",
+      "retrieval_name_char_score",
+      "retrieval_name_char_rank_reciprocal",
+      "retrieval_name_word_score",
+      "retrieval_name_word_rank_reciprocal",
+      "retrieval_address_char_score",
+      "retrieval_address_char_rank_reciprocal",
+      "retrieval_address_word_score",
+      "retrieval_address_word_rank_reciprocal",
+      "actual_name_char_cosine",
+      "actual_name_word_cosine",
+      "actual_address_char_cosine"
+    ],
+    "mask_names": [
+      "name_char",
+      "name_word",
+      "address_char",
+      "name_exact",
+      "number_block"
+    ],
+    "retrieval_columns": [
+      "name_char",
+      "name_word",
+      "address_char"
+    ],
+    "schema_version": 1,
+    "source_sha256": {
+      "features.py": "e9fd695faebb9c6d1c2397eebd975845aa69404a912ba41541f9a07708cded89",
+      "pair_dataset.py": "867bd1f525c918bf8de4f928e92739c32dff90cef83b2c4174712b0300fe89b2",
+      "text.py": "379cbcf90ab6b0a350c668c44aef873e9d59ec73d49d0d977a1b022b79fba013"
+    },
+    "target_inputs": {
+      "2": {
+        "path": "/home/ubuntu/amazonml/work/splits_v1/calibration/source2.tsv",
+        "sha256": "70b62b98b1a83c26fa5d09ccd2a003922cc1d4589199bbf9e1ab4345115a6242"
+      },
+      "3": {
+        "path": "/home/ubuntu/amazonml/work/splits_v1/calibration/source3.tsv",
+        "sha256": "83272c3631fab2b06ad4244cfff5bb45c16481affe2b68860af5ef63841a514b"
+      }
+    },
+    "vectorizers_sha1": "ddbcc2fad31531f52c27b2be699386c2ccacfa78",
+    "versions": {
+      "joblib": "1.5.2",
+      "numpy": "2.1.3",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.16.1"
+    }
+  },
+  "feature_names": [
+    "name_exact",
+    "name_folded_exact",
+    "name_token_jaccard",
+    "name_token_containment",
+    "name_token_overlap",
+    "name_length_ratio",
+    "name_token_count_ratio",
+    "name_edit_similarity",
+    "name_token_sort_similarity",
+    "name_numbers_both_present",
+    "name_numbers_equal",
+    "name_numbers_overlap",
+    "name_numbers_conflict",
+    "name_numbers_disagree",
+    "name_numbers_jaccard",
+    "name_left_missing",
+    "name_right_missing",
+    "address_exact",
+    "address_folded_exact",
+    "address_token_jaccard",
+    "address_token_containment",
+    "address_token_overlap",
+    "address_length_ratio",
+    "address_token_count_ratio",
+    "address_edit_similarity",
+    "address_token_sort_similarity",
+    "address_numbers_both_present",
+    "address_numbers_equal",
+    "address_numbers_overlap",
+    "address_numbers_conflict",
+    "address_numbers_disagree",
+    "address_numbers_jaccard",
+    "address_left_missing",
+    "address_right_missing",
+    "name_legal_exact",
+    "name_core_exact",
+    "name_acronym_exact",
+    "name_acronym_matches_name",
+    "country_equal",
+    "country_conflict",
+    "country_left_missing",
+    "country_right_missing",
+    "left_source1",
+    "right_source2",
+    "right_source3",
+    "retrieval_rank_reciprocal",
+    "retrieval_score",
+    "retrieval_candidate_count_log1p",
+    "retrieval_name_rank_reciprocal",
+    "retrieval_address_rank_reciprocal",
+    "retrieval_name_score",
+    "retrieval_address_score",
+    "retrieval_name_exact",
+    "retrieval_address_exact",
+    "retrieval_name_char",
+    "retrieval_address_char",
+    "retrieval_name_token",
+    "retrieval_address_token",
+    "retrieval_number_block",
+    "retrieval_sorted_neighborhood",
+    "retrieval_name_char_score",
+    "retrieval_name_char_rank_reciprocal",
+    "retrieval_name_word_score",
+    "retrieval_name_word_rank_reciprocal",
+    "retrieval_address_char_score",
+    "retrieval_address_char_rank_reciprocal",
+    "retrieval_address_word_score",
+    "retrieval_address_word_rank_reciprocal",
+    "actual_name_char_cosine",
+    "actual_name_word_cosine",
+    "actual_address_char_cosine"
+  ],
+  "lookup_complete": true,
+  "lookup_sha256": "e5f451d96844fcb3dabb5310fd5059cdf1346932bab916e7b17fbccc36bfce57",
+  "rows_completed": 306321,
+  "runtime_seconds": 178.76566516099956,
+  "shape": [
+    306321,
+    71
+  ],
+  "target_lookup": {
+    "selected_unique_targets": 206081,
+    "source2": 503841,
+    "source3": 528251
+  }
+}

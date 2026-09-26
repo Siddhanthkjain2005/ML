@@ -1,0 +1,360 @@
+{
+  "features": [
+    {
+      "feature": "name_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "name_folded_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "address_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "address_folded_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "address_numbers_equal",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "address_numbers_overlap",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "address_numbers_conflict",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": -0.19779038324075737
+    },
+    {
+      "feature": "address_numbers_disagree",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": -0.19779038324075737
+    },
+    {
+      "feature": "address_numbers_jaccard",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "name_legal_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "name_core_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "retrieval_name_exact",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "retrieval_number_block",
+      "importance": 0.19779038324075737,
+      "signed_coefficient": 0.19779038324075737
+    },
+    {
+      "feature": "name_numbers_equal",
+      "importance": 0.16234414721754972,
+      "signed_coefficient": 0.16234414721754972
+    },
+    {
+      "feature": "name_numbers_overlap",
+      "importance": 0.16234414721754972,
+      "signed_coefficient": 0.16234414721754972
+    },
+    {
+      "feature": "name_numbers_conflict",
+      "importance": 0.16234414721754972,
+      "signed_coefficient": -0.16234414721754972
+    },
+    {
+      "feature": "name_numbers_disagree",
+      "importance": 0.16234414721754972,
+      "signed_coefficient": -0.16234414721754972
+    },
+    {
+      "feature": "name_numbers_jaccard",
+      "importance": 0.16234414721754972,
+      "signed_coefficient": 0.16234414721754972
+    },
+    {
+      "feature": "name_token_jaccard",
+      "importance": 0.12739437697834274,
+      "signed_coefficient": 0.12739437697834274
+    },
+    {
+      "feature": "address_token_jaccard",
+      "importance": 0.12435071454883252,
+      "signed_coefficient": 0.12435071454883252
+    },
+    {
+      "feature": "actual_name_word_cosine",
+      "importance": 0.11769200936402341,
+      "signed_coefficient": 0.11769200936402341
+    },
+    {
+      "feature": "retrieval_name_word_score",
+      "importance": 0.11423067635181341,
+      "signed_coefficient": 0.11423067635181341
+    },
+    {
+      "feature": "retrieval_name_char_rank_reciprocal",
+      "importance": 0.10483831418094516,
+      "signed_coefficient": 0.10483831418094516
+    },
+    {
+      "feature": "address_token_containment",
+      "importance": 0.10224944475878953,
+      "signed_coefficient": 0.10224944475878953
+    },
+    {
+      "feature": "address_token_overlap",
+      "importance": 0.10224944475878953,
+      "signed_coefficient": 0.10224944475878953
+    },
+    {
+      "feature": "retrieval_name_rank_reciprocal",
+      "importance": 0.10186211699556258,
+      "signed_coefficient": 0.10186211699556258
+    },
+    {
+      "feature": "retrieval_name_word_rank_reciprocal",
+      "importance": 0.10044476282043024,
+      "signed_coefficient": 0.10044476282043024
+    },
+    {
+      "feature": "name_token_overlap",
+      "importance": 0.10020473695810274,
+      "signed_coefficient": 0.10020473695810274
+    },
+    {
+      "feature": "name_token_containment",
+      "importance": 0.10020473092860548,
+      "signed_coefficient": 0.10020473092860548
+    },
+    {
+      "feature": "retrieval_address_rank_reciprocal",
+      "importance": 0.09953652619532662,
+      "signed_coefficient": 0.09953652619532662
+    },
+    {
+      "feature": "retrieval_address_char_rank_reciprocal",
+      "importance": 0.09953652619532662,
+      "signed_coefficient": 0.09953652619532662
+    },
+    {
+      "feature": "retrieval_rank_reciprocal",
+      "importance": 0.09474706485105416,
+      "signed_coefficient": 0.09474706485105416
+    },
+    {
+      "feature": "actual_name_char_cosine",
+      "importance": 0.0598210570652342,
+      "signed_coefficient": 0.0598210570652342
+    },
+    {
+      "feature": "actual_address_char_cosine",
+      "importance": 0.059078737382025744,
+      "signed_coefficient": 0.059078737382025744
+    },
+    {
+      "feature": "retrieval_name_char_score",
+      "importance": 0.05705286010380065,
+      "signed_coefficient": 0.05705286010380065
+    },
+    {
+      "feature": "retrieval_name_score",
+      "importance": 0.05201410081809037,
+      "signed_coefficient": 0.05201410081809037
+    },
+    {
+      "feature": "retrieval_address_score",
+      "importance": 0.04761804409666853,
+      "signed_coefficient": 0.04761804409666853
+    },
+    {
+      "feature": "retrieval_address_char_score",
+      "importance": 0.04761804409666853,
+      "signed_coefficient": 0.04761804409666853
+    },
+    {
+      "feature": "name_edit_similarity",
+      "importance": 0.04730901368467097,
+      "signed_coefficient": 0.04730901368467097
+    },
+    {
+      "feature": "address_length_ratio",
+      "importance": 0.04427940427535952,
+      "signed_coefficient": 0.04427940427535952
+    },
+    {
+      "feature": "retrieval_score",
+      "importance": 0.044026868645838754,
+      "signed_coefficient": 0.044026868645838754
+    },
+    {
+      "feature": "name_length_ratio",
+      "importance": 0.04304506296658603,
+      "signed_coefficient": 0.04304506296658603
+    },
+    {
+      "feature": "address_edit_similarity",
+      "importance": 0.0373173358570945,
+      "signed_coefficient": 0.0373173358570945
+    },
+    {
+      "feature": "address_token_count_ratio",
+      "importance": 0.0362521068257186,
+      "signed_coefficient": 0.0362521068257186
+    },
+    {
+      "feature": "name_token_sort_similarity",
+      "importance": 0.035121167512529146,
+      "signed_coefficient": 0.035121167512529146
+    },
+    {
+      "feature": "address_token_sort_similarity",
+      "importance": 0.028490687538625235,
+      "signed_coefficient": 0.028490687538625235
+    },
+    {
+      "feature": "retrieval_candidate_count_log1p",
+      "importance": 0.02646093814103933,
+      "signed_coefficient": -0.02646093814103933
+    },
+    {
+      "feature": "name_acronym_exact",
+      "importance": 0.018215856130982838,
+      "signed_coefficient": 0.018215856130982838
+    },
+    {
+      "feature": "retrieval_name_char",
+      "importance": 0.01582165823553401,
+      "signed_coefficient": 0.01582165823553401
+    },
+    {
+      "feature": "country_equal",
+      "importance": 0.014640647383300193,
+      "signed_coefficient": 0.014640647383300193
+    },
+    {
+      "feature": "country_conflict",
+      "importance": 0.014640647383300193,
+      "signed_coefficient": -0.014640647383300193
+    },
+    {
+      "feature": "retrieval_name_token",
+      "importance": 0.004789320978742025,
+      "signed_coefficient": 0.004789320978742025
+    },
+    {
+      "feature": "retrieval_address_char",
+      "importance": 0.0023945011711348314,
+      "signed_coefficient": 0.0023945011711348314
+    },
+    {
+      "feature": "right_source2",
+      "importance": 9.060103133393227e-20,
+      "signed_coefficient": -9.060103133393227e-20
+    },
+    {
+      "feature": "right_source3",
+      "importance": 9.060103133393227e-20,
+      "signed_coefficient": 9.060103133393227e-20
+    },
+    {
+      "feature": "name_token_count_ratio",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "name_numbers_both_present",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "name_left_missing",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "name_right_missing",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "address_numbers_both_present",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "address_left_missing",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "address_right_missing",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "name_acronym_matches_name",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "country_left_missing",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "country_right_missing",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "left_source1",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "retrieval_address_exact",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "retrieval_address_token",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "retrieval_sorted_neighborhood",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "retrieval_address_word_score",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    },
+    {
+      "feature": "retrieval_address_word_rank_reciprocal",
+      "importance": 0.0,
+      "signed_coefficient": 0.0
+    }
+  ],
+  "kind": "absolute coefficient after StandardScaler"
+}

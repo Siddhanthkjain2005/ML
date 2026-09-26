@@ -1,0 +1,106 @@
+{"time": "2026-09-25T14:45:43Z", "stage": "fold_start", "fold": "train", "anchors": 6000, "true_links": 20872}
+{"time": "2026-09-25T14:46:15Z", "fold": "train", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T14:46:35Z", "fold": "train", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T14:46:56Z", "fold": "train", "stage": "target_cache_shard", "shard": 2, "rows": 250000}
+{"time": "2026-09-25T14:47:15Z", "fold": "train", "stage": "target_cache_shard", "shard": 3, "rows": 250000}
+{"time": "2026-09-25T14:47:36Z", "fold": "train", "stage": "target_cache_shard", "shard": 4, "rows": 250000}
+{"time": "2026-09-25T14:47:55Z", "fold": "train", "stage": "target_cache_shard", "shard": 5, "rows": 250000}
+{"time": "2026-09-25T14:48:15Z", "fold": "train", "stage": "target_cache_shard", "shard": 6, "rows": 250000}
+{"time": "2026-09-25T14:48:35Z", "fold": "train", "stage": "target_cache_shard", "shard": 7, "rows": 250000}
+{"time": "2026-09-25T14:48:57Z", "fold": "train", "stage": "target_cache_shard", "shard": 8, "rows": 250000}
+{"time": "2026-09-25T14:49:18Z", "fold": "train", "stage": "target_cache_shard", "shard": 9, "rows": 250000}
+{"time": "2026-09-25T14:49:40Z", "fold": "train", "stage": "target_cache_shard", "shard": 10, "rows": 250000}
+{"time": "2026-09-25T14:50:02Z", "fold": "train", "stage": "target_cache_shard", "shard": 11, "rows": 250000}
+{"time": "2026-09-25T14:50:24Z", "fold": "train", "stage": "target_cache_shard", "shard": 12, "rows": 250000}
+{"time": "2026-09-25T14:50:45Z", "fold": "train", "stage": "target_cache_shard", "shard": 13, "rows": 250000}
+{"time": "2026-09-25T14:51:05Z", "fold": "train", "stage": "target_cache_shard", "shard": 14, "rows": 250000}
+{"time": "2026-09-25T14:51:26Z", "fold": "train", "stage": "target_cache_shard", "shard": 15, "rows": 250000}
+{"time": "2026-09-25T14:51:28Z", "fold": "train", "stage": "target_cache_shard", "shard": 16, "rows": 27549}
+{"time": "2026-09-25T14:54:01Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:54:46Z", "stage": "fold_start", "fold": "train", "anchors": 6000, "true_links": 20872}
+{"time": "2026-09-25T14:55:30Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:55:58Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:56:25Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 4, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:56:53Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 5, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:57:21Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 6, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:57:49Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 7, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:58:18Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 8, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:58:45Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 9, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:59:12Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 10, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T14:59:39Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 11, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:00:39Z", "stage": "fold_start", "fold": "train", "anchors": 6000, "true_links": 20872}
+{"time": "2026-09-25T15:01:09Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 12, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:01:23Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 13, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:01:37Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 14, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:01:51Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 15, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:02:07Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 16, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:02:09Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 17, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:02:41Z", "fold": "train", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T15:03:03Z", "fold": "train", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T15:03:24Z", "fold": "train", "stage": "target_cache_shard", "shard": 2, "rows": 250000}
+{"time": "2026-09-25T15:03:44Z", "fold": "train", "stage": "target_cache_shard", "shard": 3, "rows": 250000}
+{"time": "2026-09-25T15:04:04Z", "fold": "train", "stage": "target_cache_shard", "shard": 4, "rows": 250000}
+{"time": "2026-09-25T15:04:24Z", "fold": "train", "stage": "target_cache_shard", "shard": 5, "rows": 250000}
+{"time": "2026-09-25T15:04:45Z", "fold": "train", "stage": "target_cache_shard", "shard": 6, "rows": 250000}
+{"time": "2026-09-25T15:05:06Z", "fold": "train", "stage": "target_cache_shard", "shard": 7, "rows": 250000}
+{"time": "2026-09-25T15:05:26Z", "fold": "train", "stage": "target_cache_shard", "shard": 8, "rows": 250000}
+{"time": "2026-09-25T15:05:46Z", "fold": "train", "stage": "target_cache_shard", "shard": 9, "rows": 250000}
+{"time": "2026-09-25T15:06:06Z", "fold": "train", "stage": "target_cache_shard", "shard": 10, "rows": 250000}
+{"time": "2026-09-25T15:06:26Z", "fold": "train", "stage": "target_cache_shard", "shard": 11, "rows": 250000}
+{"time": "2026-09-25T15:06:46Z", "fold": "train", "stage": "target_cache_shard", "shard": 12, "rows": 250000}
+{"time": "2026-09-25T15:07:11Z", "fold": "train", "stage": "target_cache_shard", "shard": 13, "rows": 250000}
+{"time": "2026-09-25T15:07:39Z", "fold": "train", "stage": "target_cache_shard", "shard": 14, "rows": 250000}
+{"time": "2026-09-25T15:08:00Z", "fold": "train", "stage": "target_cache_shard", "shard": 15, "rows": 250000}
+{"time": "2026-09-25T15:08:18Z", "fold": "train", "stage": "target_cache_shard", "shard": 16, "rows": 227938}
+{"time": "2026-09-25T15:08:49Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:09:13Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:09:31Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:09:48Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 4, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:10:05Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 5, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:10:21Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 6, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:10:37Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 7, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:10:53Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 8, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:11:08Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 9, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:11:22Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 10, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:11:36Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 11, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:11:49Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 12, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:12:03Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 13, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:12:17Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 14, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:12:33Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 15, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:12:49Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 16, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:13:07Z", "fold": "train", "stage": "retrieval_shard_complete", "completed_shards": 17, "total_shards": 17, "target_source": "S3"}
+{"time": "2026-09-25T15:15:20Z", "stage": "candidates_complete", "fold": "train"}
+{"time": "2026-09-25T15:54:33Z", "stage": "features_complete", "fold": "train", "shape": [614640, 71]}
+{"time": "2026-09-25T15:54:33Z", "stage": "fold_start", "fold": "calibration", "anchors": 3000, "true_links": 10453}
+{"time": "2026-09-25T15:55:07Z", "fold": "calibration", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T15:55:29Z", "fold": "calibration", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T15:55:29Z", "fold": "calibration", "stage": "target_cache_shard", "shard": 2, "rows": 3841}
+{"time": "2026-09-25T15:55:48Z", "fold": "calibration", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 3, "target_source": "S2"}
+{"time": "2026-09-25T15:56:01Z", "fold": "calibration", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 3, "target_source": "S2"}
+{"time": "2026-09-25T15:56:01Z", "fold": "calibration", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 3, "target_source": "S2"}
+{"time": "2026-09-25T15:56:36Z", "fold": "calibration", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T15:56:57Z", "fold": "calibration", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T15:57:00Z", "fold": "calibration", "stage": "target_cache_shard", "shard": 2, "rows": 28251}
+{"time": "2026-09-25T15:57:19Z", "fold": "calibration", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 3, "target_source": "S3"}
+{"time": "2026-09-25T15:57:34Z", "fold": "calibration", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 3, "target_source": "S3"}
+{"time": "2026-09-25T15:57:35Z", "fold": "calibration", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 3, "target_source": "S3"}
+{"time": "2026-09-25T15:57:48Z", "stage": "candidates_complete", "fold": "calibration"}
+{"time": "2026-09-25T16:00:47Z", "stage": "features_complete", "fold": "calibration", "shape": [306321, 71]}
+{"time": "2026-09-25T16:01:06Z", "stage": "models_trained", "models": ["linear", "xgboost"]}
+{"time": "2026-09-25T16:01:07Z", "stage": "calibration_complete", "selected_model": "xgboost", "decisions": {"linear": {"n_entities": 3000, "macro_f0_5": 0.9350453113011966, "precision": 0.9708697023872122, "recall": 0.8831914282980963, "micro_f0_5": 0.9519684876982408, "true_positives": 9232, "false_positives": 277, "false_negatives": 1221, "true_links": 10453, "predicted_links": 9509, "singleton_count": 160, "correct_singletons": 144, "false_singleton_merges": 16, "singleton_accuracy": 0.9, "avg_predicted_matches_per_s1": 3.1696666666666666, "false_positives_per_s1": 0.09233333333333334, "false_negatives_per_s1": 0.407, "threshold": 0.31, "selection_partition": "calibration", "thresholds_evaluated": 134, "threshold_strategy": "coarse grid plus local .001 refinement"}, "xgboost": {"n_entities": 3000, "macro_f0_5": 0.9510222570782955, "precision": 0.9807396783116484, "recall": 0.915813642016646, "micro_f0_5": 0.9670283047457422, "true_positives": 9573, "false_positives": 188, "false_negatives": 880, "true_links": 10453, "predicted_links": 9761, "singleton_count": 160, "correct_singletons": 149, "false_singleton_merges": 11, "singleton_accuracy": 0.93125, "avg_predicted_matches_per_s1": 3.2536666666666667, "false_positives_per_s1": 0.06266666666666666, "false_negatives_per_s1": 0.29333333333333333, "threshold": 0.366, "selection_partition": "calibration", "thresholds_evaluated": 134, "threshold_strategy": "coarse grid plus local .001 refinement"}}}
+{"time": "2026-09-25T16:01:07Z", "stage": "fold_start", "fold": "validation", "anchors": 3000, "true_links": 10423}
+{"time": "2026-09-25T16:01:42Z", "fold": "validation", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T16:02:02Z", "fold": "validation", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T16:02:02Z", "fold": "validation", "stage": "target_cache_shard", "shard": 2, "rows": 3226}
+{"time": "2026-09-25T16:02:20Z", "fold": "validation", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 3, "target_source": "S2"}
+{"time": "2026-09-25T16:02:35Z", "fold": "validation", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 3, "target_source": "S2"}
+{"time": "2026-09-25T16:02:35Z", "fold": "validation", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 3, "target_source": "S2"}
+{"time": "2026-09-25T16:03:10Z", "fold": "validation", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T16:03:31Z", "fold": "validation", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T16:03:33Z", "fold": "validation", "stage": "target_cache_shard", "shard": 2, "rows": 29414}
+{"time": "2026-09-25T16:03:53Z", "fold": "validation", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 3, "target_source": "S3"}
+{"time": "2026-09-25T16:04:07Z", "fold": "validation", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 3, "target_source": "S3"}
+{"time": "2026-09-25T16:04:08Z", "fold": "validation", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 3, "target_source": "S3"}
+{"time": "2026-09-25T16:04:22Z", "stage": "candidates_complete", "fold": "validation"}
+{"time": "2026-09-25T16:07:18Z", "stage": "features_complete", "fold": "validation", "shape": [307534, 71]}
+{"time": "2026-09-25T16:07:19Z", "stage": "experiment_complete", "status": "COMPLETE", "selected_model": "xgboost", "calibration": {"linear": {"n_entities": 3000, "macro_f0_5": 0.9350453113011966, "precision": 0.9708697023872122, "recall": 0.8831914282980963, "micro_f0_5": 0.9519684876982408, "true_positives": 9232, "false_positives": 277, "false_negatives": 1221, "true_links": 10453, "predicted_links": 9509, "singleton_count": 160, "correct_singletons": 144, "false_singleton_merges": 16, "singleton_accuracy": 0.9, "avg_predicted_matches_per_s1": 3.1696666666666666, "false_positives_per_s1": 0.09233333333333334, "false_negatives_per_s1": 0.407, "threshold": 0.31, "selection_partition": "calibration", "thresholds_evaluated": 134, "threshold_strategy": "coarse grid plus local .001 refinement"}, "xgboost": {"n_entities": 3000, "macro_f0_5": 0.9510222570782955, "precision": 0.9807396783116484, "recall": 0.915813642016646, "micro_f0_5": 0.9670283047457422, "true_positives": 9573, "false_positives": 188, "false_negatives": 880, "true_links": 10453, "predicted_links": 9761, "singleton_count": 160, "correct_singletons": 149, "false_singleton_merges": 11, "singleton_accuracy": 0.93125, "avg_predicted_matches_per_s1": 3.2536666666666667, "false_positives_per_s1": 0.06266666666666666, "false_negatives_per_s1": 0.29333333333333333, "threshold": 0.366, "selection_partition": "calibration", "thresholds_evaluated": 134, "threshold_strategy": "coarse grid plus local .001 refinement"}}, "validation": {"linear": {"n_entities": 3000, "macro_f0_5": 0.9381208878862144, "precision": 0.9710357854969042, "recall": 0.8877482490645687, "micro_f0_5": 0.9531510743937864, "true_positives": 9253, "false_positives": 276, "false_negatives": 1170, "true_links": 10423, "predicted_links": 9529, "singleton_count": 165, "correct_singletons": 149, "false_singleton_merges": 16, "singleton_accuracy": 0.9030303030303031, "avg_predicted_matches_per_s1": 3.1763333333333335, "false_positives_per_s1": 0.092, "false_negatives_per_s1": 0.39, "threshold": 0.31}, "xgboost": {"n_entities": 3000, "macro_f0_5": 0.9548132362906878, "precision": 0.9814413857098669, "recall": 0.9132687326105727, "micro_f0_5": 0.9670046120400658, "true_positives": 9519, "false_positives": 180, "false_negatives": 904, "true_links": 10423, "predicted_links": 9699, "singleton_count": 165, "correct_singletons": 156, "false_singleton_merges": 9, "singleton_accuracy": 0.9454545454545454, "avg_predicted_matches_per_s1": 3.233, "false_positives_per_s1": 0.06, "false_negatives_per_s1": 0.30133333333333334, "threshold": 0.366}}, "runtime_seconds": 4005.743122238, "scope": "sampled anchors against entire fold target pools", "public_leaderboard_comparable": false, "caveats": ["Training data has no France examples; target test distribution differs.", "Pilot validation is sampled, not the full holdout."]}

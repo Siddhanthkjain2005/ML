@@ -1,0 +1,13 @@
+{
+  "cache": "work/retrieval_cache_v1",
+  "calibration_anchors": 3000,
+  "k": 20,
+  "output": "experiments/pilot_v1",
+  "seed": 42,
+  "splits": "work/splits_v1",
+  "target_batch": 250000,
+  "threads": 4,
+  "train_anchors": 6000,
+  "validation_anchors": 3000,
+  "vectorizers": "work/vectorizers_v1.joblib"
+}

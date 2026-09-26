@@ -1,0 +1,23 @@
+{
+  "avg_predicted_matches_per_s1": 3.326,
+  "correct_singletons": 155,
+  "false_negatives": 559,
+  "false_negatives_per_s1": 0.18633333333333332,
+  "false_positives": 84,
+  "false_positives_per_s1": 0.028,
+  "false_singleton_merges": 5,
+  "macro_f0_5": 0.974997584299155,
+  "micro_f0_5": 0.9822297230219399,
+  "n_entities": 3000,
+  "precision": 0.9915814792543596,
+  "predicted_links": 9978,
+  "recall": 0.9465225294173921,
+  "selection_partition": "calibration",
+  "singleton_accuracy": 0.96875,
+  "singleton_count": 160,
+  "threshold": 0.425,
+  "threshold_strategy": "coarse grid plus local .001 refinement",
+  "thresholds_evaluated": 134,
+  "true_links": 10453,
+  "true_positives": 9894
+}

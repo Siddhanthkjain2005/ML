@@ -1,6 +1,6 @@
 # Verified project state — 2026-09-25
 
-Phase 0 complete; evidence in PHASE0_AUDIT.md and audit/*.json. Full baseline experiment now running on AWS.
+Phase 0 complete; evidence in PHASE0_AUDIT.md and audit/*.json. AWS baseline was launched; results await recovery after the AWS session expired. See reports/RECOVERY.md for the latest state.
 
 - Inputs: project.zip; ps.docx. Source schemas and labels internally consistent.
 - Train S1/S2/S3: 2,206,821 / 5,034,616 / 5,285,603. Test S1/S2/S3: 1,732,544 / 4,887,273 / 5,082,316.

@@ -1,0 +1,11 @@
+{
+  "candidate_pairs": 540,
+  "complete": true,
+  "rows": 30,
+  "selected_pairs": 48,
+  "sha256": {
+    "candidate_pairs.tsv": "50c488fb1e4653fe6b9b44eb95b74e8116bcbc7bd9921e3f8e380b3263490d5a",
+    "matching_results.tsv": "6920014202cbb0073cc0cc13775c6a00827cf7d0154110ec7371287085952521"
+  },
+  "validation_status": "Must run strict and official membership validators before packaging"
+}

@@ -1,0 +1,18 @@
+{"time": "2026-09-25T15:07:04Z", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:06Z", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:07Z", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:09Z", "stage": "retrieval_shard_complete", "completed_shards": 4, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:10Z", "stage": "retrieval_shard_complete", "completed_shards": 5, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:11Z", "stage": "retrieval_shard_complete", "completed_shards": 6, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:13Z", "stage": "retrieval_shard_complete", "completed_shards": 7, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:14Z", "stage": "retrieval_shard_complete", "completed_shards": 8, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:15Z", "stage": "retrieval_shard_complete", "completed_shards": 9, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:17Z", "stage": "retrieval_shard_complete", "completed_shards": 10, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:18Z", "stage": "retrieval_shard_complete", "completed_shards": 11, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:19Z", "stage": "retrieval_shard_complete", "completed_shards": 12, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:21Z", "stage": "retrieval_shard_complete", "completed_shards": 13, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:22Z", "stage": "retrieval_shard_complete", "completed_shards": 14, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:24Z", "stage": "retrieval_shard_complete", "completed_shards": 15, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:25Z", "stage": "retrieval_shard_complete", "completed_shards": 16, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:07:25Z", "stage": "retrieval_shard_complete", "completed_shards": 17, "total_shards": 17, "target_source": "S2"}
+{"scope": "1000 training anchors; entire S2 training pool; sparse branches only; not validation", "query_feature_limit": 32, "k": 40, "runtime_seconds": 48.28827307199981, "counts": {"overall": {"true": 1689, "retrieved": 1631, "lost_vs_base": 15, "gained_vs_base": 11, "recall": 0.9656601539372409}, "US": {"true": 1014, "retrieved": 995, "lost_vs_base": 4, "gained_vs_base": 4, "recall": 0.9812623274161736}, "India": {"true": 675, "retrieved": 636, "lost_vs_base": 11, "gained_vs_base": 7, "recall": 0.9422222222222222}}}

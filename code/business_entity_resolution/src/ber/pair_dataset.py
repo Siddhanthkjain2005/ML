@@ -9,13 +9,19 @@ in all three channels, even when that channel did not retrieve the pair.
 from __future__ import annotations
 
 import csv
+from collections import deque
+from concurrent.futures import ProcessPoolExecutor
+from contextlib import ExitStack
 import hashlib
 import importlib.metadata
 import json
+import multiprocessing
+from multiprocessing.util import Finalize
 import os
 from pathlib import Path
 import re
 import sqlite3
+import pickle
 import time
 from typing import Any, Callable, Mapping
 
@@ -173,9 +179,16 @@ def _build_lookup(path: Path, target_files: Mapping[int, str | Path], needed: np
 
 def _lookup_records(connection: sqlite3.Connection, codes: np.ndarray) -> dict[int, Any]:
     result = {}
+    prepared = any(row[1] == 'prepared' for row in connection.execute('PRAGMA table_info(records)'))
     for start in range(0, len(codes), 500):
         chunk = [int(value) for value in codes[start:start + 500]]
         marks = ",".join("?" for _ in chunk)
+        if prepared:
+            for code, payload in connection.execute(f'SELECT code,prepared FROM records WHERE code IN ({marks})', chunk):
+                # The source-index file is built locally and checksum-verified
+                # before lookup. Never use an untrusted external pickle cache.
+                result[code] = pickle.loads(payload)
+            continue
         for code, name, address, country in connection.execute(f"SELECT code,name,address,country FROM records WHERE code IN ({marks})", chunk):
             result[code] = prepare_record({
                 "entity_id": f"S{code // TARGET_FACTOR}-{code % TARGET_FACTOR}",
@@ -235,10 +248,66 @@ def _compute_batch(queries, arrays, start, end, lookup, counts, vectorizers) -> 
     return result
 
 
+_WORKER_STATE = None
+
+
+def _init_feature_worker(candidate_dir, lookup_path, vectorizers, counts):
+    """Open worker-local read-only inputs once; never pass writable artifacts."""
+    from threadpoolctl import threadpool_limits
+
+    global _WORKER_STATE
+    limits = threadpool_limits(limits=1)
+    candidate_dir = Path(candidate_dir)
+    with (candidate_dir / "queries.jsonl").open(encoding="utf-8") as handle:
+        queries = [prepare_record(json.loads(line)) for line in handle]
+    arrays = {name: np.load(candidate_dir / f"{name}.npy", mmap_mode="r", allow_pickle=False)
+              for name in ("anchors", "target_codes", "masks", "scores", "ranks")}
+    lookup = sqlite3.connect(f"file:{lookup_path}?mode=ro", uri=True)
+    lookup.execute("PRAGMA query_only=ON")
+    # Multiprocessing workers do not reliably run ordinary atexit callbacks.
+    Finalize(lookup, lookup.close, exitpriority=10)
+    _WORKER_STATE = (queries, arrays, lookup, counts, vectorizers, limits)
+
+
+def _compute_worker_batch(start, end):
+    if _WORKER_STATE is None:
+        raise RuntimeError("Feature worker is not initialized")
+    queries, arrays, lookup, counts, vectorizers, _ = _WORKER_STATE
+    return _compute_batch(queries, arrays, start, end, lookup, counts, vectorizers)
+
+
+def _ordered_parallel_batches(pool, start, total, batch_size, workers):
+    """Bound submitted/results-in-memory work and yield in candidate row order."""
+    pending = deque()
+    next_start = start
+    try:
+        while next_start < total or pending:
+            while next_start < total and len(pending) < 2 * workers:
+                end = min(next_start + batch_size, total)
+                pending.append((next_start, end, pool.submit(_compute_worker_batch, next_start, end)))
+                next_start = end
+            first, end, future = pending.popleft()
+            yield first, end, future.result()
+    finally:
+        for _, _, future in pending:
+            future.cancel()
+
+
+def _candidate_counts(anchors, query_count):
+    # Avoid converting a full, potentially 100M-row uint32 array to int64.
+    counts = np.zeros(query_count, dtype=np.int64)
+    for start in range(0, len(anchors), 1_000_000):
+        counts += np.bincount(np.asarray(anchors[start:start + 1_000_000], dtype=np.int64),
+                              minlength=query_count)
+    return counts
+
+
 def build_pair_dataset(
     candidate_dir: str | Path, target_files: Mapping[int, str | Path],
     vectorizers: Mapping[str, Any], output_dir: str | Path, batch_size: int = 10_000,
     *, progress: Callable[[dict[str, Any]], None] | None = None,
+    source_index_path: str | Path | None = None,
+    workers: int = 1,
 ) -> dict[str, Any]:
     """Build or safely resume X.npy, preserving exact saved candidate ordering.
 
@@ -247,12 +316,30 @@ def build_pair_dataset(
     Resume rejects changed candidate text/arrays, targets, vectorizers, source
     code, or batch size, and verifies checksums of previously completed batches.
     Neither labels.npy nor truth_counts.npy is opened by this function.
+    Optional spawned workers read independent SQLite connections and candidate
+    memory maps. Only this parent writes/checkpoints, in original row order,
+    with at most 2 * workers batches submitted at once. Native worker threads
+    are limited to one; callers must use a guarded entry point for spawn.
     """
     if not isinstance(batch_size, int) or batch_size < 1:
         raise ValueError("batch_size must be a positive integer")
+    if not isinstance(workers, int) or isinstance(workers, bool) or workers < 1:
+        raise ValueError("workers must be a positive integer")
     started = time.perf_counter()
     candidate_dir, output = Path(candidate_dir).resolve(), Path(output_dir).resolve()
     config, raw_queries, arrays = _inputs(candidate_dir, target_files, vectorizers, batch_size)
+    if workers > 1:
+        config["workers"] = workers
+    if source_index_path is not None:
+        source_index_path = Path(source_index_path).resolve()
+        index_meta = json.loads((source_index_path.parent / 'manifest.json').read_text())
+        for source in (2, 3):
+            if index_meta['config'][str(source)] != config['target_inputs'][str(source)]:
+                raise ValueError('Source index does not match target inputs')
+        checksum = _digest(source_index_path)
+        if checksum != index_meta['sha256']:
+            raise ValueError('Source index corrupted')
+        config['source_index_sha256'] = checksum
     shape = (len(arrays["anchors"]), len(PAIR_FEATURE_NAMES))
     output.mkdir(parents=True, exist_ok=True)
     metadata_path = output / "metadata.json"
@@ -268,10 +355,13 @@ def build_pair_dataset(
                     "lookup_complete": False, "batches": [], "runtime_seconds": 0.0}
         _write_json(metadata_path, metadata)
     previous_runtime = metadata["runtime_seconds"]
-    lookup_path = output / "targets.sqlite"
+    lookup_path = Path(source_index_path) if source_index_path is not None else output / "targets.sqlite"
     if not metadata["lookup_complete"]:
         needed = np.unique(arrays["target_codes"])
-        metadata["target_lookup"] = _build_lookup(lookup_path, target_files, needed)
+        if source_index_path is None:
+            metadata["target_lookup"] = _build_lookup(lookup_path, target_files, needed)
+        else:
+            metadata['target_lookup'] = {'shared_source_index': str(lookup_path), 'selected_unique_targets': len(needed)}
         metadata["lookup_sha256"] = _digest(lookup_path)
         metadata["lookup_complete"] = True
         _write_json(metadata_path, metadata)
@@ -300,23 +390,39 @@ def build_pair_dataset(
         position = batch["end"]
     if position != metadata["rows_completed"]:
         raise ValueError("Feature checkpoint row count does not match completed batches")
-    queries = [prepare_record(row) for row in raw_queries]
-    counts = np.bincount(np.asarray(arrays["anchors"], dtype=np.int64), minlength=len(queries))
-    lookup = sqlite3.connect(f"file:{lookup_path}?mode=ro", uri=True)
+    counts = _candidate_counts(arrays["anchors"], len(raw_queries))
     try:
-        for start in range(position, shape[0], batch_size):
-            end = min(start + batch_size, shape[0])
-            values = _compute_batch(queries, arrays, start, end, lookup, counts, vectorizers)
-            matrix[start:end] = values
-            matrix.flush()
-            metadata["batches"].append({"start": start, "end": end, "sha256": _array_digest(values)})
-            metadata["rows_completed"] = end
-            metadata["runtime_seconds"] = previous_runtime + time.perf_counter() - started
-            _write_json(metadata_path, metadata)
-            if progress:
-                progress({"stage": "pair_features", "rows_completed": end, "total_rows": shape[0]})
+        with ExitStack() as resources:
+            if workers == 1:
+                queries = [prepare_record(row) for row in raw_queries]
+                lookup = sqlite3.connect(f"file:{lookup_path}?mode=ro", uri=True)
+                resources.callback(lookup.close)
+                batches = ((start, min(start + batch_size, shape[0]),
+                            _compute_batch(queries, arrays, start, min(start + batch_size, shape[0]),
+                                           lookup, counts, vectorizers))
+                           for start in range(position, shape[0], batch_size))
+            elif position < shape[0]:
+                pool = ProcessPoolExecutor(max_workers=workers, mp_context=multiprocessing.get_context("spawn"),
+                    initializer=_init_feature_worker,
+                    initargs=(str(candidate_dir), str(lookup_path), vectorizers, counts))
+                resources.callback(pool.shutdown, wait=True, cancel_futures=True)
+                batches = _ordered_parallel_batches(pool, position, shape[0], batch_size, workers)
+            else:
+                batches = iter(())
+            try:
+                for start, end, values in batches:
+                    matrix[start:end] = values
+                    matrix.flush()
+                    metadata["batches"].append({"start": start, "end": end, "sha256": _array_digest(values)})
+                    metadata["rows_completed"] = end
+                    metadata["runtime_seconds"] = previous_runtime + time.perf_counter() - started
+                    _write_json(metadata_path, metadata)
+                    if progress:
+                        progress({"stage": "pair_features", "rows_completed": end, "total_rows": shape[0]})
+            finally:
+                if hasattr(batches, "close"):
+                    batches.close()
     finally:
-        lookup.close()
         matrix.flush()
     metadata["complete"] = True
     metadata["X_sha256"] = _digest(X_path)

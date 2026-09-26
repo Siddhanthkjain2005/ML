@@ -1,0 +1,15 @@
+{"branch": "name_char", "seconds": 0.5332562850003342, "ties": 7, "queries": 100, "targets": 250000, "nnz": 13239339}
+{"branch": "name_word", "seconds": 0.03185118900000816, "ties": 39, "queries": 100, "targets": 250000, "nnz": 956501}
+{"branch": "address_char", "seconds": 1.0055897950001054, "ties": 1, "queries": 100, "targets": 250000, "nnz": 20365060}
+{"branch": "name_char", "full_seconds": 0.33114782800021203, "queries": 100}
+{"branch": "name_word", "full_seconds": 0.12866870400011976, "queries": 100}
+{"branch": "address_char", "full_seconds": 0.26903794399959224, "queries": 100}
+{"branch": "name_char", "query_features": 4, "full_seconds": 0.03481358299995918, "queries": 100}
+{"branch": "name_word", "query_features": 4, "full_seconds": 0.1309618639998007, "queries": 100}
+{"branch": "address_char", "query_features": 4, "full_seconds": 0.030229569999846717, "queries": 100}
+{"branch": "name_char", "query_features": 8, "full_seconds": 0.03674605200012593, "queries": 100}
+{"branch": "name_word", "query_features": 8, "full_seconds": 0.13065666900001816, "queries": 100}
+{"branch": "address_char", "query_features": 8, "full_seconds": 0.032116140999733034, "queries": 100}
+{"branch": "name_char", "query_features": 12, "full_seconds": 0.0359313829999337, "queries": 100}
+{"branch": "name_word", "query_features": 12, "full_seconds": 0.13339083600021695, "queries": 100}
+{"branch": "address_char", "query_features": 12, "full_seconds": 0.03206518300021344, "queries": 100}

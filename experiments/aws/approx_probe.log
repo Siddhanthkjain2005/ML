@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/amazonml/scripts/approximate_probe.py", line 10, in <module>
+    result=retrieve_sparse(queries,'work/splits_v1/train/source2.tsv',v,'experiments/approx_probe_s2',k=20,threads=2,target_batch=250000,query_batch=512,cache_dir='work/retrieval_cache_v1/train/source2',query_feature_limit=12,progress=event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/amazonml/code/business_entity_resolution/src/ber/retrieval.py", line 385, in retrieve_sparse
+    progress({"stage": "retrieval_shard_complete", "completed_shards": completed,
+TypeError: event() takes 0 positional arguments but 1 was given
+{"time": "2026-09-25T15:04:52Z", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:53Z", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:54Z", "stage": "retrieval_shard_complete", "completed_shards": 4, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:55Z", "stage": "retrieval_shard_complete", "completed_shards": 5, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:56Z", "stage": "retrieval_shard_complete", "completed_shards": 6, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:57Z", "stage": "retrieval_shard_complete", "completed_shards": 7, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:58Z", "stage": "retrieval_shard_complete", "completed_shards": 8, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:04:59Z", "stage": "retrieval_shard_complete", "completed_shards": 9, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:00Z", "stage": "retrieval_shard_complete", "completed_shards": 10, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:01Z", "stage": "retrieval_shard_complete", "completed_shards": 11, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:01Z", "stage": "retrieval_shard_complete", "completed_shards": 12, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:02Z", "stage": "retrieval_shard_complete", "completed_shards": 13, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:03Z", "stage": "retrieval_shard_complete", "completed_shards": 14, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:04Z", "stage": "retrieval_shard_complete", "completed_shards": 15, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:05Z", "stage": "retrieval_shard_complete", "completed_shards": 16, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:05:05Z", "stage": "retrieval_shard_complete", "completed_shards": 17, "total_shards": 17, "target_source": "S2"}
+{"scope": "1000 training anchors; entire S2 training pool; sparse branches only; not validation", "query_feature_limit": 12, "runtime_seconds": 37.093078750999666, "counts": {"overall": {"true": 1689, "retrieved": 1566, "lost_vs_base": 74, "gained_vs_base": 5, "recall": 0.9271758436944938}, "US": {"true": 1014, "retrieved": 962, "lost_vs_base": 36, "gained_vs_base": 3, "recall": 0.9487179487179487}, "India": {"true": 675, "retrieved": 604, "lost_vs_base": 38, "gained_vs_base": 2, "recall": 0.8948148148148148}}}

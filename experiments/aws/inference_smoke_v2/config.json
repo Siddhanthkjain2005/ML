@@ -1,0 +1,36 @@
+{
+  "batch_anchors": 11,
+  "code": {
+    "__init__.py": "4be359fb79b4d792d075c587efd99b43b3a3df2652ce7fd41c3c65a25412911f",
+    "candidates.py": "6b1ead258298af262d52da23c718a94e13824fb370010236b13770543534eaa3",
+    "data.py": "0356a0d77b36d4bf5b7f54cf34883a31ebbdae622cfdc7147286cb5b7572a2f8",
+    "error_analysis.py": "467324e81441c719e11a03874c80e3c9735fa5ba19ddab0c1b46c34417ed7b5d",
+    "features.py": "e9fd695faebb9c6d1c2397eebd975845aa69404a912ba41541f9a07708cded89",
+    "inference.py": "22f9d5f15e02e6ba4a3d4439ebd8d9b41c1e3b23b03ca9d70fb10cf593173e9a",
+    "metrics.py": "6d5b48f5a1e913b55eceb7bfc491f49d8dc77cb9d0031e2ae3ee2106c70a33cc",
+    "model.py": "5f83d0c09a9ecbe790c86a066883f294b2758739a75cfb3d6497572e2e54765d",
+    "oracle.py": "8954c4dfbac22d747f12915d66afbd8a692c56b2a5556da3a6f329910a035c7b",
+    "pair_dataset.py": "867bd1f525c918bf8de4f928e92739c32dff90cef83b2c4174712b0300fe89b2",
+    "pipeline.py": "8183505b90aaabc621b7f9dc5b4b95bf92f5660898b0faf0d213210b9a4d02d8",
+    "prepare.py": "99062e9041bd66b5a455e19acbd844963eb8dc3142b53bb054fca76c18b16fb8",
+    "retrieval.py": "c92d14b2e82d799a531dfd8346eb829555bf6265c1040d4e82aef03e3caabbb8",
+    "romanization.py": "c0cd5383f3810f2c43c5199a6a9e738420517944812ac19a69e83e61cfbbfb62",
+    "source_index.py": "ec0f1f49fb1c520bb2e0b4b1f901d8e5a6e49a621df0e859075870c3d05720c2",
+    "strict_validate.py": "fd443323b7db0c33669cb2f4e7fc2f51d2f74cda3318cd1243651b42a4344fe1",
+    "text.py": "379cbcf90ab6b0a350c668c44aef873e9d59ec73d49d0d977a1b022b79fba013"
+  },
+  "inputs": {
+    "1": "d3dfaf0c369123bd42d94d6dacc70813abcbc903db5676b1efa8ec4470be6be2",
+    "2": "3ce1368a50412c75fcd8993ef3dc9a861af0badf7cbaad7f507e2686342e92a9",
+    "3": "5ae28a42925f61e556fe87868efd67fb9e7f3d6df00e7150d2743cb0b4ba52f5"
+  },
+  "k": 5,
+  "keep_intermediates": false,
+  "model": "f6b90a377f0285ba5399b4669624616842cec84e62e57fbad353b2182ef0bccd",
+  "query_feature_limit": null,
+  "shared_index": true,
+  "target_batch": 20,
+  "threads": 1,
+  "threshold": 0.557,
+  "vectorizers": "68a8900ed0b2ec0a6c17c8e5d7f15314dbc0d4376c2ed2831c8e1ae507bf97d3"
+}

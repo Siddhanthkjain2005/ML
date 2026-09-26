@@ -1,0 +1,3 @@
+{"branch": "name_char", "seconds": 0.3647072619996834, "ties": 7, "queries": 100, "targets": 250000, "nnz": 13239339}
+{"branch": "name_word", "seconds": 0.03338168200025393, "ties": 39, "queries": 100, "targets": 250000, "nnz": 956501}
+{"branch": "address_char", "seconds": 0.6418805640000755, "ties": 1, "queries": 100, "targets": 250000, "nnz": 20365060}

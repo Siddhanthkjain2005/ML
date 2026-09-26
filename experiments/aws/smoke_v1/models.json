@@ -1,0 +1,4 @@
+{
+  "linear": "experiments/smoke_v1/models/linear/model.joblib",
+  "xgboost": "experiments/smoke_v1/models/xgboost/model.joblib"
+}

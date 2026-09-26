@@ -130,3 +130,50 @@ class RetrievalTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_distinctive_query_keeps_rare_fragments_and_empty_rows():
+    from scipy import sparse
+    from ber.retrieval import distinctive_query_matrix
+    matrix=sparse.csr_matrix(np.array([[.9,.2,.3,.4],[0,0,0,0]],dtype=np.float32))
+    result=distinctive_query_matrix(matrix,np.array([1.,3.,3.,2.]),2)
+    assert result[0].indices.tolist()==[1,2]
+    assert result[1].nnz==0
+    assert np.isclose(float(result[0].multiply(result[0]).sum()),1.)
+    assert matrix.nnz==4
+
+
+def test_below_global_cutoff_ties_do_not_change_merged_results():
+    from scipy import sparse
+    from ber.retrieval import _multiply_topk, _merge_topk
+    q=sparse.csr_matrix([[1.,0.]],dtype=np.float32)
+    t=sparse.csr_matrix([[.2,0.]]*50,dtype=np.float32)
+    ids=np.arange(50,dtype=np.int64)
+    full=next(_multiply_topk(q,t,t.T.tocsr(),ids,2,1))
+    fast=next(_multiply_topk(q,t,t.T.tocsr(),ids,2,1,np.array([.8])))
+    a=_merge_topk(np.array([100,101]),np.array([.9,.8]),*full,2)
+    b=_merge_topk(np.array([100,101]),np.array([.9,.8]),*fast,2)
+    np.testing.assert_array_equal(a[0],b[0]);np.testing.assert_array_equal(a[1],b[1])
+
+
+def test_parallel_cache_preserves_retrieval(tmp_path):
+    helper=RetrievalTests();train,vectors=helper.fixtures(tmp_path)
+    path=tmp_path/'targets.tsv';write_tsv(path,[dict(r,entity_id=r['entity_id'].replace('S1','S2')) for r in train])
+    a=retrieve_sparse(train,path,vectors,tmp_path/'serial',k=2,threads=1,target_batch=3)
+    b=retrieve_sparse(train,path,vectors,tmp_path/'parallel',k=2,threads=1,target_batch=3,cache_workers=2)
+    for branch in BRANCHES:
+        np.testing.assert_array_equal(a[branch]['target_ids'],b[branch]['target_ids'])
+        np.testing.assert_array_equal(a[branch]['scores'],b[branch]['scores'])
+
+
+def test_approximate_pool_reranks_with_actual_full_cosine(tmp_path):
+    helper=RetrievalTests();train,vectors=helper.fixtures(tmp_path)
+    targets=[dict(r,entity_id=r['entity_id'].replace('S1','S2')) for r in train]
+    path=tmp_path/'targets.tsv';write_tsv(path,targets)
+    result=retrieve_sparse(train,path,vectors,tmp_path/'reranked',k=2,threads=1,target_batch=3,query_feature_limit=4,rerank_pool=5)
+    for branch in BRANCHES:
+        field='business_address' if branch=='address_char' else 'business_name'
+        q=vectors[branch].transform([normalize_text(r[field]) for r in train]);t=vectors[branch].transform([normalize_text(r[field]) for r in targets]);expected=(q@t.T).toarray()
+        for i in range(len(train)):
+            for code,score in zip(result[branch]['target_ids'][i],result[branch]['scores'][i]):
+                if code>=0:assert np.isclose(score,expected[i,code-1],atol=1e-6)

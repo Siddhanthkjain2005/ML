@@ -115,7 +115,8 @@ def _result(output: Path, manifest: dict) -> dict:
 
 def build_candidates(query_records: Sequence[Mapping[str, str]], target_files: Mapping[int, str | Path],
                      retrieval_results: Mapping[int, dict], output_dir: str | Path,
-                     truth: Mapping[str, set[str]] | None = None, exact_cap: int = 200) -> dict:
+                     truth: Mapping[str, set[str]] | None = None, exact_cap: int = 200,
+                     *, source_index_path: str | Path | None = None) -> dict:
     """Union three sparse branches and two exact rescues without using labels.
 
     Sparse results are the dictionaries returned by retrieve_sparse. Target codes
@@ -181,6 +182,17 @@ def build_candidates(query_records: Sequence[Mapping[str, str]], target_files: M
         "truth_sha256": _json_digest([sorted(values) for values in truth_codes]) if truth_codes is not None else None,
         "normalizer_sha256": _digest(Path(__file__).with_name("text.py")), "implementation_sha256": _digest(Path(__file__)),
     }
+    index_meta = None
+    if source_index_path is not None:
+        source_index_path = Path(source_index_path).resolve()
+        index_meta = json.loads((source_index_path.parent / 'manifest.json').read_text())
+        for source in (2, 3):
+            if index_meta['config'][str(source)] != config['target_files'][str(source)]:
+                raise ValueError('Source index does not match target files')
+        checksum = _digest(source_index_path)
+        if checksum != index_meta['sha256'] or index_meta['config']['normalizer_sha256'] != config['normalizer_sha256']:
+            raise ValueError('Source index corrupted or normalizer changed')
+        config['source_index_sha256'] = checksum
     output = Path(output_dir).resolve()
     if (output / "manifest.json").exists():
         previous = json.loads((output / "manifest.json").read_text())
@@ -226,7 +238,13 @@ def build_candidates(query_records: Sequence[Mapping[str, str]], target_files: M
             seen[hit] = True
             buffered_ids.clear()
 
-        for row in _rows(files[source]):
+        if source_index_path is None:
+            raw_rows = _rows(files[source])
+        else:
+            from .source_index import iter_selected_records
+            raw_rows = iter_selected_records(source_index_path, source,
+                required + source * TARGET_MULTIPLIER, name_queries, address_queries)
+        for row in raw_rows:
             count += 1
             code = encode_target_id(row["entity_id"])
             if code // TARGET_MULTIPLIER != source:
@@ -258,7 +276,7 @@ def build_candidates(query_records: Sequence[Mapping[str, str]], target_files: M
         check_buffer()
         if not np.all(seen):
             raise ValueError(f"Sparse results reference missing Source {source} targets: {required[~seen][:5].tolist()}")
-        target_rows[str(source)] = count
+        target_rows[str(source)] = count if index_meta is None else index_meta['counts'][str(source)]
         if source_stats[source] != (files[source].stat().st_size, files[source].stat().st_mtime_ns):
             raise ValueError("Target file changed during candidate construction")
     anchor_values, target_values, mask_values = array.array("I"), array.array("Q"), array.array("H")

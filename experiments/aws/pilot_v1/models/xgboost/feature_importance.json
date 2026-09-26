@@ -1,0 +1,289 @@
+{
+  "features": [
+    {
+      "feature": "address_numbers_equal",
+      "importance": 0.825343906879425
+    },
+    {
+      "feature": "address_numbers_jaccard",
+      "importance": 0.05369620770215988
+    },
+    {
+      "feature": "retrieval_rank_reciprocal",
+      "importance": 0.021997636184096336
+    },
+    {
+      "feature": "address_numbers_conflict",
+      "importance": 0.01648503728210926
+    },
+    {
+      "feature": "actual_name_char_cosine",
+      "importance": 0.015373632311820984
+    },
+    {
+      "feature": "retrieval_address_rank_reciprocal",
+      "importance": 0.009939036332070827
+    },
+    {
+      "feature": "retrieval_name_char_rank_reciprocal",
+      "importance": 0.005897117778658867
+    },
+    {
+      "feature": "address_numbers_both_present",
+      "importance": 0.004682566504925489
+    },
+    {
+      "feature": "address_right_missing",
+      "importance": 0.004647520370781422
+    },
+    {
+      "feature": "address_token_containment",
+      "importance": 0.004407201893627644
+    },
+    {
+      "feature": "actual_address_char_cosine",
+      "importance": 0.0035497606731951237
+    },
+    {
+      "feature": "name_acronym_exact",
+      "importance": 0.0034448159858584404
+    },
+    {
+      "feature": "address_token_count_ratio",
+      "importance": 0.0031525909435003996
+    },
+    {
+      "feature": "address_numbers_disagree",
+      "importance": 0.002599684288725257
+    },
+    {
+      "feature": "name_token_sort_similarity",
+      "importance": 0.0025376430712640285
+    },
+    {
+      "feature": "retrieval_score",
+      "importance": 0.0016783555038273335
+    },
+    {
+      "feature": "name_token_count_ratio",
+      "importance": 0.0016589307924732566
+    },
+    {
+      "feature": "name_folded_exact",
+      "importance": 0.0015831951750442386
+    },
+    {
+      "feature": "name_token_jaccard",
+      "importance": 0.0015155147993937135
+    },
+    {
+      "feature": "retrieval_name_score",
+      "importance": 0.0012409697519615293
+    },
+    {
+      "feature": "address_token_sort_similarity",
+      "importance": 0.0012376769445836544
+    },
+    {
+      "feature": "name_legal_exact",
+      "importance": 0.001101290574297309
+    },
+    {
+      "feature": "name_edit_similarity",
+      "importance": 0.001021196716465056
+    },
+    {
+      "feature": "actual_name_word_cosine",
+      "importance": 0.0008336477912962437
+    },
+    {
+      "feature": "address_numbers_overlap",
+      "importance": 0.0008285604999400675
+    },
+    {
+      "feature": "name_core_exact",
+      "importance": 0.0008003152906894684
+    },
+    {
+      "feature": "name_token_containment",
+      "importance": 0.0007998642977327108
+    },
+    {
+      "feature": "address_token_jaccard",
+      "importance": 0.0007618042873218656
+    },
+    {
+      "feature": "retrieval_name_char_score",
+      "importance": 0.0006335340440273285
+    },
+    {
+      "feature": "name_length_ratio",
+      "importance": 0.0005948200705461204
+    },
+    {
+      "feature": "retrieval_candidate_count_log1p",
+      "importance": 0.0005796099430881441
+    },
+    {
+      "feature": "name_token_overlap",
+      "importance": 0.0005714725703001022
+    },
+    {
+      "feature": "address_length_ratio",
+      "importance": 0.0005566721083596349
+    },
+    {
+      "feature": "address_token_overlap",
+      "importance": 0.000536665553227067
+    },
+    {
+      "feature": "retrieval_name_word_rank_reciprocal",
+      "importance": 0.0004739479336421937
+    },
+    {
+      "feature": "retrieval_name_word_score",
+      "importance": 0.0003936562279704958
+    },
+    {
+      "feature": "retrieval_name_token",
+      "importance": 0.0003673529135994613
+    },
+    {
+      "feature": "right_source2",
+      "importance": 0.0003392061626072973
+    },
+    {
+      "feature": "retrieval_address_score",
+      "importance": 0.00031674146885052323
+    },
+    {
+      "feature": "address_edit_similarity",
+      "importance": 0.0002941303246188909
+    },
+    {
+      "feature": "right_source3",
+      "importance": 0.00025604100665077567
+    },
+    {
+      "feature": "retrieval_address_char_rank_reciprocal",
+      "importance": 0.00024707941338419914
+    },
+    {
+      "feature": "retrieval_name_rank_reciprocal",
+      "importance": 0.00024191093689296395
+    },
+    {
+      "feature": "retrieval_name_exact",
+      "importance": 0.00023247703211382031
+    },
+    {
+      "feature": "retrieval_address_char_score",
+      "importance": 0.00021174445282667875
+    },
+    {
+      "feature": "name_numbers_jaccard",
+      "importance": 0.00020131919882260263
+    },
+    {
+      "feature": "name_numbers_overlap",
+      "importance": 8.629107469459996e-05
+    },
+    {
+      "feature": "name_exact",
+      "importance": 4.973877003067173e-05
+    },
+    {
+      "feature": "name_numbers_both_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_equal",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_conflict",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_disagree",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_left_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_right_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_folded_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_left_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_acronym_matches_name",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_equal",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_conflict",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_left_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_right_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "left_source1",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_char",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_char",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_token",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_number_block",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_sorted_neighborhood",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_word_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_word_rank_reciprocal",
+      "importance": 0.0
+    }
+  ],
+  "kind": "XGBoost normalized gain"
+}

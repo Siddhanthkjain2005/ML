@@ -1,0 +1,54 @@
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "target_cache_shard", "shard": 0, "rows": 20}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "target_cache_shard", "shard": 1, "rows": 10}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "target_cache_shard", "shard": 0, "rows": 20}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "target_cache_shard", "shard": 1, "rows": 10}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T14:50:06Z", "partition": 0, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T14:50:06Z", "stage": "inference_partition_complete", "partition": 0, "rows": 11}
+{"time": "2026-09-25T14:50:06Z", "partition": 1, "stage": "target_cache_shard", "shard": 0, "rows": 20}
+{"time": "2026-09-25T14:50:06Z", "partition": 1, "stage": "target_cache_shard", "shard": 1, "rows": 10}
+{"time": "2026-09-25T14:50:06Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T14:50:06Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T14:50:07Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T14:50:07Z", "partition": 1, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T14:50:07Z", "stage": "inference_partition_complete", "partition": 1, "rows": 11}
+{"time": "2026-09-25T14:50:07Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T14:50:07Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S2"}
+{"time": "2026-09-25T14:50:07Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T14:50:07Z", "partition": 2, "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 2, "target_source": "S3"}
+{"time": "2026-09-25T14:50:07Z", "stage": "inference_partition_complete", "partition": 2, "rows": 8}
+{
+  "complete": true,
+  "rows": 30,
+  "candidate_pairs": 540,
+  "selected_pairs": 48,
+  "sha256": {
+    "matching_results.tsv": "6920014202cbb0073cc0cc13775c6a00827cf7d0154110ec7371287085952521",
+    "candidate_pairs.tsv": "50c488fb1e4653fe6b9b44eb95b74e8116bcbc7bd9921e3f8e380b3263490d5a"
+  },
+  "validation_status": "Must run strict and official membership validators before packaging"
+}
+{
+  "valid": true,
+  "error_count": 0,
+  "errors": [],
+  "errors_truncated": false,
+  "counts": {
+    "source1_rows": 30,
+    "france_source1_rows": 0,
+    "source2_rows": 30,
+    "source3_rows": 30,
+    "candidate": {
+      "rows": 30,
+      "pairs": 540,
+      "empty_rows": 0
+    },
+    "matching": {
+      "rows": 30,
+      "pairs": 48,
+      "empty_rows": 6
+    }
+  }
+}

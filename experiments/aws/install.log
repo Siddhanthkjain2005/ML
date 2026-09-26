@@ -1,0 +1,77 @@
+Collecting numpy==2.1.3 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 1))
+  Downloading numpy-2.1.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 5.8 MB/s eta 0:00:00
+Collecting scipy==1.16.1 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 2))
+  Downloading scipy-1.16.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 9.0 MB/s eta 0:00:00
+Collecting pandas==2.2.3 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 3))
+  Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 12.5 MB/s eta 0:00:00
+Collecting scikit-learn==1.7.2 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 4))
+  Downloading scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting xgboost==3.1.2 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 5))
+  Downloading xgboost-3.1.2-py3-none-manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+Collecting rapidfuzz==3.14.1 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 6))
+  Downloading rapidfuzz-3.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (12 kB)
+Collecting sparse-dot-topn==1.2.0 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 7))
+  Downloading sparse_dot_topn-1.2.0-cp312-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Collecting joblib==1.5.2 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 8))
+  Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting threadpoolctl==3.6.0 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 9))
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting psutil==7.2.1 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 10))
+  Downloading psutil-7.2.1-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting pytest==8.3.4 (from -r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 11))
+  Downloading pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 3))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas==2.2.3->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 3))
+  Downloading pytz-2026.4-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas==2.2.3->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 3))
+  Downloading tzdata-2026.4-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting nvidia-nccl-cu12 (from xgboost==3.1.2->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 5))
+  Downloading nvidia_nccl_cu12-2.32.3-py3-none-manylinux_2_27_x86_64.whl.metadata (2.1 kB)
+Collecting iniconfig (from pytest==8.3.4->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 11))
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging (from pytest==8.3.4->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 11))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest==8.3.4->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 11))
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.2.3->-r /home/ubuntu/amazonml/code/business_entity_resolution/requirements.txt (line 3))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-2.1.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.0/16.0 MB 182.8 MB/s eta 0:00:00
+Downloading scipy-1.16.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (35.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.2/35.2 MB 114.0 MB/s eta 0:00:00
+Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 217.0 MB/s eta 0:00:00
+Downloading scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.5/9.5 MB 240.8 MB/s eta 0:00:00
+Downloading xgboost-3.1.2-py3-none-manylinux_2_28_x86_64.whl (115.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 MB 43.1 MB/s eta 0:00:00
+Downloading rapidfuzz-3.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 185.2 MB/s eta 0:00:00
+Downloading sparse_dot_topn-1.2.0-cp312-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (309 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.6/309.6 kB 65.5 MB/s eta 0:00:00
+Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 308.4/308.4 kB 62.0 MB/s eta 0:00:00
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading psutil-7.2.1-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (154 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.7/154.7 kB 36.9 MB/s eta 0:00:00
+Downloading pytest-8.3.4-py3-none-any.whl (343 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.1/343.1 kB 74.1 MB/s eta 0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 44.3 MB/s eta 0:00:00
+Downloading pytz-2026.4-py2.py3-none-any.whl (506 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 506.7/506.7 kB 87.9 MB/s eta 0:00:00
+Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.5/347.5 kB 74.2 MB/s eta 0:00:00
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading nvidia_nccl_cu12-2.32.3-py3-none-manylinux_2_27_x86_64.whl (351.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 351.5/351.5 MB 5.4 MB/s eta 0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 29.4 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, threadpoolctl, six, rapidfuzz, psutil, pluggy, packaging, nvidia-nccl-cu12, numpy, joblib, iniconfig, scipy, python-dateutil, pytest, xgboost, sparse-dot-topn, scikit-learn, pandas
+Successfully installed iniconfig-2.3.0 joblib-1.5.2 numpy-2.1.3 nvidia-nccl-cu12-2.32.3 packaging-26.3 pandas-2.2.3 pluggy-1.6.0 psutil-7.2.1 pytest-8.3.4 python-dateutil-2.9.0.post0 pytz-2026.4 rapidfuzz-3.14.1 scikit-learn-1.7.2 scipy-1.16.1 six-1.17.0 sparse-dot-topn-1.2.0 threadpoolctl-3.6.0 tzdata-2026.4 xgboost-3.1.2

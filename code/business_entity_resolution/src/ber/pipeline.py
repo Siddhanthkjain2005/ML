@@ -71,7 +71,7 @@ def load_arrays(folder):
 
 
 def build_fold(split_root, fold, limit, vectorizers, output, cache_root,
-               *, k, seed, threads, target_batch):
+               *, k, seed, threads, target_batch, query_feature_limit=None, cache_workers=1, rerank_pool=None):
     from .candidates import build_candidates
     from .pair_dataset import build_pair_dataset
     source = Path(split_root) / fold
@@ -86,7 +86,8 @@ def build_fold(split_root, fold, limit, vectorizers, output, cache_root,
         retrieval[s] = retrieve_sparse(queries, path, vectorizers, output / f'retrieval_s{s}',
             k=k, threads=threads, target_batch=target_batch, query_batch=512,
             cache_dir=Path(cache_root) / fold / f'source{s}',
-            progress=lambda message: event(fold=fold, **message))
+            progress=lambda message: event(fold=fold, **message), query_feature_limit=query_feature_limit,
+            cache_workers=cache_workers, rerank_pool=rerank_pool)
     candidate_meta = build_candidates(queries, targets, retrieval, output / 'candidates', truth=truth)
     event(stage='candidates_complete', fold=fold)
     feature_meta = build_pair_dataset(output / 'candidates', targets, vectorizers, output / 'features')
@@ -99,6 +100,10 @@ def run_experiment(args):
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     config = {key: value for key, value in vars(args).items() if key != 'func'}
+    if config.get('query_feature_limit') is None:
+        config.pop('query_feature_limit', None)
+    if config.get('cache_workers', 1) == 1:
+        config.pop('cache_workers', None)
     config_path = output / 'config.json'
     if config_path.exists() and json.loads(config_path.read_text()) != config:
         raise ValueError('Experiment configuration changed; use a new output directory')
@@ -108,7 +113,8 @@ def run_experiment(args):
     # Validation remains untouched until the model and threshold are frozen.
     for fold, limit in [('train', args.train_anchors), ('calibration', args.calibration_anchors)]:
         _, meta = build_fold(args.splits, fold, limit, vectorizers, output / fold, args.cache,
-            k=args.k, seed=args.seed, threads=args.threads, target_batch=args.target_batch)
+            k=args.k, seed=args.seed, threads=args.threads, target_batch=args.target_batch,
+            query_feature_limit=getattr(args, 'query_feature_limit', None), cache_workers=getattr(args, 'cache_workers', 1))
         if feature_names is None:
             feature_names = meta['feature_names']
         elif feature_names != meta['feature_names']:
@@ -131,13 +137,16 @@ def run_experiment(args):
         np.save(output / f'calibration/{name}_scores.npy', scores)
         decisions[name] = select_decision(calibration['truth_counts'], calibration['anchors'],
             calibration['target_codes'], calibration['labels'], scores)
-    selected = max(decisions, key=lambda name: (decisions[name]['macro_f0_5'], name == 'xgboost'))
+    # The official final-model rule requires MIT/Apache 2.0. The sklearn
+    # baseline is diagnostic; its score cannot make it the submitted model.
+    selected = 'xgboost'
     write_json(output / 'frozen_decisions.json', {'selected_model': selected, 'decisions': decisions,
-        'selection_basis': 'calibration entity macro F0.5 only; validation not yet examined'})
+        'selection_basis': 'XGBoost is the eligible Apache-2.0 model; threshold chosen on calibration only; linear diagnostic is not submission eligible'})
     event(stage='calibration_complete', selected_model=selected, decisions=decisions)
     _, validation_meta = build_fold(args.splits, 'validation', args.validation_anchors,
         vectorizers, output / 'validation', args.cache, k=args.k, seed=args.seed,
-        threads=args.threads, target_batch=args.target_batch)
+        threads=args.threads, target_batch=args.target_batch,
+        query_feature_limit=getattr(args, 'query_feature_limit', None), cache_workers=getattr(args, 'cache_workers', 1))
     if feature_names != validation_meta['feature_names']:
         raise ValueError('Validation feature schema differs')
     validation = load_arrays(output / 'validation/candidates')
@@ -172,6 +181,8 @@ def main():
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--threads', type=int, default=4)
     parser.add_argument('--target-batch', type=int, default=250000)
+    parser.add_argument('--query-feature-limit', type=int)
+    parser.add_argument('--cache-workers', type=int, default=1)
     args = parser.parse_args()
     run_experiment(args)
 

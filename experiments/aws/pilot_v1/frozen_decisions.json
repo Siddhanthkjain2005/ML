@@ -1,0 +1,52 @@
+{
+  "decisions": {
+    "linear": {
+      "avg_predicted_matches_per_s1": 3.1696666666666666,
+      "correct_singletons": 144,
+      "false_negatives": 1221,
+      "false_negatives_per_s1": 0.407,
+      "false_positives": 277,
+      "false_positives_per_s1": 0.09233333333333334,
+      "false_singleton_merges": 16,
+      "macro_f0_5": 0.9350453113011966,
+      "micro_f0_5": 0.9519684876982408,
+      "n_entities": 3000,
+      "precision": 0.9708697023872122,
+      "predicted_links": 9509,
+      "recall": 0.8831914282980963,
+      "selection_partition": "calibration",
+      "singleton_accuracy": 0.9,
+      "singleton_count": 160,
+      "threshold": 0.31,
+      "threshold_strategy": "coarse grid plus local .001 refinement",
+      "thresholds_evaluated": 134,
+      "true_links": 10453,
+      "true_positives": 9232
+    },
+    "xgboost": {
+      "avg_predicted_matches_per_s1": 3.2536666666666667,
+      "correct_singletons": 149,
+      "false_negatives": 880,
+      "false_negatives_per_s1": 0.29333333333333333,
+      "false_positives": 188,
+      "false_positives_per_s1": 0.06266666666666666,
+      "false_singleton_merges": 11,
+      "macro_f0_5": 0.9510222570782955,
+      "micro_f0_5": 0.9670283047457422,
+      "n_entities": 3000,
+      "precision": 0.9807396783116484,
+      "predicted_links": 9761,
+      "recall": 0.915813642016646,
+      "selection_partition": "calibration",
+      "singleton_accuracy": 0.93125,
+      "singleton_count": 160,
+      "threshold": 0.366,
+      "threshold_strategy": "coarse grid plus local .001 refinement",
+      "thresholds_evaluated": 134,
+      "true_links": 10453,
+      "true_positives": 9573
+    }
+  },
+  "selected_model": "xgboost",
+  "selection_basis": "XGBoost is the eligible Apache-2.0 model; threshold chosen on calibration only; linear diagnostic is not submission eligible"
+}

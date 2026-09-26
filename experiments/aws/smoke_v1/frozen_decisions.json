@@ -1,0 +1,52 @@
+{
+  "decisions": {
+    "linear": {
+      "avg_predicted_matches_per_s1": 1.6,
+      "correct_singletons": 6,
+      "false_negatives": 0,
+      "false_negatives_per_s1": 0.0,
+      "false_positives": 0,
+      "false_positives_per_s1": 0.0,
+      "false_singleton_merges": 0,
+      "macro_f0_5": 1.0,
+      "micro_f0_5": 1.0,
+      "n_entities": 30,
+      "precision": 1.0,
+      "predicted_links": 48,
+      "recall": 1.0,
+      "selection_partition": "calibration",
+      "singleton_accuracy": 1.0,
+      "singleton_count": 6,
+      "threshold": 0.994,
+      "threshold_strategy": "coarse grid plus local .001 refinement",
+      "thresholds_evaluated": 125,
+      "true_links": 48,
+      "true_positives": 48
+    },
+    "xgboost": {
+      "avg_predicted_matches_per_s1": 1.6,
+      "correct_singletons": 6,
+      "false_negatives": 0,
+      "false_negatives_per_s1": 0.0,
+      "false_positives": 0,
+      "false_positives_per_s1": 0.0,
+      "false_singleton_merges": 0,
+      "macro_f0_5": 1.0,
+      "micro_f0_5": 1.0,
+      "n_entities": 30,
+      "precision": 1.0,
+      "predicted_links": 48,
+      "recall": 1.0,
+      "selection_partition": "calibration",
+      "singleton_accuracy": 1.0,
+      "singleton_count": 6,
+      "threshold": 0.557,
+      "threshold_strategy": "coarse grid plus local .001 refinement",
+      "thresholds_evaluated": 135,
+      "true_links": 48,
+      "true_positives": 48
+    }
+  },
+  "selected_model": "xgboost",
+  "selection_basis": "calibration entity macro F0.5 only; validation not yet examined"
+}

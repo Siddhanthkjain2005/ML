@@ -1,0 +1,13 @@
+{
+  "license": "Apache-2.0",
+  "parameters": {
+    "learning_rate": 0.05,
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "n_estimators": 1400,
+    "reg_lambda": 3.0
+  },
+  "seconds": 38.5993836130001,
+  "selection_partition": "calibration",
+  "training_partition": "train"
+}

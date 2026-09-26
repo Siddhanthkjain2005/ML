@@ -1,0 +1,35 @@
+{"time": "2026-09-25T15:13:13Z", "stage": "target_cache_shard", "shard": 0, "rows": 250000}
+{"time": "2026-09-25T15:13:35Z", "stage": "target_cache_shard", "shard": 1, "rows": 250000}
+{"time": "2026-09-25T15:13:54Z", "stage": "target_cache_shard", "shard": 2, "rows": 250000}
+{"time": "2026-09-25T15:14:16Z", "stage": "target_cache_shard", "shard": 3, "rows": 250000}
+{"time": "2026-09-25T15:14:37Z", "stage": "target_cache_shard", "shard": 4, "rows": 250000}
+{"time": "2026-09-25T15:14:59Z", "stage": "target_cache_shard", "shard": 5, "rows": 250000}
+{"time": "2026-09-25T15:15:21Z", "stage": "target_cache_shard", "shard": 6, "rows": 250000}
+{"time": "2026-09-25T15:15:44Z", "stage": "target_cache_shard", "shard": 7, "rows": 250000}
+{"time": "2026-09-25T15:16:05Z", "stage": "target_cache_shard", "shard": 8, "rows": 250000}
+{"time": "2026-09-25T15:16:27Z", "stage": "target_cache_shard", "shard": 9, "rows": 250000}
+{"time": "2026-09-25T15:16:47Z", "stage": "target_cache_shard", "shard": 10, "rows": 250000}
+{"time": "2026-09-25T15:17:09Z", "stage": "target_cache_shard", "shard": 11, "rows": 250000}
+{"time": "2026-09-25T15:17:29Z", "stage": "target_cache_shard", "shard": 12, "rows": 250000}
+{"time": "2026-09-25T15:17:51Z", "stage": "target_cache_shard", "shard": 13, "rows": 250000}
+{"time": "2026-09-25T15:18:11Z", "stage": "target_cache_shard", "shard": 14, "rows": 250000}
+{"time": "2026-09-25T15:18:33Z", "stage": "target_cache_shard", "shard": 15, "rows": 250000}
+{"time": "2026-09-25T15:18:36Z", "stage": "target_cache_shard", "shard": 16, "rows": 27549}
+{"time": "2026-09-25T15:18:39Z", "stage": "retrieval_shard_complete", "completed_shards": 1, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:42Z", "stage": "retrieval_shard_complete", "completed_shards": 2, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:43Z", "stage": "retrieval_shard_complete", "completed_shards": 3, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:45Z", "stage": "retrieval_shard_complete", "completed_shards": 4, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:46Z", "stage": "retrieval_shard_complete", "completed_shards": 5, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:47Z", "stage": "retrieval_shard_complete", "completed_shards": 6, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:49Z", "stage": "retrieval_shard_complete", "completed_shards": 7, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:50Z", "stage": "retrieval_shard_complete", "completed_shards": 8, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:52Z", "stage": "retrieval_shard_complete", "completed_shards": 9, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:53Z", "stage": "retrieval_shard_complete", "completed_shards": 10, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:54Z", "stage": "retrieval_shard_complete", "completed_shards": 11, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:56Z", "stage": "retrieval_shard_complete", "completed_shards": 12, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:57Z", "stage": "retrieval_shard_complete", "completed_shards": 13, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:18:59Z", "stage": "retrieval_shard_complete", "completed_shards": 14, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:19:00Z", "stage": "retrieval_shard_complete", "completed_shards": 15, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:19:01Z", "stage": "retrieval_shard_complete", "completed_shards": 16, "total_shards": 17, "target_source": "S2"}
+{"time": "2026-09-25T15:19:02Z", "stage": "retrieval_shard_complete", "completed_shards": 17, "total_shards": 17, "target_source": "S2"}
+{"scope": "1000 training anchors; entire S2 training pool; sparse branches only; not validation", "query_feature_limit": 32, "k": 40, "runtime_seconds": 404.48150716500004, "counts": {"overall": {"true": 1689, "retrieved": 1635, "lost_vs_base": 14, "gained_vs_base": 14, "recall": 0.9680284191829485}, "US": {"true": 1014, "retrieved": 997, "lost_vs_base": 3, "gained_vs_base": 5, "recall": 0.9832347140039448}, "India": {"true": 675, "retrieved": 638, "lost_vs_base": 11, "gained_vs_base": 9, "recall": 0.9451851851851852}}}

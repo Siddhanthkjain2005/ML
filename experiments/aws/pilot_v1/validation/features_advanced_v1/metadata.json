@@ -1,0 +1,301 @@
+{
+  "batches": [
+    {
+      "end": 10000,
+      "sha256": "29d30edab5b73c1cad4c5f997cd829e183cf46f4022412fda300d84715dcf79f",
+      "start": 0
+    },
+    {
+      "end": 20000,
+      "sha256": "cfa5eb2cd9edd7a185b09d8bf804e36f6300f05696ec9ca8ad6817c6d554d67f",
+      "start": 10000
+    },
+    {
+      "end": 30000,
+      "sha256": "cc2f2b9b53c5d72abd95b88d1c7fc43879aedf997a92e0ce5384f028aecd8fbe",
+      "start": 20000
+    },
+    {
+      "end": 40000,
+      "sha256": "0860bcc56c5fb35d1a50be82a79958e848b22d043b0754c4ec9c04681e07b82c",
+      "start": 30000
+    },
+    {
+      "end": 50000,
+      "sha256": "d701b265634eb77bf7ed5a3f9b03a9c08dab2afe170447552ca85d8c8c2fdcac",
+      "start": 40000
+    },
+    {
+      "end": 60000,
+      "sha256": "541af1e209156385e33e1585f43bdd5463346ef587a06c3c5695c4a10078e628",
+      "start": 50000
+    },
+    {
+      "end": 70000,
+      "sha256": "a348e65a0066af0a8da726a85b42c814a18a54c69cbda3e6c5db1bdff3476b77",
+      "start": 60000
+    },
+    {
+      "end": 80000,
+      "sha256": "e24a72dd0f82ecb93b5fbad74795b5004d59e3eaedf7a15fbfef0f3cb5248efe",
+      "start": 70000
+    },
+    {
+      "end": 90000,
+      "sha256": "8436c36d172f5339d32ae885ceb2465092bac4e80a8998fa7a1657b091f8e4b5",
+      "start": 80000
+    },
+    {
+      "end": 100000,
+      "sha256": "9b0152498551171f4456afb6452afe04281751d3145cc087e5dd068693df10ac",
+      "start": 90000
+    },
+    {
+      "end": 110000,
+      "sha256": "a2fa6c451dbcbf2aa90788f1ccf85089e6eb218d35b50820248fb0f07919a290",
+      "start": 100000
+    },
+    {
+      "end": 120000,
+      "sha256": "bb8f7d031e760435509e3fee98901c9751b745ade11c0007f4d113c2cf36feb5",
+      "start": 110000
+    },
+    {
+      "end": 130000,
+      "sha256": "afa2512b901c90625f077473d1df8b6c2cba5f249de4253c3070716d0a4e2830",
+      "start": 120000
+    },
+    {
+      "end": 140000,
+      "sha256": "48384b5bd72b7cae92a87240031d3c257e89d5fa42ab17e2fea094631bb082ea",
+      "start": 130000
+    },
+    {
+      "end": 150000,
+      "sha256": "3a42322c01bd4b5766f13665b07d551aea8f74795f2c83864ee208eabb6ec61b",
+      "start": 140000
+    },
+    {
+      "end": 160000,
+      "sha256": "de9c9c58a1eb257f859a2b59cccf0680d3128aa0f5c08c9c6f68007179402ba3",
+      "start": 150000
+    },
+    {
+      "end": 170000,
+      "sha256": "eb4a325a49ee7324ecaee7b14a985c4865d834f71b2931f84a47959de3d107a3",
+      "start": 160000
+    },
+    {
+      "end": 180000,
+      "sha256": "102fba0ab95aa5570ac67000ef58b8f0b3d41a894d1830b7b9d03a9e03691e38",
+      "start": 170000
+    },
+    {
+      "end": 190000,
+      "sha256": "b920b1fbdb0003c8cae8e8460fbd6814fc4cb2239adcc739c4a3d66d807d05bd",
+      "start": 180000
+    },
+    {
+      "end": 200000,
+      "sha256": "8f1c89842154a799a1d4cdaaa47145e599470500803e2d3bf70d26240eb77bea",
+      "start": 190000
+    },
+    {
+      "end": 210000,
+      "sha256": "954fa72f1a49bd35cf62708cdfd2597c90b939f8a60eede857a89b180b10b691",
+      "start": 200000
+    },
+    {
+      "end": 220000,
+      "sha256": "acea74c300b8138e9358b27b6b2fa220cd4b676abe7a1cb6f984262b4f3f91e4",
+      "start": 210000
+    },
+    {
+      "end": 230000,
+      "sha256": "814fdaa006dc01a5c5771d6a5cd94c4c4b400bf3a713cc5a85211ef744f6578f",
+      "start": 220000
+    },
+    {
+      "end": 240000,
+      "sha256": "d7a6a3537ce6b11570139201af357a0cdab6a586a081b7636f30a187767ee6ec",
+      "start": 230000
+    },
+    {
+      "end": 250000,
+      "sha256": "0ef105e795bf0d6a1fb0146235dd386de5a3320c525ef4d5b5e6131d73e64ea7",
+      "start": 240000
+    },
+    {
+      "end": 260000,
+      "sha256": "6e247098a6f62f8e23f56ce7256fe9127ba682ba0d33ca8d23be10a97d5ebae3",
+      "start": 250000
+    },
+    {
+      "end": 270000,
+      "sha256": "2da34a3b8041c3bafc86facb0c118791cdfb795d50f7caa086321106850907b2",
+      "start": 260000
+    },
+    {
+      "end": 280000,
+      "sha256": "d1b0ee7ba970a8676880790dc6918a9226ec362f276e5363ad9c414155e9bcc6",
+      "start": 270000
+    },
+    {
+      "end": 290000,
+      "sha256": "3f1bd3af7a3a3e5f107b90585e07ab12dc90c670f6aa1a4343b4343049e9c484",
+      "start": 280000
+    },
+    {
+      "end": 300000,
+      "sha256": "ac154d234d3ccee445c31966deae7a3ff1b04639d976ed977b87ff89cdb3365b",
+      "start": 290000
+    },
+    {
+      "end": 307534,
+      "sha256": "4bf359b1032f8d56d93f6d14e4168429abf38614afbce6abf35426ac916c2fb3",
+      "start": 300000
+    }
+  ],
+  "complete": true,
+  "feature_names": [
+    "name_exact",
+    "name_folded_exact",
+    "name_token_jaccard",
+    "name_token_containment",
+    "name_token_overlap",
+    "name_length_ratio",
+    "name_token_count_ratio",
+    "name_edit_similarity",
+    "name_token_sort_similarity",
+    "name_numbers_both_present",
+    "name_numbers_equal",
+    "name_numbers_overlap",
+    "name_numbers_conflict",
+    "name_numbers_disagree",
+    "name_numbers_jaccard",
+    "name_left_missing",
+    "name_right_missing",
+    "address_exact",
+    "address_folded_exact",
+    "address_token_jaccard",
+    "address_token_containment",
+    "address_token_overlap",
+    "address_length_ratio",
+    "address_token_count_ratio",
+    "address_edit_similarity",
+    "address_token_sort_similarity",
+    "address_numbers_both_present",
+    "address_numbers_equal",
+    "address_numbers_overlap",
+    "address_numbers_conflict",
+    "address_numbers_disagree",
+    "address_numbers_jaccard",
+    "address_left_missing",
+    "address_right_missing",
+    "name_legal_exact",
+    "name_core_exact",
+    "name_acronym_exact",
+    "name_acronym_matches_name",
+    "country_equal",
+    "country_conflict",
+    "country_left_missing",
+    "country_right_missing",
+    "left_source1",
+    "right_source2",
+    "right_source3",
+    "retrieval_rank_reciprocal",
+    "retrieval_score",
+    "retrieval_candidate_count_log1p",
+    "retrieval_name_rank_reciprocal",
+    "retrieval_address_rank_reciprocal",
+    "retrieval_name_score",
+    "retrieval_address_score",
+    "retrieval_name_exact",
+    "retrieval_address_exact",
+    "retrieval_name_char",
+    "retrieval_address_char",
+    "retrieval_name_token",
+    "retrieval_address_token",
+    "retrieval_number_block",
+    "retrieval_sorted_neighborhood",
+    "retrieval_name_char_score",
+    "retrieval_name_char_rank_reciprocal",
+    "retrieval_name_word_score",
+    "retrieval_name_word_rank_reciprocal",
+    "retrieval_address_char_score",
+    "retrieval_address_char_rank_reciprocal",
+    "retrieval_address_word_score",
+    "retrieval_address_word_rank_reciprocal",
+    "actual_name_char_cosine",
+    "actual_name_word_cosine",
+    "actual_address_char_cosine",
+    "name_roman_edit",
+    "name_roman_jaro",
+    "name_roman_ratio",
+    "name_roman_partial",
+    "name_roman_token_set",
+    "name_roman_token_sort",
+    "name_alternate_edit",
+    "name_alternate_token_set",
+    "name_alternate_token_sort",
+    "name_without_numbers_exact",
+    "name_without_numbers_token_set",
+    "name_first_number_equal",
+    "name_last_number_equal",
+    "name_first_number_edit",
+    "name_best_number_edit",
+    "name_short_numbers_jaccard",
+    "name_long_numbers_jaccard",
+    "name_number_count_ratio",
+    "name_first_number_length_ratio",
+    "address_roman_edit",
+    "address_roman_jaro",
+    "address_roman_ratio",
+    "address_roman_partial",
+    "address_roman_token_set",
+    "address_roman_token_sort",
+    "address_alternate_edit",
+    "address_alternate_token_set",
+    "address_alternate_token_sort",
+    "address_without_numbers_exact",
+    "address_without_numbers_token_set",
+    "address_first_number_equal",
+    "address_last_number_equal",
+    "address_first_number_edit",
+    "address_best_number_edit",
+    "address_short_numbers_jaccard",
+    "address_long_numbers_jaccard",
+    "address_number_count_ratio",
+    "address_first_number_length_ratio",
+    "roman_name_char_cosine",
+    "roman_name_word_cosine",
+    "roman_address_char_cosine"
+  ],
+  "profile": {
+    "base_X": "197737db0d566210b13ad64bb02a0489cf4df242a57abf0b0b64d0d04c969173",
+    "batch_size": 10000,
+    "candidates": {
+      "anchors.npy": "e0ec9b87619dc617b0647f3219d89d92b932a93eebdf83a6303248e70d8b7f49",
+      "queries.jsonl": "a699a5f5a6746f57d79c6936fe86fc4cd9e6285fa567fd5d8de0b2eda84c175d",
+      "target_codes.npy": "82571577c21b7ec502a02c016096cfac554b07b29c379e25a5cead796b3921cc"
+    },
+    "code": {
+      "advanced_features.py": "5ec2bd2c0e94926815fbafea1fbcc35ed3e297cafb37f7db64d5523bf2187fe6",
+      "augment.py": "5ba95e2b29054e2d71a0bfe3bedc2f463368f2ec8640422bc8b384371a34db26",
+      "romanization.py": "c0cd5383f3810f2c43c5199a6a9e738420517944812ac19a69e83e61cfbbfb62"
+    },
+    "representation": {
+      "ICU": "74.2",
+      "PyICU": "2.16.2",
+      "implementation_sha256": "c0cd5383f3810f2c43c5199a6a9e738420517944812ac19a69e83e61cfbbfb62",
+      "representation": "ICU Any-Latin; Latin-ASCII"
+    },
+    "roman_vectors": "62c12a7eaf163c1ca16661da3b254eb1b754cbfa85813fe2a2ff07092db90c6e"
+  },
+  "rows_completed": 307534,
+  "sha256": "d9da58fdc5ea3b810d93f3c0eac8e45250cf8fd10872c23d0cfe24377a4643d8",
+  "shape": [
+    307534,
+    112
+  ]
+}

@@ -1,0 +1,6 @@
+{"branch": "name_char", "seconds": 0.5946494350000648, "ties": 7, "queries": 100, "targets": 250000, "nnz": 13239339}
+{"branch": "name_word", "seconds": 0.03443831399999908, "ties": 39, "queries": 100, "targets": 250000, "nnz": 956501}
+{"branch": "address_char", "seconds": 0.7242814129999715, "ties": 1, "queries": 100, "targets": 250000, "nnz": 20365060}
+{"branch": "name_char", "full_seconds": 0.18532856100000572, "queries": 100}
+{"branch": "name_word", "full_seconds": 0.09255477700025949, "queries": 100}
+{"branch": "address_char", "full_seconds": 0.3167075319997821, "queries": 100}

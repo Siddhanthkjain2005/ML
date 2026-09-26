@@ -1,0 +1,239 @@
+{
+  "complete": true,
+  "config": {
+    "schema_version": 1,
+    "query_sha256": "1fe38af67bcbe072010b49846866e2fb4d0b3fd4ab0cd9913e74bcb790b81e9b",
+    "exact_cap": 200,
+    "target_files": {
+      "2": {
+        "path": "/home/ubuntu/amazonml/integration_fixture/calibration/source2.tsv",
+        "sha256": "45181a62b25fc266e8d04942c6074689a7489987f79119f5629754e095ba1b2c"
+      },
+      "3": {
+        "path": "/home/ubuntu/amazonml/integration_fixture/calibration/source3.tsv",
+        "sha256": "efbef6757b69df5521452706229645b1cf30ceb2a0e7d62d03e32496a2bb0bc6"
+      }
+    },
+    "retrieval_arrays": {
+      "2": {
+        "name_char": {
+          "ids": "337dd5afb1e193f3a2362d3d1840a1121970b1ab85af2d86e414573921f4585a",
+          "scores": "88f70c5dfdbee882f777f96d47af92301844944e52cddef3ddf910a014082c08"
+        },
+        "name_word": {
+          "ids": "ae8b4528e3f199c8ec230b99847d143925468312f5f9c968713c16a94fa9eba7",
+          "scores": "a2fdce3c6906a5da6c49785ec36b6b4ec1e7788d9b265e91867d9f9a7ac31373"
+        },
+        "address_char": {
+          "ids": "456cd111d04804f648277c6a33d5e51c36e754a51b0517363fd32b09d5e62bf0",
+          "scores": "6103e3fb9512ebd55fcdba222a3fe0318172d4992559c22af9f2f7910e7124aa"
+        }
+      },
+      "3": {
+        "name_char": {
+          "ids": "337dd5afb1e193f3a2362d3d1840a1121970b1ab85af2d86e414573921f4585a",
+          "scores": "88f70c5dfdbee882f777f96d47af92301844944e52cddef3ddf910a014082c08"
+        },
+        "name_word": {
+          "ids": "ae8b4528e3f199c8ec230b99847d143925468312f5f9c968713c16a94fa9eba7",
+          "scores": "a2fdce3c6906a5da6c49785ec36b6b4ec1e7788d9b265e91867d9f9a7ac31373"
+        },
+        "address_char": {
+          "ids": "456cd111d04804f648277c6a33d5e51c36e754a51b0517363fd32b09d5e62bf0",
+          "scores": "6103e3fb9512ebd55fcdba222a3fe0318172d4992559c22af9f2f7910e7124aa"
+        }
+      }
+    },
+    "truth_sha256": "9b4334b0582acc4762de7e8278da546c1b6bb428fc06aee6290960da4d7c4e31",
+    "normalizer_sha256": "379cbcf90ab6b0a350c668c44aef873e9d59ec73d49d0d977a1b022b79fba013",
+    "implementation_sha256": "a3e0d1d0ab602d6b3164c79db8bf6a3a48ae1d507beecdefd1598191d0a1ec54"
+  },
+  "branches": [
+    "name_char",
+    "name_word",
+    "address_char",
+    "name_exact",
+    "number_block"
+  ],
+  "branch_bits": {
+    "name_char": 1,
+    "name_word": 2,
+    "address_char": 4,
+    "name_exact": 8,
+    "number_block": 16
+  },
+  "artifacts": {
+    "anchors": "anchors.npy",
+    "target_codes": "target_codes.npy",
+    "masks": "masks.npy",
+    "scores": "scores.npy",
+    "ranks": "ranks.npy",
+    "queries": "queries.jsonl",
+    "labels": "labels.npy",
+    "truth_counts": "truth_counts.npy"
+  },
+  "stats": {
+    "query_count": 30,
+    "candidate_pairs": 540,
+    "target_rows": {
+      "2": 30,
+      "3": 30
+    },
+    "candidate_counts": {
+      "mean": 18.0,
+      "max": 22,
+      "p50": 18.0,
+      "p90": 22.0,
+      "p95": 22.0,
+      "p99": 22.0
+    },
+    "candidate_pairs_by_branch": {
+      "name_char": 300,
+      "name_word": 300,
+      "address_char": 300,
+      "name_exact": 48,
+      "number_block": 48
+    },
+    "exact_branch_eligible_pairs": {
+      "name_exact": 48,
+      "number_block": 48
+    },
+    "exact_eligible_pairs": 48,
+    "exact_retained_pairs": 48,
+    "exact_overflow_queries": 0,
+    "exact_discarded_pairs": 0,
+    "exact_cap_policy": "Combined exact-name/numeric-address union across both sources; smallest numeric encoded target IDs retained",
+    "label_diagnostics": {
+      "overall": {
+        "anchors": 30,
+        "true_links": 48,
+        "recalled_links": 48,
+        "positive_anchors": 24,
+        "link_recall": 1.0,
+        "macro_recall_positive_anchors": 1.0,
+        "oracle_macro_f0_5": 1.0
+      },
+      "by_source": {
+        "2": {
+          "anchors": 30,
+          "true_links": 24,
+          "recalled_links": 24,
+          "positive_anchors": 24,
+          "link_recall": 1.0,
+          "macro_recall_positive_anchors": 1.0,
+          "oracle_macro_f0_5": 1.0
+        },
+        "3": {
+          "anchors": 30,
+          "true_links": 24,
+          "recalled_links": 24,
+          "positive_anchors": 24,
+          "link_recall": 1.0,
+          "macro_recall_positive_anchors": 1.0,
+          "oracle_macro_f0_5": 1.0
+        }
+      },
+      "by_country": {
+        "India": {
+          "anchors": 15,
+          "true_links": 24,
+          "recalled_links": 24,
+          "positive_anchors": 12,
+          "link_recall": 1.0,
+          "macro_recall_positive_anchors": 1.0,
+          "oracle_macro_f0_5": 1.0
+        },
+        "United States": {
+          "anchors": 15,
+          "true_links": 24,
+          "recalled_links": 24,
+          "positive_anchors": 12,
+          "link_recall": 1.0,
+          "macro_recall_positive_anchors": 1.0,
+          "oracle_macro_f0_5": 1.0
+        }
+      },
+      "by_match_count": {
+        "2-3": {
+          "anchors": 24,
+          "true_links": 48,
+          "recalled_links": 48,
+          "positive_anchors": 24,
+          "link_recall": 1.0,
+          "macro_recall_positive_anchors": 1.0,
+          "oracle_macro_f0_5": 1.0
+        },
+        "0": {
+          "anchors": 6,
+          "true_links": 0,
+          "recalled_links": 0,
+          "positive_anchors": 0,
+          "link_recall": null,
+          "macro_recall_positive_anchors": null,
+          "oracle_macro_f0_5": 1.0
+        }
+      },
+      "standalone_branch_recall": {
+        "name_char": {
+          "recalled_links": 48,
+          "recall": 1.0
+        },
+        "name_word": {
+          "recalled_links": 48,
+          "recall": 1.0
+        },
+        "address_char": {
+          "recalled_links": 48,
+          "recall": 1.0
+        },
+        "name_exact": {
+          "recalled_links": 48,
+          "recall": 1.0
+        },
+        "number_block": {
+          "recalled_links": 48,
+          "recall": 1.0
+        }
+      },
+      "incremental_branch_recall": {
+        "name_char": {
+          "new_positive_links": 48,
+          "cumulative_positive_links": 48,
+          "cumulative_recall": 1.0
+        },
+        "name_word": {
+          "new_positive_links": 0,
+          "cumulative_positive_links": 48,
+          "cumulative_recall": 1.0
+        },
+        "address_char": {
+          "new_positive_links": 0,
+          "cumulative_positive_links": 48,
+          "cumulative_recall": 1.0
+        },
+        "name_exact": {
+          "new_positive_links": 0,
+          "cumulative_positive_links": 48,
+          "cumulative_recall": 1.0
+        },
+        "number_block": {
+          "new_positive_links": 0,
+          "cumulative_positive_links": 48,
+          "cumulative_recall": 1.0
+        }
+      },
+      "oracle_note": "Perfect classifier selects only recalled true links; empty true anchors score one; this is a candidate ceiling, not measured model performance."
+    }
+  },
+  "runtime_seconds": 0.004279535000023316,
+  "sha256": {
+    "anchors.npy": "a0d7e5c5531845edd20355d6b27180e595e3db91e3fbd431c9d6b83d4beac215",
+    "target_codes.npy": "54b673878150ce19b797af36d6b234e4c0a6fdc9b3da42b856d26f5c76f74a0e",
+    "masks.npy": "4ecee639b4be6bc681bd7e3de8e7e94a8e452c700c28992fb0a3b24423044c4b",
+    "scores.npy": "fd84b6c16821889f0b734c92fd4e9467d2db01f9bd6ed2711b0bce7fb095eb8d",
+    "ranks.npy": "0dee98d8966d445dbf2151a93700095ad8ae78be46298765f12b842eb31cdb77",
+    "queries.jsonl": "2afadfb4f86484061ed1983324d65c499ed5d0cb9887b878851f784e00e49a20",
+    "labels.npy": "e7452ebb4eb68539606427fc3d642ab9be295d7b77aa8e2425b9d8b135fd8f18",
+    "truth_counts.npy": "f6f94033940678d0de94794a37e988c46c5d43c37dbf9a35cee43ed0425a9a7d"
+  }
+}

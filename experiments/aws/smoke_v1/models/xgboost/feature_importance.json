@@ -1,0 +1,289 @@
+{
+  "features": [
+    {
+      "feature": "retrieval_rank_reciprocal",
+      "importance": 0.14074553549289703
+    },
+    {
+      "feature": "actual_address_char_cosine",
+      "importance": 0.13468778133392334
+    },
+    {
+      "feature": "retrieval_address_score",
+      "importance": 0.13413327932357788
+    },
+    {
+      "feature": "retrieval_score",
+      "importance": 0.12726663053035736
+    },
+    {
+      "feature": "retrieval_name_score",
+      "importance": 0.12049078196287155
+    },
+    {
+      "feature": "name_numbers_equal",
+      "importance": 0.08690126240253448
+    },
+    {
+      "feature": "name_exact",
+      "importance": 0.07282180339097977
+    },
+    {
+      "feature": "retrieval_address_rank_reciprocal",
+      "importance": 0.0625910609960556
+    },
+    {
+      "feature": "name_folded_exact",
+      "importance": 0.05148269608616829
+    },
+    {
+      "feature": "name_token_jaccard",
+      "importance": 0.041127968579530716
+    },
+    {
+      "feature": "retrieval_name_rank_reciprocal",
+      "importance": 0.027751171961426735
+    },
+    {
+      "feature": "name_token_containment",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_token_overlap",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_length_ratio",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_token_count_ratio",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_edit_similarity",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_token_sort_similarity",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_both_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_overlap",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_conflict",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_disagree",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_numbers_jaccard",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_left_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_right_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_folded_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_token_jaccard",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_token_containment",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_token_overlap",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_length_ratio",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_token_count_ratio",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_edit_similarity",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_token_sort_similarity",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_numbers_both_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_numbers_equal",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_numbers_overlap",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_numbers_conflict",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_numbers_disagree",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_numbers_jaccard",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_left_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "address_right_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_legal_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_core_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_acronym_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "name_acronym_matches_name",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_equal",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_conflict",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_left_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "country_right_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "left_source1",
+      "importance": 0.0
+    },
+    {
+      "feature": "right_source2",
+      "importance": 0.0
+    },
+    {
+      "feature": "right_source3",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_candidate_count_log1p",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_exact",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_char",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_char",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_token",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_token",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_number_block",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_sorted_neighborhood",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_char_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_char_rank_reciprocal",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_word_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_name_word_rank_reciprocal",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_char_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_char_rank_reciprocal",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_word_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "retrieval_address_word_rank_reciprocal",
+      "importance": 0.0
+    },
+    {
+      "feature": "actual_name_char_cosine",
+      "importance": 0.0
+    },
+    {
+      "feature": "actual_name_word_cosine",
+      "importance": 0.0
+    }
+  ],
+  "kind": "XGBoost normalized gain"
+}

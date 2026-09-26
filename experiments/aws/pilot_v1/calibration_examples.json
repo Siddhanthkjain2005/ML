@@ -1,0 +1,706 @@
+{
+  "false_positive": [
+    {
+      "query": {
+        "entity_id": "S1-498364660",
+        "business_name": "Highland Custom Imperii Inc.",
+        "business_address": "1106 Westmoreland Avenue, Syracuse, NY",
+        "country": "US"
+      },
+      "target": [
+        "Highland Custom Imperii Inc",
+        "1113 Westmoreland Ave, New York, Syracuse",
+        "US"
+      ],
+      "score": 0.9953399896621704
+    },
+    {
+      "query": {
+        "entity_id": "S1-540643162",
+        "business_name": "Patna Industries Limited",
+        "business_address": "C/O Rakesh Kumar Sinha, Bihar, Patna, S/O Devendra Kumar Sinha Phul Bhawan, D-79, P C Colony, Kankarbag, H, Patna",
+        "country": "India"
+      },
+      "target": [
+        "Patna-Industries Private Limited",
+        "H/o Shail Sinha, Patna, <NULL>, BR",
+        "India"
+      ],
+      "score": 0.9853039383888245
+    },
+    {
+      "query": {
+        "entity_id": "S1-145706610",
+        "business_name": "Digital Media Private Limited",
+        "business_address": "1St Floor, A Wing, Kamdhenu Chs Ltd, Babhai Naka, Borivali West, Mumbai, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "Digital Media Limited Private",
+        "Sanghavi 1St Floor, Mumbai, MH",
+        "India"
+      ],
+      "score": 0.9610674381256104
+    },
+    {
+      "query": {
+        "entity_id": "S1-468555529",
+        "business_name": "Gupta Marketing LLP",
+        "business_address": "House No, 183 Aditional, Floor Portion 3Rd Floor, Delhi, North West Delhi, Delhi",
+        "country": "India"
+      },
+      "target": [
+        "Gupta Technologies [LLP]",
+        "H.no 50 House No, 183 Aditional, Floor Portion 3Rd Floor, Delhi, North West Delhi, DL",
+        "India"
+      ],
+      "score": 0.9544922113418579
+    },
+    {
+      "query": {
+        "entity_id": "S1-387119154",
+        "business_name": "Black Ace Tech Private Limited",
+        "business_address": "Shree Pro. Store, Dabhoi Road, Opp. Yamuna Mill, Vadodara, Gujarat",
+        "country": "India"
+      },
+      "target": [
+        "Public Black Ace Tech Limited",
+        "NO 91 SHREE PRO. STORE, DABHOI ROAD, OPP. YAMUNA MILL, NARMADA, VADODARA, Gujarat",
+        "India"
+      ],
+      "score": 0.9372154474258423
+    },
+    {
+      "query": {
+        "entity_id": "S1-84346378",
+        "business_name": "Ivenus Works",
+        "business_address": "38 Holly Hill Lane, Brookhaven, NY",
+        "country": "US"
+      },
+      "target": [
+        "Ivenusa  Works",
+        "0038 HOLLY HILL LN, BROOKHAVEN, NY",
+        "US"
+      ],
+      "score": 0.9346778988838196
+    },
+    {
+      "query": {
+        "entity_id": "S1-873812325",
+        "business_name": "Lotus Technology Private Limited",
+        "business_address": "Plot No. B-29/2 Midc Mahad, Raigarh, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "Big  Technologies",
+        "Plot-c-31 Midc Mahad, Mahad, Raigarh, Raigarh(mh), MH",
+        "India"
+      ],
+      "score": 0.919643759727478
+    },
+    {
+      "query": {
+        "entity_id": "S1-21776435",
+        "business_name": "Barney & Thomas Physical Inc",
+        "business_address": "2718 Minnesota Avenue, Billings, MT",
+        "country": "US"
+      },
+      "target": [
+        "Barney & Thocgas Physical Inc",
+        "",
+        "US"
+      ],
+      "score": 0.9029508829116821
+    },
+    {
+      "query": {
+        "entity_id": "S1-681813266",
+        "business_name": "Ruth C. Jones, O.D., PC",
+        "business_address": "104 Roadrunner Circle, Elephant Butte, NM",
+        "country": "US"
+      },
+      "target": [
+        "Ruth C. Jones, O.D., Pc",
+        "",
+        "US"
+      ],
+      "score": 0.892778754234314
+    },
+    {
+      "query": {
+        "entity_id": "S1-201187440",
+        "business_name": "NKN Energy Private Limited",
+        "business_address": "C/O Shri Kusan Karu Kore At Amgaon Tq Amgaon Dt Gondia At Amgaon, Gondia, Gondiya, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "NKN Energy Limited",
+        "NO 47 C/O SHRI KUSAN KARU KORE AT AMGAON TQ AMGAON DT GONDIA AT AMGAON, GONDIA, Maharashtra",
+        "India"
+      ],
+      "score": 0.8674524426460266
+    },
+    {
+      "query": {
+        "entity_id": "S1-731203729",
+        "business_name": "Monarch",
+        "business_address": "9437 Albert Lane, Peoria, AZ",
+        "country": "US"
+      },
+      "target": [
+        "Arts Cll Partners",
+        "9437-A Albert Lane, Peoria, Arizona",
+        "US"
+      ],
+      "score": 0.8512948155403137
+    },
+    {
+      "query": {
+        "entity_id": "S1-519768476",
+        "business_name": "Intimate Welfare Society of Bhubaneswar",
+        "business_address": "B 223 Hig Duplexbda Colony Baramunda, Bhubaneswar, Puri, Orissa",
+        "country": "India"
+      },
+      "target": [
+        "#Bhubaneswarproducer",
+        "A/d/12, Hig Colony, Baramunda, Bhubaneswar, Khordha, OD",
+        "India"
+      ],
+      "score": 0.8491536378860474
+    },
+    {
+      "query": {
+        "entity_id": "S1-309478450",
+        "business_name": "Indo Technologies Private Limited",
+        "business_address": "R S No 2012, E Ward, Flat No 1 Anujan Appartment, 6Th Lane Rajarampuri, Kolhapur, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "Indo Limited Private-Technologies",
+        "",
+        "India"
+      ],
+      "score": 0.8346664905548096
+    },
+    {
+      "query": {
+        "entity_id": "S1-995443921",
+        "business_name": "Castellon & Orr Innovations Inc",
+        "business_address": "Duluth, MN, 5331 Colorado Street",
+        "country": "US"
+      },
+      "target": [
+        "Castellon & Orr Inngohvations (Inc)",
+        "",
+        "US"
+      ],
+      "score": 0.8148289918899536
+    },
+    {
+      "query": {
+        "entity_id": "S1-171879879",
+        "business_name": "Hyderabad Marketing Private Limited",
+        "business_address": "6-3-1099/1100/401 To 407A, Babukhan'S Millenium Centre, Raj Bhavan Road, Somajiguda, Hyderabad, Telangana",
+        "country": "India"
+      },
+      "target": [
+        "Hyderabad Marketing Private Ltd",
+        "",
+        "India"
+      ],
+      "score": 0.8103315234184265
+    },
+    {
+      "query": {
+        "entity_id": "S1-430074851",
+        "business_name": "Pediatric Medicine",
+        "business_address": "49 Vista Circle, Rutland, MA",
+        "country": "US"
+      },
+      "target": [
+        "PEDIATRIC DENTAL",
+        "49 CLEVELAND AVE, RUTLAND CITY, VT",
+        "US"
+      ],
+      "score": 0.796413779258728
+    },
+    {
+      "query": {
+        "entity_id": "S1-374179782",
+        "business_name": "Kanchan Properties Pvt. Ltd.",
+        "business_address": "Dayanand Prasad, Bihar, Bihar Sharif, Magadh Colony, Bari Pahari Post- Soh-Sarai, Dist.- Nalanda, Nalanda",
+        "country": "India"
+      },
+      "target": [
+        "Sri Kanchan Properties Limited",
+        "No 25 Dayanand Prasad, Bihar Sharif, Nalanda, BR",
+        "India"
+      ],
+      "score": 0.7943763732910156
+    },
+    {
+      "query": {
+        "entity_id": "S1-438430300",
+        "business_name": "Urban Logistics Private Limited",
+        "business_address": "A-15, Fourth Floor, Lajpat Nagar, New Delhi, New Delhi, South Delhi, Delhi",
+        "country": "India"
+      },
+      "target": [
+        "Urban Logistics Private [Limited]",
+        "",
+        "India"
+      ],
+      "score": 0.7839481830596924
+    },
+    {
+      "query": {
+        "entity_id": "S1-471618",
+        "business_name": "Shiva It Private Limited",
+        "business_address": "Sno. 39/1A/39/2 Buildinga, Fl-A/3, Rajanigandha Apts, Pune City, Pune, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "Shiva  It Private Limited",
+        "",
+        "India"
+      ],
+      "score": 0.7721178531646729
+    },
+    {
+      "query": {
+        "entity_id": "S1-603731590",
+        "business_name": "Shiva It Private Limited",
+        "business_address": "C/O Ajeet Kumar Verma H No 32, Baxipura, Bahraich, Uttar Pradesh",
+        "country": "India"
+      },
+      "target": [
+        "Shiva  It Private Limited",
+        "",
+        "India"
+      ],
+      "score": 0.7721178531646729
+    },
+    {
+      "query": {
+        "entity_id": "S1-479278537",
+        "business_name": "Urban Trading Private Limited",
+        "business_address": "B/05 Panchrahi Appt Nr., Sukan Flat Nirnay Nagar, Ahmadabad City, Ahmedabad, Gujarat",
+        "country": "India"
+      },
+      "target": [
+        "URBAN TRADING (PRIVATE-LIMITED)",
+        "",
+        "India"
+      ],
+      "score": 0.7715891599655151
+    },
+    {
+      "query": {
+        "entity_id": "S1-61255525",
+        "business_name": "Premier Agro Private Limited",
+        "business_address": "Maharashtra, B-Wing, Mumbai City, Mumbai, Unit No. 1011, Kanakia Wallstreet Chakala, Andheri East",
+        "country": "India"
+      },
+      "target": [
+        "Premier Agro Private Limited",
+        "",
+        "India"
+      ],
+      "score": 0.7715519666671753
+    },
+    {
+      "query": {
+        "entity_id": "S1-208413558",
+        "business_name": "Al Infra Private Limited",
+        "business_address": "Floor-1, Mumbai City, Mumbai, Maharashtra, Plot -20, Raja Bahadur Mansion, Ambalal Doshi Marg, Bombay Stock Exchang, E, Fort",
+        "country": "India"
+      },
+      "target": [
+        "AL INFRA PRIVATE LIMITED",
+        "",
+        "India"
+      ],
+      "score": 0.7698429226875305
+    },
+    {
+      "query": {
+        "entity_id": "S1-171879879",
+        "business_name": "Hyderabad Marketing Private Limited",
+        "business_address": "6-3-1099/1100/401 To 407A, Babukhan'S Millenium Centre, Raj Bhavan Road, Somajiguda, Hyderabad, Telangana",
+        "country": "India"
+      },
+      "target": [
+        "Hyderabad Marketing Private  Limited",
+        "",
+        "India"
+      ],
+      "score": 0.7693105936050415
+    },
+    {
+      "query": {
+        "entity_id": "S1-958844559",
+        "business_name": "Raj Foods Private Limited",
+        "business_address": "C/O Satveer Bhati, S/O Jati Ram Village Aicher, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh",
+        "country": "India"
+      },
+      "target": [
+        "Raj Fodos Private Limited",
+        "",
+        "India"
+      ],
+      "score": 0.7692488431930542
+    }
+  ],
+  "false_negative": [
+    {
+      "query": {
+        "entity_id": "S1-772849303",
+        "business_name": "United Project-Rotterdam",
+        "business_address": "1275 Main Street, Rotterdam, NY",
+        "country": "US"
+      },
+      "target": [
+        "United Service",
+        "1553 MAIN ST, PO BOX 1796, ROTTERDAM JUNCTION, NY",
+        "US"
+      ],
+      "score": 3.38487297995016e-05
+    },
+    {
+      "query": {
+        "entity_id": "S1-745386731",
+        "business_name": "Supreme Foundation",
+        "business_address": "Room No : 601, Diamond Prestige 41A, A.J.C. Bose Road, Kolkatta, West Bengal",
+        "country": "India"
+      },
+      "target": [
+        "সুপ্রিম ফাউন্ডেশন",
+        "ROOM NO : 60, KOLKATA, KOLKATTA, West Bengal",
+        "India"
+      ],
+      "score": 0.00011469711171230301
+    },
+    {
+      "query": {
+        "entity_id": "S1-501488117",
+        "business_name": "Corporate Tec LLP",
+        "business_address": "Site No 1C, Shed No 2, 19Th A Crs Kariobanahalli, Bangalore North, Bangalore, Karnataka",
+        "country": "India"
+      },
+      "target": [
+        "Sri Corporate  LLP Services",
+        "",
+        "India"
+      ],
+      "score": 0.0003125916700810194
+    },
+    {
+      "query": {
+        "entity_id": "S1-835952025",
+        "business_name": "Rkn Seva Samiti",
+        "business_address": "House No 284, Gali No 6, Lalita Park, East Delhi, Delhi",
+        "country": "India"
+      },
+      "target": [
+        "Solmira",
+        "#118 House No 284, East Delhi, DL",
+        "India"
+      ],
+      "score": 0.0005056273657828569
+    },
+    {
+      "query": {
+        "entity_id": "S1-445795826",
+        "business_name": "Future Infotech",
+        "business_address": "No966 8Th Cross 27Th Mnrd, 1St Sector Hsr Layout, Bangalore South, Bangalore, Karnataka",
+        "country": "India"
+      },
+      "target": [
+        "ಫ್ಯೂಚರ್ ಇನ್‌ಫೋಟೆಕ್",
+        "NO6-966 8TH CROSS 27TH MNRD, Bangalore South, N/A, Karnataka",
+        "India"
+      ],
+      "score": 0.0005416067433543503
+    },
+    {
+      "query": {
+        "entity_id": "S1-327932009",
+        "business_name": "Ceus Atlantic Chile Inc.",
+        "business_address": "NY, Orangetown, 450 Broadway",
+        "country": "US"
+      },
+      "target": [
+        "Incorporated Ceus At1antic Chile",
+        "45 BROADWAY, NYACK, NY",
+        "US"
+      ],
+      "score": 0.000697151874192059
+    },
+    {
+      "query": {
+        "entity_id": "S1-493007995",
+        "business_name": "Supreme Foods Corp",
+        "business_address": "C/O. Rakesh Singh, West Santinagar, Near Belur Esi Hospital, P.O- Anandanaga, R, Howrah, West Bengal",
+        "country": "India"
+      },
+      "target": [
+        "Mr Brixviowex",
+        "C/o. Rakesh Singh, Haora, Howrah, পশ্চিমবঙ্গ",
+        "India"
+      ],
+      "score": 0.0008593442616984248
+    },
+    {
+      "query": {
+        "entity_id": "S1-767787548",
+        "business_name": "Al It",
+        "business_address": "Shop 18, Sahyadri Avenue, Opposite Manusha Masjid, Pune City, Pune, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "अल आईटी",
+        "SHOP 18, PUNE, Maharashtra",
+        "India"
+      ],
+      "score": 0.0009741974645294249
+    },
+    {
+      "query": {
+        "entity_id": "S1-942313075",
+        "business_name": "Prime Tirupati Healthcare Limited",
+        "business_address": "119 A, Gangotri Colony, Roopkee Rd Mt Cant, Meerut, Uttar Pradesh",
+        "country": "India"
+      },
+      "target": [
+        "प्राइम तिरुपति हेल्थकेयर लिमिटेड",
+        "11 A, MEERUT, <NULL>, Uttar Pradesh",
+        "India"
+      ],
+      "score": 0.001281849225051701
+    },
+    {
+      "query": {
+        "entity_id": "S1-562116671",
+        "business_name": "Solutions Shree Distributors",
+        "business_address": "S.No. 80/234/2, Chinchwade Colony, Walhekarwadi, Chinchwad, Pune, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "SOLUTIONS SHREE",
+        "",
+        "India"
+      ],
+      "score": 0.0014470939058810472
+    },
+    {
+      "query": {
+        "entity_id": "S1-526539553",
+        "business_name": "Bright Trading LLP",
+        "business_address": "Door No 83C/4, 5-94-14/A, 6/13Th Line, Brodipet, Guntur, Andhra Pradesh",
+        "country": "India"
+      },
+      "target": [
+        "బ్రైట్ ట్రేడింగ్ ఎల్‌ఎల్‌పీ",
+        "Andhra Pradesh, H.NO 83C/4, GUNTUR",
+        "India"
+      ],
+      "score": 0.0015068264910951257
+    },
+    {
+      "query": {
+        "entity_id": "S1-201877364",
+        "business_name": "Life Technology Private Limited",
+        "business_address": "Auris Avenue, Near Panchami School, Perinthalmanna, Malappuram, Malapuram, Kerala",
+        "country": "India"
+      },
+      "target": [
+        "ലൈഫ് ടെക്നോളജി Private Limited",
+        "DOOR NO 727 AURIS AVENUE, MALAPPURAM, MALAPURAM, Kerala",
+        "India"
+      ],
+      "score": 0.0015466087497770786
+    },
+    {
+      "query": {
+        "entity_id": "S1-642608450",
+        "business_name": "Bharat Properties Limited",
+        "business_address": "Khora Khedi, Gharaunda, Gharunda, Karnal, Haryana",
+        "country": "India"
+      },
+      "target": [
+        "भारत प्रॉपर्टीज लिमिटेड",
+        "KHORA KHEDI, DIVREPORTINGCIRCLE, KARNAL, Haryana",
+        "India"
+      ],
+      "score": 0.0018098647706210613
+    },
+    {
+      "query": {
+        "entity_id": "S1-172619208",
+        "business_name": "AT Safe Machines PC",
+        "business_address": "110 Country Club Drive, Mchenry, IL",
+        "country": "US"
+      },
+      "target": [
+        "AT Máchines PC Partners",
+        "",
+        "US"
+      ],
+      "score": 0.0018997424049302936
+    },
+    {
+      "query": {
+        "entity_id": "S1-14739323",
+        "business_name": "One Hospitals Private Limited",
+        "business_address": "Ponneri, New No.33/A2, Munivel Nagar 1St Lane, Gnt Road, Karanodai, Tamil Nadu, Tiruvallur, Old No.100",
+        "country": "India"
+      },
+      "target": [
+        "One Hospita1s Private",
+        "Tiruvallur, TN, Chennai City Region, 100",
+        "India"
+      ],
+      "score": 0.002130975481122732
+    },
+    {
+      "query": {
+        "entity_id": "S1-149378967",
+        "business_name": "Unique Logistics LLP",
+        "business_address": "Mumbai City, B Wing, Office 101 Mmgs Marg, Naigaon, Dadar, Mumbai, Maharashtra, Prathamesh Chs",
+        "country": "India"
+      },
+      "target": [
+        "यूनिक लॉजिस्टिक्स एलएलपी",
+        "H.NO 75 PRATHAMESH CHS, MUMBAI, MUMBAI CITY, Maharashtra",
+        "India"
+      ],
+      "score": 0.00226380187086761
+    },
+    {
+      "query": {
+        "entity_id": "S1-331058350",
+        "business_name": "International Infra Private Limited",
+        "business_address": "No 5, Smr Vinay Regency Banaswadi Ring Road, Bangalore, Karnataka",
+        "country": "India"
+      },
+      "target": [
+        "ಇಂಟರ್‌ನ್ಯಾಷನಲ್ ಇನ್‌ಫ್ರಾ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+        "#7, Smr Vinay Regency Banaswadi Ring Road, Bangalore, KA",
+        "India"
+      ],
+      "score": 0.0024048141203820705
+    },
+    {
+      "query": {
+        "entity_id": "S1-343777436",
+        "business_name": "Eastern Tech Private Limited",
+        "business_address": "Karnataka, Bangalore, Bhive Workspace, Bangalore North, No 467/468, Shri Krishna Temple Road Indira Nagar",
+        "country": "India"
+      },
+      "target": [
+        "Eastern-Tech Prívate",
+        "",
+        "India"
+      ],
+      "score": 0.002520390786230564
+    },
+    {
+      "query": {
+        "entity_id": "S1-362052768",
+        "business_name": "Vision Infrastructure Limited",
+        "business_address": "Rana Bhawan, Shiv Colony, Ward No. 10, Jind, Haryana, Safidon, First Floor",
+        "country": "India"
+      },
+      "target": [
+        "विजन इंफ्रास्ट्रक्चर लिमिटेड",
+        "No. 0629 First Floor, Safidon, Jind, HR",
+        "India"
+      ],
+      "score": 0.002735106274485588
+    },
+    {
+      "query": {
+        "entity_id": "S1-172814930",
+        "business_name": "Soo Opportunity",
+        "business_address": "1411 Washington Street, Unit #2, Sumner, WA",
+        "country": "US"
+      },
+      "target": [
+        "Brixpyra",
+        "411 WASHINGTON ST, SUMNER, WA",
+        "US"
+      ],
+      "score": 0.0028878930024802685
+    },
+    {
+      "query": {
+        "entity_id": "S1-345190254",
+        "business_name": "Safe Investment Ventures",
+        "business_address": "12907 Candlewood Glen Lane, Houston, TX",
+        "country": "US"
+      },
+      "target": [
+        "... Quofaye",
+        "TX, HOUSTON, 1290 CANDLEWOOD GLEN LN",
+        "US"
+      ],
+      "score": 0.0029938051011413336
+    },
+    {
+      "query": {
+        "entity_id": "S1-641234582",
+        "business_name": "Preferred Sciences Inc",
+        "business_address": "1447 Pearl Hinds Road, Fentress County, TN",
+        "country": "US"
+      },
+      "target": [
+        "Preferred Scienfes Inc #27278",
+        "",
+        "US"
+      ],
+      "score": 0.0030596868600696325
+    },
+    {
+      "query": {
+        "entity_id": "S1-92139413",
+        "business_name": "Ortiz Grifols Inc.",
+        "business_address": "2886 Preston Lane, Hempstead, NY",
+        "country": "US"
+      },
+      "target": [
+        "Ortiz Inc. (Center)",
+        "Preston Lane, Merrick, New York",
+        "US"
+      ],
+      "score": 0.0034164786338806152
+    },
+    {
+      "query": {
+        "entity_id": "S1-90543660",
+        "business_name": "Physical Therapy Integrated Health LLC",
+        "business_address": "3421 Taylors Road, Franklin County, VA",
+        "country": "US"
+      },
+      "target": [
+        "Physical Therapy Health LLC Center",
+        "Virginia, 421 Taylors Rd, Boones Mill",
+        "US"
+      ],
+      "score": 0.0035736693535000086
+    },
+    {
+      "query": {
+        "entity_id": "S1-362567991",
+        "business_name": "Sarasaya India Private Limited",
+        "business_address": "1401, Plot No 53/54, Cts No 936, 936/1-12 Of Village Chembur, Rd No 17, Chembur, Mumbai, Mumbai City, Maharashtra",
+        "country": "India"
+      },
+      "target": [
+        "Halozeta",
+        "MUMBAI, MUMBAI CITY, Maharashtra, 1401",
+        "India"
+      ],
+      "score": 0.003597236005589366
+    }
+  ]
+}
