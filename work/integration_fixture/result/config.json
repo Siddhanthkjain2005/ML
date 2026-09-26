@@ -1,0 +1,13 @@
+{
+  "cache": "/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb/cache",
+  "calibration_anchors": 30,
+  "k": 5,
+  "output": "/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb/result",
+  "seed": 42,
+  "splits": "/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb",
+  "target_batch": 20,
+  "threads": 2,
+  "train_anchors": 30,
+  "validation_anchors": 30,
+  "vectorizers": "/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb/v.joblib"
+}

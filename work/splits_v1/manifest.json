@@ -1,0 +1,225 @@
+{
+  "checks": {
+    "all_references_exist": true,
+    "all_source1_rows_have_ground_truth": true,
+    "single_owner_per_positive_target": true,
+    "test_members_opened": false,
+    "unique_ground_truth_anchors": true,
+    "unique_source_ids": true
+  },
+  "input": {
+    "bytes": 1094823417,
+    "path": "/Users/swetha/Downloads/AMAZONML/project.zip",
+    "sha256": "82c0d3400d5318f102d649be238313e987f968eb13e5cd0a386a175f8a1ce34a",
+    "sha256_source": "provided",
+    "training_members": {
+      "ground_truth": {
+        "bytes": 127015583,
+        "crc32": "4ba4dc63",
+        "member": "student_resource/dataset/train/train_ground_truth.tsv"
+      },
+      "source1": {
+        "bytes": 210069713,
+        "crc32": "ed0bb7c8",
+        "member": "student_resource/dataset/train/train_source1.tsv"
+      },
+      "source2": {
+        "bytes": 489301488,
+        "crc32": "8cf20498",
+        "member": "student_resource/dataset/train/train_source2.tsv"
+      },
+      "source3": {
+        "bytes": 503705637,
+        "crc32": "581539f4",
+        "member": "student_resource/dataset/train/train_source3.tsv"
+      }
+    }
+  },
+  "output_dir": "/Users/swetha/Downloads/AMAZONML/work/splits_v1",
+  "schema_version": 1,
+  "split_config": {
+    "algorithm": "blake2b-64-big-endian(seed + NUL + entity_id)",
+    "fractions": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "names": [
+      "train",
+      "calibration",
+      "validation"
+    ],
+    "normalization": "none; raw UTF-8 field strings preserved",
+    "positive_targets": "inherit owning S1 split",
+    "seed": 42,
+    "unlinked_targets": "stable hash of own entity_id"
+  },
+  "splits": {
+    "calibration": {
+      "anchor_count": 220730,
+      "country_counts": {
+        "source1": {
+          "India": 88048,
+          "US": 132682
+        },
+        "source2": {
+          "India": 201198,
+          "US": 302643
+        },
+        "source3": {
+          "India": 211038,
+          "US": 317213
+        }
+      },
+      "files": {
+        "ground_truth": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/calibration/ground_truth.tsv",
+        "source1": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/calibration/source1.tsv",
+        "source2": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/calibration/source2.tsv",
+        "source3": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/calibration/source3.tsv"
+      },
+      "match_count_histogram": {
+        "0": 12292,
+        "1": 11971,
+        "10": 51,
+        "11": 3,
+        "2": 37659,
+        "3": 52889,
+        "4": 48481,
+        "5": 32306,
+        "6": 16487,
+        "7": 6370,
+        "8": 1806,
+        "9": 415
+      },
+      "positive_link_count": 763648,
+      "positive_target_counts": {
+        "source2": 369390,
+        "source3": 394258
+      },
+      "singleton_count": 12292,
+      "source_rows": {
+        "source1": 220730,
+        "source2": 503841,
+        "source3": 528251
+      },
+      "unlinked_target_counts": {
+        "source2": 134451,
+        "source3": 133993
+      }
+    },
+    "train": {
+      "anchor_count": 1765596,
+      "country_counts": {
+        "source1": {
+          "India": 706872,
+          "US": 1058724
+        },
+        "source2": {
+          "India": 1614371,
+          "US": 2413178
+        },
+        "source3": {
+          "India": 1692181,
+          "US": 2535757
+        }
+      },
+      "files": {
+        "ground_truth": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/ground_truth.tsv",
+        "source1": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/source1.tsv",
+        "source2": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/source2.tsv",
+        "source3": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/source3.tsv"
+      },
+      "match_count_histogram": {
+        "0": 98747,
+        "1": 95276,
+        "10": 419,
+        "11": 28,
+        "2": 299967,
+        "3": 425011,
+        "4": 387255,
+        "5": 257498,
+        "6": 131872,
+        "7": 51179,
+        "8": 14981,
+        "9": 3363
+      },
+      "positive_link_count": 6110851,
+      "positive_target_counts": {
+        "source2": 2955053,
+        "source3": 3155798
+      },
+      "singleton_count": 98747,
+      "source_rows": {
+        "source1": 1765596,
+        "source2": 4027549,
+        "source3": 4227938
+      },
+      "unlinked_target_counts": {
+        "source2": 1072496,
+        "source3": 1072140
+      }
+    },
+    "validation": {
+      "anchor_count": 220495,
+      "country_counts": {
+        "source1": {
+          "India": 88268,
+          "US": 132227
+        },
+        "source2": {
+          "India": 202230,
+          "US": 300996
+        },
+        "source3": {
+          "India": 212328,
+          "US": 317086
+        }
+      },
+      "files": {
+        "ground_truth": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/validation/ground_truth.tsv",
+        "source1": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/validation/source1.tsv",
+        "source2": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/validation/source2.tsv",
+        "source3": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/validation/source3.tsv"
+      },
+      "match_count_histogram": {
+        "0": 12208,
+        "1": 11910,
+        "10": 64,
+        "11": 6,
+        "2": 37586,
+        "3": 52941,
+        "4": 48379,
+        "5": 32153,
+        "6": 16509,
+        "7": 6419,
+        "8": 1893,
+        "9": 427
+      },
+      "positive_link_count": 763866,
+      "positive_target_counts": {
+        "source2": 369176,
+        "source3": 394690
+      },
+      "singleton_count": 12208,
+      "source_rows": {
+        "source1": 220495,
+        "source2": 503226,
+        "source3": 529414
+      },
+      "unlinked_target_counts": {
+        "source2": 134050,
+        "source3": 134724
+      }
+    }
+  },
+  "totals": {
+    "anchor_count": 2206821,
+    "positive_link_count": 7638365,
+    "singleton_count": 123247,
+    "source_rows": {
+      "source1": 2206821,
+      "source2": 5034616,
+      "source3": 5285603
+    }
+  }
+}

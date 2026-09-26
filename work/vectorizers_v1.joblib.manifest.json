@@ -1,0 +1,37 @@
+{
+  "artifact_sha256": "7f11fa84e01bffc4e3ea06c80c668221cae5f43599830a2fbf21c4dc928663be",
+  "config": {
+    "max_df": 0.2,
+    "max_features": 300000,
+    "min_df": 2
+  },
+  "normalizer_sha256": "379cbcf90ab6b0a350c668c44aef873e9d59ec73d49d0d977a1b022b79fba013",
+  "sample_entity_ids_sha256": "e9f9dee2c93154d7db0d46a5d8d869e09a991e4ad9db80c7e8eb4252ecc5bd89",
+  "sample_limit": 200000,
+  "sample_rows": 200000,
+  "schema_version": 1,
+  "seed": 42,
+  "seen_rows": 10021083,
+  "training_files": [
+    {
+      "path": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/source1.tsv",
+      "rows": 1765596,
+      "sha256": "14b0173960fed763ce9ec588c2cfdde40ca9517a57f754c8897ce54ae421a60c"
+    },
+    {
+      "path": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/source2.tsv",
+      "rows": 4027549,
+      "sha256": "e5abd3853b37490afa9bb4e66fcc906e793efe4c14472cf0f87604b087ff28fb"
+    },
+    {
+      "path": "/Users/swetha/Downloads/AMAZONML/work/splits_v1/train/source3.tsv",
+      "rows": 4227938,
+      "sha256": "775ed53d1546c928ac106ed535ce7964ecec6ff20bd5cb3f02d08d484f667ec9"
+    }
+  ],
+  "vocabulary_sizes": {
+    "address_char": 197134,
+    "name_char": 165495,
+    "name_word": 27022
+  }
+}

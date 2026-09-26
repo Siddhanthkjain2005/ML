@@ -1,0 +1,37 @@
+{
+  "artifact_sha256": "68a8900ed0b2ec0a6c17c8e5d7f15314dbc0d4376c2ed2831c8e1ae507bf97d3",
+  "config": {
+    "max_df": 1.0,
+    "max_features": 300000,
+    "min_df": 1
+  },
+  "normalizer_sha256": "379cbcf90ab6b0a350c668c44aef873e9d59ec73d49d0d977a1b022b79fba013",
+  "sample_entity_ids_sha256": "149a50e7127fc90686128bb694aa3967e0b1ad6679fd910496c99714dc188654",
+  "sample_limit": 100,
+  "sample_rows": 90,
+  "schema_version": 1,
+  "seed": 42,
+  "seen_rows": 90,
+  "training_files": [
+    {
+      "path": "/private/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb/train/source1.tsv",
+      "rows": 30,
+      "sha256": "fdfc043855061749e5a9c0a2e84a1a29625e8b9ab90e05d92f4c2746ec0cf014"
+    },
+    {
+      "path": "/private/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb/train/source2.tsv",
+      "rows": 30,
+      "sha256": "ab25623bfca0f7117ca1e53d64edb5ece64e89f4db624ebb1e65f2ac21ea40b6"
+    },
+    {
+      "path": "/private/var/folders/1x/dbv5hr0j6q31yd6qf988kzqw0000gn/T/amazonml-integration-bw0tb1jb/train/source3.tsv",
+      "rows": 30,
+      "sha256": "e2bf99a0a894003254c1ec6b6ec8a2aee75034dac5f28fca30320b8af06502ff"
+    }
+  ],
+  "vocabulary_sizes": {
+    "address_char": 260,
+    "name_char": 220,
+    "name_word": 43
+  }
+}
